@@ -1,0 +1,20 @@
+{
+  "name": "Kitty小任务",
+  "short_name": "Kitty任务",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffb6c1",
+  "theme_color": "#ffb6c1",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.freepik.com/256/2632/2632839.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn-icons-png.freepik.com/256/2632/2632839.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
