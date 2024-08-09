@@ -1,0 +1,320 @@
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const fetchTasks = async () => {
+            const response = await fetch('/tasks');
+            return response.json();
+        };
+        const renderTasks = async (status) => {
+            const tasks = await fetchTasks();
+            const searchQuery = document.querySelector('#search').value.toLowerCase();
+            const taskList = document.querySelector('#taskList');
+            const taskTemplate = (task) => `
+                <div class="task" data-id="${task.id}" data-status="${task.status}" role="listitem">
+                    <div class="task-controls hidden">
+                        <button class="edit-btn" onclick="editTask(${task.id})" aria-label="Edit Task"></button>
+                        <button class="delete-btn" onclick="deleteTask(${task.id})" aria-label="Delete Task"></button>
+                        <button class="focus-btn" onclick="focusTask(${task.id})" aria-label="Focus Task"></button>
+                    </div>
+                    <h3>${task.title}</h3>
+                    <p>${task.description || ''}</p>
+                    <p class="priority hidden">优先级: ${task.priority || 'medium'}</p>
+                    <p class="due-date hidden">截止日期: ${task.due_date || new Date().toISOString().split('T')[0]}</p>
+                </div>
+            `;
+            taskList.innerHTML = tasks
+                .sort((a, b) => a.position - b.position || a.priority.localeCompare(b.priority))
+                .filter(task => (status === 'all' || task.status === status) &&
+                    (task.title.toLowerCase().includes(searchQuery) || task.description.toLowerCase().includes(searchQuery)))
+                .map(taskTemplate).join('');
+            new Sortable(taskList, {
+                animation: 150,
+                easing: "ease-in-out",
+                onEnd: async (evt) => {
+                    const updatedTasks = Array.from(taskList.children).map((child, index) => ({
+                        id: parseInt(child.dataset.id, 10),
+                        position: index + 1,
+                    }));
+                    try {
+                        const response = await fetch('/tasks/reorder', {
+                            method: 'PUT',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(updatedTasks),
+                        });
+                        if (response.ok) {
+                            showFadeOutMessage();
+                        } else {
+                            console.error('Reorder failed:', await response.json());
+                        }
+                    } catch (error) {
+                        console.error('Network or other error:', error);
+                    }
+                },
+            });
+        };
+        renderTasks('all');
+        function showFadeOutMessage() {
+            const message = document.createElement("div");
+            message.textContent = "Tasks reordered successfully!";
+            message.style.position = "fixed";
+            message.style.bottom = "10px";
+            message.style.left = "50%";
+            message.style.transform = "translateX(-50%)";
+            message.style.backgroundColor = "#4CAF50";
+            message.style.color = "#fff";
+            message.style.padding = "10px";
+            message.style.borderRadius = "5px";
+            message.style.boxShadow = "0 2px 4px rgba(0, 0, 0, 0.2)";
+            document.body.appendChild(message);
+            setTimeout(() => {
+                message.style.transition = "opacity 0.5s";
+                message.style.opacity = "0";
+                setTimeout(() => message.remove(), 500);
+            }, 2000);
+        }
+        document.querySelector('#addTaskBtn').onclick = () => {
+            document.querySelector('#error-message').textContent = '';
+            document.querySelector('#taskForm').reset();
+            document.querySelector('#taskModal').style.display = 'block';
+        };
+        document.querySelector('#closeModal').onclick = () => {
+            document.querySelector('#taskModal').style.display = 'none';
+        };
+        window.onclick = (event) => {
+            if (event.target === document.querySelector('#taskModal') || event.target === document.querySelector('#feedbackModal') || event.target === document.querySelector('#confirmationModal')) {
+                event.target.style.display = 'none';
+            }
+        };
+        document.querySelector('#taskForm').onsubmit = async (e) => {
+            e.preventDefault();
+            const title = document.querySelector('#title').value.trim();
+            const description = document.querySelector('#description').value.trim() || '';
+            const priority = document.querySelector('#priority').value || 'medium';
+            const dueDate = document.querySelector('#due-date').value || new Date().toISOString().split('T')[0];
+            const status = document.querySelector('#status').value || 'pending';
+            if (!title) {
+                document.querySelector('#error-message').textContent = '标题不能为空!';
+                return;
+            }
+            const newTask = { title, description, priority, dueDate, status };
+            const response = await fetch('/tasks', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(newTask),
+            });
+            if (response.ok) {
+                renderTasks(document.querySelector('#task-status').value);
+                document.querySelector('#taskModal').style.display = 'none';
+                document.querySelector('#taskForm').reset();
+                setTimeout(() => {
+                    showNotification(`Task "${title}" has been created!`);
+                }, 2000);
+            }
+        };
+        document.querySelector('#task-status').onchange = () => renderTasks(document.querySelector('#task-status').value);
+        document.querySelector('#search').oninput = () => renderTasks(document.querySelector('#task-status').value);
+        window.editTask = async (id) => {
+            const response = await fetch(`/tasks/${id}`);
+            const task = await response.json();
+            document.querySelector('#title').value = task.title;
+            document.querySelector('#description').value = task.description;
+            document.querySelector('#priority').value = task.priority;
+            document.querySelector('#due-date').value = task.due_date;
+            document.querySelector('#status').value = task.status;
+            document.querySelector('#taskModal').style.display = 'block';
+            document.querySelector('#taskForm').onsubmit = async (e) => {
+                e.preventDefault();
+                await updateTask(id);
+            };
+        };
+        window.deleteTask = async (id) => {
+            if (confirm('确定要删除此任务吗？')) {
+                const response = await fetch(`/tasks/${id}`, { method: 'DELETE' });
+                if (response.ok) {
+                    renderTasks(document.querySelector('#task-status').value);
+                    setTimeout(() => {
+                        showNotification(`Task "${id}" has been deleted!`);
+                    }, 2000);
+                }
+            }
+        };
+        async function updateTask(id) {
+            const title = document.querySelector('#title').value.trim();
+            const description = document.querySelector('#description').value.trim() || '';
+            const priority = document.querySelector('#priority').value || 'medium';
+            const dueDate = document.querySelector('#due-date').value || new Date().toISOString().split('T')[0];
+            const status = document.querySelector('#status').value || 'pending';
+            if (!title) {
+                document.querySelector('#error-message').textContent = '标题不能为空！';
+                return;
+            }
+            const updatedTask = { title, description, priority, dueDate, status };
+            const response = await fetch(`/tasks/${id}`, {
+                method: 'PUT',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(updatedTask),
+            });
+            if (response.ok) {
+                renderTasks(document.querySelector('#task-status').value);
+                document.querySelector('#taskModal').style.display = 'none';
+                document.querySelector('#taskForm').reset();
+                setTimeout(() => {
+                    showNotification(`Task "${title}" has been updated!`);
+                }, 2000);
+            }
+        }
+        function showNotification(message) {
+            if (Notification.permission === 'granted') {
+                new Notification(message);
+            }
+        }
+        if (Notification.permission !== 'denied' && Notification.permission !== 'granted') {
+            Notification.requestPermission().then(permission => {
+                if (permission === 'granted') {
+                    checkDueDates();
+                }
+            });
+        }
+        function checkDueDates() {
+            fetch('/tasks')
+                .then(response => response.json())
+                .then(tasks => {
+                    tasks.forEach(task => {
+                        const dueDate = new Date(task.due_date);
+                        const now = new Date();
+                        if (dueDate - now < 24 * 60 * 60 * 1000) { // Less than 24 hours
+                            showNotification(`Task "${task.title}" is due soon!`);
+                        }
+                    });
+                });
+        }
+        window.focusTask = async (id) => {
+            focusedTaskId = id;
+            const response = await fetch(`/tasks/${id}`);
+            const task = await response.json();
+            const taskFocusDiv = document.createElement('div');
+            taskFocusDiv.id = 'taskFocusView';
+            taskFocusDiv.innerHTML = `
+                <button onclick="confirmExitFocusMode()" aria-label="Close Focus Mode">&times;</button>
+                <h3>${task.title}</h3>
+                <p>${task.description}</p>
+                <p>优先级: ${task.priority || 'medium'}</p>
+                <p>截止日期: ${task.due_date || new Date().toISOString().split('T')[0]}</p>
+                <p>任务状态: ${task.status}</p>
+            `;
+            document.body.appendChild(taskFocusDiv);
+            document.body.style.overflow = 'hidden';
+            document.querySelector('main').style.display = 'none';
+            document.querySelector('header').style.display = 'none';
+            document.querySelector('footer').style.display = 'none';
+        };
+        window.confirmExitFocusMode = () => {
+            document.querySelector('#confirmationModal').style.display = 'block';
+        };
+        window.closeConfirmationModal = () => {
+            document.querySelector('#confirmationModal').style.display = 'none';
+        };
+        window.exitFocusMode = () => {
+            const taskFocusDiv = document.querySelector('#taskFocusView');
+            if (taskFocusDiv) {
+                taskFocusDiv.remove();
+            }
+            document.body.style.overflow = 'auto';
+            document.querySelector('main').style.display = 'block';
+            document.querySelector('header').style.display = 'block';
+            document.querySelector('footer').style.display = 'block';
+            closeConfirmationModal();
+            focusedTaskId = null;
+        };
+        document.querySelector('#feedbackBtn').onclick = () => {
+            document.querySelector('#feedback-error-message').textContent = '';
+            document.querySelector('#feedbackForm').reset();
+            document.querySelector('#feedbackModal').style.display = 'block';
+        };
+        document.querySelector('#closeFeedbackModal').onclick = () => {
+            document.querySelector('#feedbackModal').style.display = 'none';
+        };
+        document.querySelector('#exportTasksBtn').onclick = () => {
+            exportTasks();
+        };
+                document.querySelector('#importTasksBtn').onclick = () => {
+                    document.querySelector('#importTasksFile').click();
+                };
+
+                function exportTasks() {
+                    fetch('/tasks')
+                        .then(response => response.json())
+                        .then(tasks => {
+                            const blob = new Blob([JSON.stringify(tasks)], { type: 'application/json' });
+                            const url = URL.createObjectURL(blob);
+                            const a = document.createElement('a');
+                            a.href = url;
+                            a.download = 'tasks.json';
+                            document.body.appendChild(a);
+                            a.click();
+                            document.body.removeChild(a);
+                        });
+                }
+
+                function importTasks() {
+                    const file = document.querySelector('#importTasksFile').files[0];
+                    const reader = new FileReader();
+                    reader.onload = function(event) {
+                        const tasks = JSON.parse(event.target.result);
+                        fetch('/tasks/import', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(tasks)
+                        }).then(response => {
+                            if (response.ok) {
+                                renderTasks(document.querySelector('#task-status').value);
+                            } else {
+                                console.error('导入失败:', response);
+                            }
+                        });
+                    };
+                    reader.readAsText(file);
+                }
+
+                document.querySelector('#toggleDarkModeBtn').onclick = () => {
+                    document.body.classList.toggle('dark-mode');
+                };
+
+                if (!('querySelector' in document && 'localStorage' in window && 'addEventListener' in window)) {
+                    alert('你的浏览器不支持某些必要的功能，请更新浏览器。');
+                }
+
+                const resizeObserver = new ResizeObserver(entries => {
+                    for (let entry of entries) {
+                        if (entry.contentRect.width < 320) {
+                            alert('屏幕宽度太小了，可能影响体验。');
+                        }
+                    }
+                });
+
+                resizeObserver.observe(document.body);
+
+                let isSimplifiedMode = false;
+                let focusedTaskId = null;
+
+                document.querySelector('#toggleModeBtn').onclick = () => {
+                    isSimplifiedMode = !isSimplifiedMode;
+                    document.querySelectorAll('.priority, .due-date, .task-controls').forEach(element => {
+                        element.classList.toggle('hidden', !isSimplifiedMode);
+                    });
+                };
+            });
+          </script>
+
+          <button id="install-button">安装应用</button>
+          <script>
+            if ('serviceWorker' in navigator) {
+              navigator.serviceWorker.register('/service-worker.js')
+                .then(registration => {
+                  console.log('Service Worker registered with scope:', registration.scope);
+                }).catch(error => {
+                  console.error('Service Worker registration failed:', error);
+                });
+            }
+          </script>
+        </body>
+        </html>

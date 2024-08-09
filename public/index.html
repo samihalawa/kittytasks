@@ -7,6 +7,8 @@
   <title>Kitty小任务</title>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
   <style>
     /* Global Box-Sizing */
@@ -15,24 +17,40 @@
     *::after {
       box-sizing: border-box;
     }
+    /* Countdown timer */
+#focusTimer {
+   width: 80%;
+   height: 20px;
+   background-color: #ffb6c1;
+   border-radius: 5px;
+   overflow: hidden;
+   margin-top: 20px;
+   position: relative;
+}
+
+#focusTimer div {
+   height: 100%;
+   background-color: #ff69b4;
+   width: 0%;
+   transition: width 7s linear;
+}
     .task-controls .edit-btn::before {
-      content: '\f044'; /* FontAwesome edit icon */
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
+       content: '\f044'; /* FontAwesome edit icon */
+       font-family: "Font Awesome 5 Free";
+       font-weight: 900;
     }
 
     .task-controls .delete-btn::before {
-      content: '\f1f8'; /* FontAwesome trash icon */
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
+       content: '\f1f8'; /* FontAwesome trash icon */
+       font-family: "Font Awesome 5 Free";
+       font-weight: 900;
     }
 
     .task-controls .focus-btn::before {
-      content: '\f005'; /* FontAwesome star icon */
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
+       content: '\f06e'; /* FontAwesome eye icon */
+       font-family: "Font Awesome 5 Free";
+       font-weight: 900;
     }
-
     /* Prevent horizontal overflow */
     body {
       overflow-x: hidden;
@@ -43,6 +61,11 @@
       padding: 0;
     }
 
+    body.dark-mode {
+      background-color: #333;
+    }
+    
+
     header {
       background-color: #ffb6c1;
       color: white;
@@ -52,6 +75,11 @@
       justify-content: center;
       align-items: center;
       border-bottom: 5px solid #ff69b4;
+    }
+
+    header dark-mode {
+      background-color: #555;
+      color: #ddd;
     }
 
     header img {
@@ -143,6 +171,25 @@
       background-color: #ff1493;
     }
 
+    .install-button {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .install-button:hover {
+      background-color: #ff1493;
+    }
+
     .task-status {
       margin: 20px 0;
     }
@@ -165,6 +212,11 @@
       bottom: 0;
       width: 100%;
       box-sizing: border-box;
+    }
+
+    footer.dark-mode {
+      background-color: #555;
+      color: #ddd;
     }
 
     .feedback {
@@ -194,41 +246,40 @@
 
     /* Focused task view */
     #taskFocusView {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background-color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      z-index: 1000;
-      border: 2px solid #ff69b4;
-      border-radius: 10px;
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100vw;
+       height: 100vh;
+       background: linear-gradient(135deg, rgba(255, 182, 193, 0.8), rgba(255, 105, 180, 0.8));
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       z-index: 1000;
+       border: 2px solid #ff69b4;
+       border-radius: 10px;
     }
 
-    #taskFocusView button {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      border: none;
-      background: transparent;
-      font-size: 24px;
-      cursor: pointer;
-    }
+     #taskFocusView button {
+       position: absolute;
+       top: 10px;
+       right: 10px;
+       border: none;
+       background: transparent;
+       font-size: 24px;
+       cursor: pointer;
+     }
 
-    #taskFocusView h3 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-    }
+     #taskFocusView h3 {
+       font-size: 2.5em;
+       margin-bottom: 20px;
+     }
 
-    #taskFocusView p {
-      font-size: 1.5em;
-      margin: 10px 0;
-    }
-
+     #taskFocusView p {
+       font-size: 1.5em;
+       margin: 10px 0;
+     }
     /* Confirmation modal */
     .modal {
       display: none;
@@ -370,16 +421,19 @@
     #install-button:hover {
       background-color: #ff1493;
     }
+
   </style>
 </head>
 <body>
   <header>
     <img src="https://cdn-icons-png.freepik.com/256/2632/2632839.png" alt="Kitty Icon" aria-hidden="true" />
     <h1>Kitty小任务</h1>
+
   </header>
   <main>
-    <button style="font-size: 0.9em; background-color: gray; opacity: 0.7; padding: 10px 20px;" class="button" id="toggleModeBtn" aria-label="Toggle Mode">简化模式</button>
-    <button class="button" id="addTaskBtn" aria-label="Add Task">添加任务</button>
+    <button class="button" id="addTaskBtn" aria-label="Add Task"><i class="fas fa-plus"></i> </button>
+    <button style="opacity:0.8" class="button" id="toggleModeBtn" aria-label="Toggle Mode"><i class="fas fa-exchange-alt"></i></button>
+    <button style="opacity:0.8"  class="button" id="toggleDarkModeBtn" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
     <div class="search-bar">
       <input type="text" id="search" placeholder="搜索任务..." aria-label="Search Tasks" />
     </div>
@@ -392,13 +446,20 @@
       </select>
     </div>
     <div id="taskList" role="list"></div>
+
+    <!-- Export and Import Section -->
+    <div id="backup-section">
+      <button class="button" id="exportTasksBtn" aria-label="Export Tasks">导出任务</button>
+      <input type="file" id="importTasksFile" style="display: none;" aria-label="Import Tasks" />
+      <button class="button" id="importTasksBtn" aria-label="Import Tasks">导入任务</button>
+    </div>
   </main>
   <footer>
     <p>© 2024 Kitty小任务</p>
     <div class="policies">
       <a style="color:white !important;" class="text-white" href="/privacy-policy.html">隐私政策</a> |
       <a style="color:white !important;" class="text-white" href="/terms-of-service.html">服务条款</a> |
-      <button id="feedbackBtn" aria-label="Provide Feedback" class="text-white" style="background: none; border: none; color: white; cursor: pointer;">提供反馈</button>
+      <button id="feedbackBtn" aria-label="Provide Feedback" style="background: none; border: none; color: white; cursor: pointer;">提供反馈</button>
     </div>
   </footer>
 
@@ -456,211 +517,374 @@
     </div>
   </div>
 
-  <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const fetchTasks = async () => {
-      const response = await fetch('/tasks');
-      return response.json();
-    };
-    const renderTasks = async (status) => {
-      const tasks = await fetchTasks();
-      const searchQuery = document.querySelector('#search').value.toLowerCase();
-      const taskList = document.querySelector('#taskList');
-      const taskTemplate = (task) => `
-        <div class="task" data-id="${task.id}" data-status="${task.status}" role="listitem">
-          <div class="task-controls hidden">
-            <button class="edit-btn" onclick="editTask(${task.id})" aria-label="Edit Task"></button>
-            <button class="delete-btn" onclick="deleteTask(${task.id})" aria-label="Delete Task"></button>
-            <button class="focus-btn" onclick="focusTask(${task.id})" aria-label="Focus Task"></button>
-          </div>
-          <h3>${task.title}</h3>
-          <p>${task.description || ''}</p>
-          <p class="priority hidden">优先级: ${task.priority || 'medium'}</p>
-          <p class="due-date hidden">截止日期: ${task.due_date || new Date().toISOString().split('T')[0]}</p>
-        </div>
-      `;
-      taskList.innerHTML = tasks
-        .sort((a, b) => a.position - b.position || a.priority.localeCompare(b.priority))
-        .filter(task => (status === 'all' || task.status === status) && 
-          (task.title.toLowerCase().includes(searchQuery) || task.description.toLowerCase().includes(searchQuery)))
-        .map(taskTemplate)
-        .join('');
-      const sortable = new Sortable(taskList, {
-        animation: 150,
-        onEnd: async (evt) => {
-          const updatedTasks = Array.from(taskList.children).map((child, index) => ({
-            id: child.dataset.id,
-            position: index + 1,
-          }));
+    
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        let focusTimerInterval;
+        let elapsedTime = 0;
+        let focusedTaskId = null;
 
-          await fetch('/tasks/reorder', {
-            method: 'PUT',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(updatedTasks),
-          });
-        },
-      });
-    };
-    renderTasks('all');
-    document.querySelector('#addTaskBtn').onclick = () => {
-      document.querySelector('#error-message').textContent = '';
-      document.querySelector('#taskForm').reset();
-      document.querySelector('#taskModal').style.display = 'block';
-    };
-    document.querySelector('#closeModal').onclick = () => {
-      document.querySelector('#taskModal').style.display = 'none';
-    };
-    window.onclick = (event) => {
-      if (event.target === document.querySelector('#taskModal')) {
-        document.querySelector('#taskModal').style.display = 'none';
-      } else if (event.target === document.querySelector('#feedbackModal')) {
-        document.querySelector('#feedbackModal').style.display = 'none';
-      } else if (event.target === document.querySelector('#confirmationModal')) {
-        document.querySelector('#confirmationModal').style.display = 'none';
-      }
-    };
-    document.querySelector('#taskForm').onsubmit = async (e) => {
-      e.preventDefault();
-      const title = document.querySelector('#title').value.trim();
-      const description = document.querySelector('#description').value.trim() || '';
-      const priority = document.querySelector('#priority').value || 'medium';
-      const dueDate = document.querySelector('#due-date').value || new Date().toISOString().split('T')[0];
-      const status = document.querySelector('#status').value || 'pending';
-      if (!title) {
-        document.querySelector('#error-message').textContent = '标题不能为空!';
-        return;
-      }
-      const newTask = { title, description, priority, dueDate, status };
-      await fetch('/tasks', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(newTask),
-      });
-      renderTasks(document.querySelector('#task-status').value);
-      document.querySelector('#taskModal').style.display = 'none';
-      document.querySelector('#taskForm').reset();
-    };
-    document.querySelector('#task-status').onchange = () => renderTasks(document.querySelector('#task-status').value);
-    document.querySelector('#search').oninput = () => renderTasks(document.querySelector('#task-status').value);
-    window.editTask = async (id) => {
-      const response = await fetch(`/tasks/${id}`);
-      const task = await response.json();
-      document.querySelector('#title').value = task.title;
-      document.querySelector('#description').value = task.description;
-      document.querySelector('#priority').value = task.priority;
-      document.querySelector('#due-date').value = task.due_date;
-      document.querySelector('#status').value = task.status;
-      document.querySelector('#taskModal').style.display = 'block';
-      document.querySelector('#taskForm').onsubmit = async (e) => {
-        e.preventDefault();
-        const title = document.querySelector('#title').value.trim();
-        const description = document.querySelector('#description').value.trim() || null;
-        const priority = document.querySelector('#priority').value || 'medium';
-        const dueDate = document.querySelector('#due-date').value || new Date().toISOString().split('T')[0];
-        const status = document.querySelector('#status').value || 'pending';
-        if (!title) {
-          document.querySelector('#error-message').textContent = '标题不能为空！';
-          return;
+        const fetchTasks = async () => {
+            const response = await fetch('/tasks');
+            return response.json();
+        };
+
+        const renderTasks = async (status) => {
+            const tasks = await fetchTasks();
+            const searchQuery = document.querySelector('#search').value.toLowerCase();
+            const taskList = document.querySelector('#taskList');
+            const taskTemplate = (task) => `
+                <div class="task" data-id="${task.id}" data-status="${task.status}" role="listitem">
+                    <div class="task-controls hidden">
+                        <button class="edit-btn" onclick="editTask(${task.id})" aria-label="Edit Task"></button>
+                        <button class="delete-btn" onclick="deleteTask(${task.id})" aria-label="Delete Task"></button>
+                        <button class="focus-btn" onclick="focusTask(${task.id})" aria-label="Focus Task"></button>
+                    </div>
+                    <h3>${task.title}</h3>
+                    <p>${task.description || ''}</p>
+                    <p class="priority hidden">优先级: ${task.priority || 'medium'}</p>
+                    <p class="due-date hidden">截止日期: ${task.due_date || new Date().toISOString().split('T')[0]}</p>
+                </div>
+            `;
+            taskList.innerHTML = tasks
+                .sort((a, b) => a.position - b.position || a.priority.localeCompare(b.priority))
+                .filter(task => (status === 'all' || task.status === status) &&
+                    (task.title.toLowerCase().includes(searchQuery) || task.description.toLowerCase().includes(searchQuery)))
+                .map(taskTemplate).join('');
+            new Sortable(taskList, {
+                animation: 150,
+                easing: "ease-in-out",
+                onEnd: async (evt) => {
+                    const updatedTasks = Array.from(taskList.children).map((child, index) => ({
+                        id: parseInt(child.dataset.id, 10),
+                        position: index + 1,
+                    }));
+                    try {
+                        const response = await fetch('/tasks/reorder', {
+                            method: 'PUT',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(updatedTasks),
+                        });
+                        if (response.ok) {
+                            showFadeOutMessage();
+                        } else {
+                            console.error('Reorder failed:', await response.json());
+                        }
+                    } catch (error) {
+                        console.error('Network or other error:', error);
+                    }
+                },
+            });
+        };
+
+        renderTasks('all');
+
+        function showFadeOutMessage() {
+            const message = document.createElement("div");
+            message.textContent = "Tasks reordered successfully!";
+            message.style.position = "fixed";
+            message.style.bottom = "10px";
+            message.style.left = "50%";
+            message.style.transform = "translateX(-50%)";
+            message.style.backgroundColor = "#4CAF50";
+            message.style.color = "#fff";
+            message.style.padding = "10px";
+            message.style.borderRadius = "5px";
+            message.style.boxShadow = "0 2px 4px rgba(0, 0, 0, 0.2)";
+            document.body.appendChild(message);
+            setTimeout(() => {
+                message.style.transition = "opacity 0.5s";
+                message.style.opacity = "0";
+                setTimeout(() => message.remove(), 500);
+            }, 2000);
         }
-        const updatedTask = { title, description, priority, dueDate, status };
-        await fetch(`/tasks/${id}`, {
-          method: 'PUT',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(updatedTask),
+
+        document.querySelector('#addTaskBtn').onclick = () => {
+            document.querySelector('#error-message').textContent = '';
+            document.querySelector('#taskForm').reset();
+            document.querySelector('#taskModal').style.display = 'block';
+        };
+
+        document.querySelector('#closeModal').onclick = () => {
+            document.querySelector('#taskModal').style.display = 'none';
+        };
+
+        window.onclick = (event) => {
+            if (event.target === document.querySelector('#taskModal') || event.target === document.querySelector('#feedbackModal') || event.target === document.querySelector('#confirmationModal')) {
+                event.target.style.display = 'none';
+            }
+        };
+
+        document.querySelector('#taskForm').onsubmit = async (e) => {
+            e.preventDefault();
+            const title = document.querySelector('#title').value.trim();
+            const description = document.querySelector('#description').value.trim() || '';
+            const priority = document.querySelector('#priority').value || 'medium';
+            const dueDate = document.querySelector('#due-date').value || new Date().toISOString().split('T')[0];
+            const status = document.querySelector('#status').value || 'pending';
+            if (!title) {
+                document.querySelector('#error-message').textContent = '标题不能为空!';
+                return;
+            }
+            const newTask = { title, description, priority, dueDate, status };
+            const response = await fetch('/tasks', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(newTask),
+            });
+            if (response.ok) {
+                renderTasks(document.querySelector('#task-status').value);
+                document.querySelector('#taskModal').style.display = 'none';
+                document.querySelector('#taskForm').reset();
+                setTimeout(() => {
+                    showNotification(`Task "${title}" has been created!`);
+                }, 2000);
+            }
+        };
+
+        document.querySelector('#task-status').onchange = () => renderTasks(document.querySelector('#task-status').value);
+
+        document.querySelector('#search').oninput = () => renderTasks(document.querySelector('#task-status').value);
+
+        window.editTask = async (id) => {
+            const response = await fetch(`/tasks/${id}`);
+            const task = await response.json();
+            document.querySelector('#title').value = task.title;
+            document.querySelector('#description').value = task.description;
+            document.querySelector('#priority').value = task.priority;
+            document.querySelector('#due-date').value = task.due_date;
+            document.querySelector('#status').value = task.status;
+            document.querySelector('#taskModal').style.display = 'block';
+            document.querySelector('#taskForm').onsubmit = async (e) => {
+                e.preventDefault();
+                await updateTask(id);
+            };
+        };
+
+        window.deleteTask = async (id) => {
+            if (confirm('确定要删除此任务吗？')) {
+                const response = await fetch(`/tasks/${id}`, { method: 'DELETE' });
+                if (response.ok) {
+                    renderTasks(document.querySelector('#task-status').value);
+                    setTimeout(() => {
+                        showNotification(`Task "${id}" has been deleted!`);
+                    }, 2000);
+                }
+            }
+        };
+
+        async function updateTask(id) {
+            const title = document.querySelector('#title').value.trim();
+            const description = document.querySelector('#description').value.trim() || '';
+            const priority = document.querySelector('#priority').value || 'medium';
+            const dueDate = document.querySelector('#due-date').value || new Date().toISOString().split('T')[0];
+            const status = document.querySelector('#status').value || 'pending';
+            if (!title) {
+                document.querySelector('#error-message').textContent = '标题不能为空！';
+                return;
+            }
+            const updatedTask = { title, description, priority, dueDate, status };
+            const response = await fetch(`/tasks/${id}`, {
+                method: 'PUT',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(updatedTask),
+            });
+            if (response.ok) {
+                renderTasks(document.querySelector('#task-status').value);
+                document.querySelector('#taskModal').style.display = 'none';
+                document.querySelector('#taskForm').reset();
+                setTimeout(() => {
+                    showNotification(`Task "${title}" has been updated!`);
+                }, 2000);
+            }
+        }
+
+        function showNotification(message) {
+            if (Notification.permission === 'granted') {
+                new Notification(message);
+            }
+        }
+
+        if (Notification.permission !== 'denied' && Notification.permission !== 'granted') {
+            Notification.requestPermission().then(permission => {
+                if (permission === 'granted') {
+                    checkDueDates();
+                }
+            });
+        }
+
+        function checkDueDates() {
+            fetch('/tasks')
+                .then(response => response.json())
+                .then(tasks => {
+                    tasks.forEach(task => {
+                        const dueDate = new Date(task.due_date);
+                        const now = new Date();
+                        if (dueDate - now < 24 * 60 * 60 * 1000) { // Less than 24 hours
+                            showNotification(`Task "${task.title}" is due soon!`);
+                        }
+                    });
+                });
+        }
+
+        window.focusTask = async (id) => {
+            focusedTaskId = id;
+            const response = await fetch(`/tasks/${id}`);
+            const task = await response.json();
+            const taskFocusDiv = document.createElement('div');
+            taskFocusDiv.id = 'taskFocusView';
+            taskFocusDiv.innerHTML = `
+                <button onclick="confirmExitFocusMode()" aria-label="Close Focus Mode">&times;</button>
+                <h3>${task.title}</h3>
+                <p>${task.description}</p>
+                <p>优先级: ${task.priority || 'medium'}</p>
+                <p>截止日期: ${task.due_date || new Date().toISOString().split('T')[0]}</p>
+                <p>任务状态: ${task.status}</p>
+                <div id="focusTimer"><div></div></div>
+            `;
+            document.body.appendChild(taskFocusDiv);
+            document.body.style.overflow = 'hidden';
+            document.querySelector('main').style.display = 'none';
+            document.querySelector('header').style.display = 'none';
+            document.querySelector('footer').style.display = 'none';
+            startFocusTimer();
+        };
+
+        function startFocusTimer() {
+            const focusTimerDiv = document.querySelector('#focusTimer div');
+            focusTimerDiv.style.width = '100%';
+            setTimeout(() => {
+                showNotification('Task started');
+                focusTimerDiv.style.transition = 'none';
+                focusTimerDiv.style.width = '0%';
+                focusTimerDiv.style.transition = 'width 1s linear';
+                elapsedTime = 0;
+                focusTimerInterval = setInterval(() => {
+                    elapsedTime += 1;
+                    if (elapsedTime >= 60) {
+                        clearInterval(focusTimerInterval);
+                    }
+                }, 1000);
+            }, 7000);
+        }
+
+        window.confirmExitFocusMode = () => {
+            document.querySelector('#confirmationModal').style.display = 'block';
+        };
+
+        window.closeConfirmationModal = () => {
+            document.querySelector('#confirmationModal').style.display = 'none';
+        };
+
+        window.exitFocusMode = () => {
+            const taskFocusDiv = document.querySelector('#taskFocusView');
+            if (taskFocusDiv) {
+                taskFocusDiv.remove();
+            }
+            document.body.style.overflow = 'auto';
+            document.querySelector('main').style.display = 'block';
+            document.querySelector('header').style.display = 'block';
+            document.querySelector('footer').style.display = 'block';
+            closeConfirmationModal();
+            focusedTaskId = null;
+            if (elapsedTime >= 60) {
+                showNotification('Task completed');
+            }
+        };
+
+        document.querySelector('#feedbackBtn').onclick = () => {
+            document.querySelector('#feedback-error-message').textContent = '';
+            document.querySelector('#feedbackForm').reset();
+            document.querySelector('#feedbackModal').style.display = 'block';
+        };
+
+        document.querySelector('#closeFeedbackModal').onclick = () => {
+            document.querySelector('#feedbackModal').style.display = 'none';
+        };
+
+        document.querySelector('#exportTasksBtn').onclick = () => {
+            exportTasks();
+        };
+
+        document.querySelector('#importTasksBtn').onclick = () => {
+            document.querySelector('#importTasksFile').click();
+        };
+
+        function exportTasks() {
+            fetch('/tasks')
+                .then(response => response.json())
+                .then(tasks => {
+                    const blob = new Blob([JSON.stringify(tasks)], { type: 'application/json' });
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = 'tasks.json';
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                });
+        }
+
+        function importTasks() {
+            const file = document.querySelector('#importTasksFile').files[0];
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                const tasks = JSON.parse(event.target.result);
+                fetch('/tasks/import', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(tasks)
+                }).then(response => {
+                    if (response.ok) {
+                        renderTasks(document.querySelector('#task-status').value);
+                    } else {
+                        console.error('导入失败:', response);
+                    }
+                });
+            };
+            reader.readAsText(file);
+        }
+
+        document.querySelector('#toggleDarkModeBtn').onclick = () => {
+            document.body.classList.toggle('dark-mode');
+        };
+
+        if (!('querySelector' in document && 'localStorage' in window && 'addEventListener' in window)) {
+            alert('你的浏览器不支持某些必要的功能，请更新浏览器。');
+        }
+
+        const resizeObserver = new ResizeObserver(entries => {
+            for (let entry of entries) {
+                if (entry.contentRect.width < 320) {
+                    alert('屏幕宽度太小了，可能影响体验。');
+                }
+            }
         });
-        renderTasks(document.querySelector('#task-status').value);
-        document.querySelector('#taskModal').style.display = 'none';
-        document.querySelector('#taskForm').reset();
-      };
-    };
-    window.deleteTask = async (id) => {
-      if (confirm('确定要删除此任务吗？')) {
-        await fetch(`/tasks/${id}`, { method: 'DELETE' });
-        renderTasks(document.querySelector('#task-status').value);
-      }
-    };
-    document.querySelector('#feedbackBtn').onclick = () => {
-      document.querySelector('#feedback-error-message').textContent = '';
-      document.querySelector('#feedbackForm').reset();
-      document.querySelector('#feedbackModal').style.display = 'block';
-    };
-    document.querySelector('#closeFeedbackModal').onclick = () => {
-      document.querySelector('#feedbackModal').style.display = 'none';
-    };
-    if (!('querySelector' in document && 'localStorage' in window && 'addEventListener' in window)) {
-      alert('你的浏览器不支持某些必要的功能，请更新浏览器。');
-    }
-    const resizeObserver = new ResizeObserver(entries => {
-      for (let entry of entries) {
-        if (entry.contentRect.width < 320) {
-          alert('屏幕宽度太小了，可能影响体验。');
-        }
-      }
+
+        resizeObserver.observe(document.body);
+
+        let isSimplifiedMode = false;
+
+        document.querySelector('#toggleModeBtn').onclick = () => {
+            isSimplifiedMode = !isSimplifiedMode;
+            document.querySelectorAll('.priority, .due-date, .task-controls').forEach(element => {
+                element.classList.toggle('hidden', !isSimplifiedMode);
+            });
+        };
     });
-    resizeObserver.observe(document.body);
-    let isSimplifiedMode = false;
-    let focusedTaskId = null;
-    document.querySelector('#toggleModeBtn').onclick = () => {
-      isSimplifiedMode = !isSimplifiedMode;
-      document.querySelectorAll('.priority, .due-date, .task-controls').forEach(element => {
-        element.classList.toggle('hidden', !isSimplifiedMode);
-      });
-    };
-    window.focusTask = async (id) => {
-      focusedTaskId = id;
-      const response = await fetch(`/tasks/${id}`);
-      const task = await response.json();
-      const taskFocusDiv = document.createElement('div');
-      taskFocusDiv.id = 'taskFocusView';
-      taskFocusDiv.innerHTML = `
-        <button onclick="confirmExitFocusMode()" aria-label="Close Focus Mode">&times;</button>
-        <h3>${task.title}</h3>
-        <p>${task.description}</p>
-        <p>优先级: ${task.priority || 'medium'}</p>
-        <p>截止日期: ${task.due_date || new Date().toISOString().split('T')[0]}</p>
-        <p>任务状态: ${task.status}</p>
-      `;
-      document.body.appendChild(taskFocusDiv);
-      document.body.style.overflow = 'hidden';
-      document.querySelector('main').style.display = 'none';
-      document.querySelector('header').style.display = 'none';
-      document.querySelector('footer').style.display = 'none';
-    };
-    window.confirmExitFocusMode = () => {
-      document.querySelector('#confirmationModal').style.display = 'block';
-    };
-    window.closeConfirmationModal = () => {
-      document.querySelector('#confirmationModal').style.display = 'none';
-    };
-    window.exitFocusMode = () => {
-      const taskFocusDiv = document.querySelector('#taskFocusView');
-      if (taskFocusDiv) {
-        taskFocusDiv.remove();
-      }
-      document.body.style.overflow = 'auto';
-      document.querySelector('main').style.display = 'block';
-      document.querySelector('header').style.display = 'block';
-      document.querySelector('footer').style.display = 'block';
-      closeConfirmationModal();
-      focusedTaskId = null;
-    };
-    window.onclick = (event) => {
-      if (event.target === document.querySelector('#confirmationModal')) {
-        closeConfirmationModal();
-      }
-    };
-  });
-  </script>
-  <button id="install-button">安装应用</button>
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/service-worker.js')
-        .then(registration => {
-          console.log('Service Worker registered with scope:', registration.scope);
-        }).catch(error => {
-          console.error('Service Worker registration failed:', error);
-        });
-    }
-  </script>
-</body>
-</html>
+</script>
+
+
+          <button id="install-button">安装应用</button>
+          <script>
+            if ('serviceWorker' in navigator) {
+              navigator.serviceWorker.register('/service-worker.js')
+                .then(registration => {
+                  console.log('Service Worker registered with scope:', registration.scope);
+                }).catch(error => {
+                  console.error('Service Worker registration failed:', error);
+                });
+            }
+          </script>
+        </body>
+        </html>
