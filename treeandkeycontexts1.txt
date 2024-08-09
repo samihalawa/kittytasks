@@ -1,0 +1,3620 @@
+
+>>>>>>>> ./.cache/typescript/5.0/package.json
+
+[ 412]  .
+├── [   6]  android
+│   └── [   6]  app
+│       └── [   8]  src
+│           └── [  38]  main
+│               └── [ 476]  AndroidManifest.xml
+├── [  38]  .cache
+│   ├── [ 104]  nix
+│   │   ├── [ 40K]  binary-cache-v6.sqlite
+│   │   └── [   0]  binary-cache-v6.sqlite-journal
+│   ├── [  92]  replit
+│   │   ├── [  96]  modules
+│   │   │   ├── [  67]  nodejs-18 -> /nix/store/b0v305nvidpyw64cr4alk85p0hq3914n-replit-module-nodejs-18
+│   │   │   ├── [ 122]  nodejs-18.res
+│   │   │   ├── [  64]  replit -> /nix/store/pyyq478izs8rhhwli1pkmqdvbdz3frma-replit-module-replit
+│   │   │   ├── [ 116]  replit.res
+│   │   │   ├── [  61]  web -> /nix/store/ha7scvvwkkk80qapgcjywpjh00xz6vax-replit-module-web
+│   │   │   └── [ 110]  web.res
+│   │   ├── [   0]  modules.stamp
+│   │   ├── [  16]  nix
+│   │   │   └── [ 20K]  env.json
+│   │   └── [  84]  __replit_disk_meta.json
+│   └── [  18]  typescript
+│       ├── [  82]  5.0
+│       │   ├── [ 106]  package.json
+│       │   └── [1.1K]  package-lock.json
+│       ├── [  82]  5.3
+│       │   ├── [ 106]  package.json
+│       │   └── [1.1K]  package-lock.json
+│       └── [  82]  5.4
+│           ├── [ 186]  package.json
+│           └── [8.7K]  package-lock.json
+├── [ 303]  .env
+├── [ 164]  .git
+│   ├── [   0]  branches
+│   ├── [   6]  COMMIT_EDITMSG
+│   ├── [ 261]  config
+│   ├── [  73]  description
+│   ├── [   0]  FETCH_HEAD
+│   ├── [  21]  HEAD
+│   ├── [ 556]  hooks
+│   │   ├── [ 536]  applypatch-msg.sample
+│   │   ├── [ 954]  commit-msg.sample
+│   │   ├── [4.7K]  fsmonitor-watchman.sample
+│   │   ├── [ 247]  post-update.sample
+│   │   ├── [ 482]  pre-applypatch.sample
+│   │   ├── [1.7K]  pre-commit.sample
+│   │   ├── [ 474]  pre-merge-commit.sample
+│   │   ├── [1.7K]  prepare-commit-msg.sample
+│   │   ├── [1.4K]  pre-push.sample
+│   │   ├── [4.9K]  pre-rebase.sample
+│   │   ├── [ 602]  pre-receive.sample
+│   │   ├── [2.8K]  push-to-checkout.sample
+│   │   ├── [2.3K]  sendemail-validate.sample
+│   │   └── [3.6K]  update.sample
+│   ├── [2.1K]  index
+│   ├── [  14]  info
+│   │   └── [ 240]  exclude
+│   ├── [  16]  logs
+│   │   ├── [ 321]  HEAD
+│   │   └── [  24]  refs
+│   │       ├── [   8]  heads
+│   │       │   └── [ 321]  main
+│   │       └── [  12]  remotes
+│   │           └── [  16]  origin
+│   │               ├── [ 153]  HEAD
+│   │               └── [ 152]  main
+│   ├── [ 164]  objects
+│   │   ├── [  76]  03
+│   │   │   └── [ 264]  24cfc9729361ec99cc33bb86192887b3ef285c
+│   │   ├── [  76]  0c
+│   │   │   └── [ 248]  e1eb672f2f16e97ac27e0c1da0cc9e354dda0b
+│   │   ├── [  76]  1c
+│   │   │   └── [ 105]  eec6bff5519e803761e7b4086ab71cab3c7f0c
+│   │   ├── [  76]  24
+│   │   │   └── [ 224]  759b26041fa2d3ea5fd151a3884d317bb57ccc
+│   │   ├── [  76]  26
+│   │   │   └── [ 920]  260652e01d156a93efa1c7f384103d99e26960
+│   │   ├── [  76]  2e
+│   │   │   └── [  78]  4b50c66e9732dfa58ca19e95e0e1a5df436f04
+│   │   ├── [  76]  37
+│   │   │   └── [ 223]  efe8315e26028391cb3f06c0fd1015c175d3f2
+│   │   ├── [  76]  40
+│   │   │   └── [  29]  b878db5b1c97fc77049537a71bb2e249abe5dc
+│   │   ├── [  76]  42
+│   │   │   └── [ 701]  78742b32cb26ad7201b4cb76deec87616bb568
+│   │   ├── [  76]  46
+│   │   │   └── [ 106]  22fc3c668a650c1a38af208616b941cfdb09a1
+│   │   ├── [  76]  4d
+│   │   │   └── [ 77K]  5be1c97ec4807df5551eec2831dda6afbc6f6f
+│   │   ├── [  76]  51
+│   │   │   └── [2.2K]  10d182d29cd488f2e961f0daba422e7e58452e
+│   │   ├── [  76]  5e
+│   │   │   └── [  45]  3c2ef46019fae4f42912414cd7a59a1acd2052
+│   │   ├── [  76]  68
+│   │   │   └── [ 477]  c0b52236f871c4119f6d45740298032787d899
+│   │   ├── [  76]  69
+│   │   │   └── [ 380]  6b44c1ac78ca02af9b4b066b46430f9202428f
+│   │   ├── [  76]  6d
+│   │   │   └── [138K]  f7ebf02a983d22c7f13dc66671bce772b9ec8c
+│   │   ├── [  76]  6e
+│   │   │   └── [ 155]  411e8d77f33602291ca3bff308f47cf20475ee
+│   │   ├── [  76]  71
+│   │   │   └── [ 390]  8de57622916224c1147669fc7489f1fb5791e9
+│   │   ├── [  76]  72
+│   │   │   └── [1.0K]  396ad9ebc2265414b2084de72843fd6067e442
+│   │   ├── [  76]  77
+│   │   │   └── [ 353]  8212b225e5763bda6ed0323e343a92d2b7d7f6
+│   │   ├── [  76]  7b
+│   │   │   └── [ 193]  a19b09f813071692405d5cb0354c0021b07c8d
+│   │   ├── [  76]  82
+│   │   │   └── [  46]  fc853563f8963c3daaa6584b9d4c8751d4d649
+│   │   ├── [  76]  9e
+│   │   │   └── [5.9K]  d092736b37552cd8b82c4a77b65845db7840a0
+│   │   ├── [  76]  a4
+│   │   │   └── [ 477]  69a4329f51b0142cafe35695d8dd8232c5933b
+│   │   ├── [  76]  a7
+│   │   │   └── [ 130]  227f5e863f78caa2fec2dc6d72c38ced4dd4eb
+│   │   ├── [  76]  b4
+│   │   │   └── [ 33K]  6ac45480f248b9f0535c05b755dda7866a1679
+│   │   ├── [  76]  ba
+│   │   │   └── [170K]  f129a00263988a63ccf1f72f2257bc4bebf833
+│   │   ├── [  76]  bf
+│   │   │   └── [ 199]  c2d73738299338f5eadf57d2484fa92e0eaef7
+│   │   ├── [  76]  c3
+│   │   │   └── [6.5K]  62abaab3413a31413dea13ca4e2b9945b1a5f1
+│   │   ├── [  76]  ca
+│   │   │   └── [ 904]  87e26b558822892804c24cb4ec53f998101e22
+│   │   ├── [  76]  cb
+│   │   │   └── [ 176]  f039b53c83060231c5d708cc748aa2369bd1f6
+│   │   ├── [  76]  d4
+│   │   │   └── [  64]  3d91936aa80f94c72e06870f95568be173f7f5
+│   │   ├── [  76]  dc
+│   │   │   └── [ 784]  e536e0f425827a6d21708f806461b29ffc909e
+│   │   ├── [  76]  de
+│   │   │   └── [  60]  056e7232bb6e65b83a8b6d3bc1de6e5a985108
+│   │   ├── [  76]  e1
+│   │   │   └── [ 138]  314f74c48a97fdf03a41da911c994cea960e39
+│   │   ├── [  76]  f3
+│   │   │   └── [ 312]  9a17d51b01be1a049075d1ea88a31308cde67d
+│   │   ├── [  76]  fa
+│   │   │   └── [  45]  ee4f360ddcc9d56850af53276e4f40731907cf
+│   │   ├── [   0]  info
+│   │   └── [   0]  pack
+│   └── [  32]  refs
+│       ├── [   8]  heads
+│       │   └── [  41]  main
+│       ├── [  12]  remotes
+│       │   └── [  16]  origin
+│       │       ├── [  30]  HEAD
+│       │       └── [  41]  main
+│       └── [   0]  tags
+├── [  13]  .gitignore
+├── [ 734]  Info.plist
+├── [ 639]  package.json
+├── [104K]  package-lock.json
+├── [ 214]  public
+│   ├── [  48]  img
+│   │   ├── [124K]  img1.png
+│   │   ├── [177K]  img2.png
+│   │   └── [207K]  img3.png
+│   ├── [ 27K]  index.html
+│   ├── [  80]  legal
+│   │   ├── [1.5K]  privacy-policy.html
+│   │   └── [1.7K]  terms-of-service.html
+│   ├── [ 469]  manifest.json
+│   ├── [ 12K]  originalindex.html
+│   ├── [ 26K]  originalindexpart2.html
+│   ├── [3.2K]  script.js
+│   ├── [ 576]  service-worker.js
+│   └── [2.5K]  style.css
+├── [6.6K]  README.md
+├── [ 284]  .replit
+├── [  84]  replit.nix
+├── [5.2K]  server.js
+├── [ 481]  tasks.json
+├── [  48]  treeandkeycontexts1.txt
+├── [ 432]  treefinal.txt
+├── [3.7K]  tree.txt
+├── [  20]  .upm
+│   └── [ 256]  store.json
+├── [ 222]  vite.config.js
+└── [  30]  .well-known
+    └── [ 164]  assetlinks.json
+
+72 directories, 111 files
+{"private":true,"dependencies":{"types-registry":"^0.1.673"},"devDependencies":{"@types/node":"^20.8.10"}}
+>>>>>>>> ./.cache/typescript/5.0/node_modules/undici-types/package.json
+
+[ 412]  .
+├── [   6]  android
+│   └── [   6]  app
+│       └── [   8]  src
+│           └── [  38]  main
+│               └── [ 476]  AndroidManifest.xml
+├── [  38]  .cache
+│   ├── [ 104]  nix
+│   │   ├── [ 40K]  binary-cache-v6.sqlite
+│   │   └── [   0]  binary-cache-v6.sqlite-journal
+│   ├── [  92]  replit
+│   │   ├── [  96]  modules
+│   │   │   ├── [  67]  nodejs-18 -> /nix/store/b0v305nvidpyw64cr4alk85p0hq3914n-replit-module-nodejs-18
+│   │   │   ├── [ 122]  nodejs-18.res
+│   │   │   ├── [  64]  replit -> /nix/store/pyyq478izs8rhhwli1pkmqdvbdz3frma-replit-module-replit
+│   │   │   ├── [ 116]  replit.res
+│   │   │   ├── [  61]  web -> /nix/store/ha7scvvwkkk80qapgcjywpjh00xz6vax-replit-module-web
+│   │   │   └── [ 110]  web.res
+│   │   ├── [   0]  modules.stamp
+│   │   ├── [  16]  nix
+│   │   │   └── [ 20K]  env.json
+│   │   └── [  84]  __replit_disk_meta.json
+│   └── [  18]  typescript
+│       ├── [  82]  5.0
+│       │   ├── [ 106]  package.json
+│       │   └── [1.1K]  package-lock.json
+│       ├── [  82]  5.3
+│       │   ├── [ 106]  package.json
+│       │   └── [1.1K]  package-lock.json
+│       └── [  82]  5.4
+│           ├── [ 186]  package.json
+│           └── [8.7K]  package-lock.json
+├── [ 303]  .env
+├── [ 164]  .git
+│   ├── [   0]  branches
+│   ├── [   6]  COMMIT_EDITMSG
+│   ├── [ 261]  config
+│   ├── [  73]  description
+│   ├── [   0]  FETCH_HEAD
+│   ├── [  21]  HEAD
+│   ├── [ 556]  hooks
+│   │   ├── [ 536]  applypatch-msg.sample
+│   │   ├── [ 954]  commit-msg.sample
+│   │   ├── [4.7K]  fsmonitor-watchman.sample
+│   │   ├── [ 247]  post-update.sample
+│   │   ├── [ 482]  pre-applypatch.sample
+│   │   ├── [1.7K]  pre-commit.sample
+│   │   ├── [ 474]  pre-merge-commit.sample
+│   │   ├── [1.7K]  prepare-commit-msg.sample
+│   │   ├── [1.4K]  pre-push.sample
+│   │   ├── [4.9K]  pre-rebase.sample
+│   │   ├── [ 602]  pre-receive.sample
+│   │   ├── [2.8K]  push-to-checkout.sample
+│   │   ├── [2.3K]  sendemail-validate.sample
+│   │   └── [3.6K]  update.sample
+│   ├── [2.1K]  index
+│   ├── [  14]  info
+│   │   └── [ 240]  exclude
+│   ├── [  16]  logs
+│   │   ├── [ 321]  HEAD
+│   │   └── [  24]  refs
+│   │       ├── [   8]  heads
+│   │       │   └── [ 321]  main
+│   │       └── [  12]  remotes
+│   │           └── [  16]  origin
+│   │               ├── [ 153]  HEAD
+│   │               └── [ 152]  main
+│   ├── [ 164]  objects
+│   │   ├── [  76]  03
+│   │   │   └── [ 264]  24cfc9729361ec99cc33bb86192887b3ef285c
+│   │   ├── [  76]  0c
+│   │   │   └── [ 248]  e1eb672f2f16e97ac27e0c1da0cc9e354dda0b
+│   │   ├── [  76]  1c
+│   │   │   └── [ 105]  eec6bff5519e803761e7b4086ab71cab3c7f0c
+│   │   ├── [  76]  24
+│   │   │   └── [ 224]  759b26041fa2d3ea5fd151a3884d317bb57ccc
+│   │   ├── [  76]  26
+│   │   │   └── [ 920]  260652e01d156a93efa1c7f384103d99e26960
+│   │   ├── [  76]  2e
+│   │   │   └── [  78]  4b50c66e9732dfa58ca19e95e0e1a5df436f04
+│   │   ├── [  76]  37
+│   │   │   └── [ 223]  efe8315e26028391cb3f06c0fd1015c175d3f2
+│   │   ├── [  76]  40
+│   │   │   └── [  29]  b878db5b1c97fc77049537a71bb2e249abe5dc
+│   │   ├── [  76]  42
+│   │   │   └── [ 701]  78742b32cb26ad7201b4cb76deec87616bb568
+│   │   ├── [  76]  46
+│   │   │   └── [ 106]  22fc3c668a650c1a38af208616b941cfdb09a1
+│   │   ├── [  76]  4d
+│   │   │   └── [ 77K]  5be1c97ec4807df5551eec2831dda6afbc6f6f
+│   │   ├── [  76]  51
+│   │   │   └── [2.2K]  10d182d29cd488f2e961f0daba422e7e58452e
+│   │   ├── [  76]  5e
+│   │   │   └── [  45]  3c2ef46019fae4f42912414cd7a59a1acd2052
+│   │   ├── [  76]  68
+│   │   │   └── [ 477]  c0b52236f871c4119f6d45740298032787d899
+│   │   ├── [  76]  69
+│   │   │   └── [ 380]  6b44c1ac78ca02af9b4b066b46430f9202428f
+│   │   ├── [  76]  6d
+│   │   │   └── [138K]  f7ebf02a983d22c7f13dc66671bce772b9ec8c
+│   │   ├── [  76]  6e
+│   │   │   └── [ 155]  411e8d77f33602291ca3bff308f47cf20475ee
+│   │   ├── [  76]  71
+│   │   │   └── [ 390]  8de57622916224c1147669fc7489f1fb5791e9
+│   │   ├── [  76]  72
+│   │   │   └── [1.0K]  396ad9ebc2265414b2084de72843fd6067e442
+│   │   ├── [  76]  77
+│   │   │   └── [ 353]  8212b225e5763bda6ed0323e343a92d2b7d7f6
+│   │   ├── [  76]  7b
+│   │   │   └── [ 193]  a19b09f813071692405d5cb0354c0021b07c8d
+│   │   ├── [  76]  82
+│   │   │   └── [  46]  fc853563f8963c3daaa6584b9d4c8751d4d649
+│   │   ├── [  76]  9e
+│   │   │   └── [5.9K]  d092736b37552cd8b82c4a77b65845db7840a0
+│   │   ├── [  76]  a4
+│   │   │   └── [ 477]  69a4329f51b0142cafe35695d8dd8232c5933b
+│   │   ├── [  76]  a7
+│   │   │   └── [ 130]  227f5e863f78caa2fec2dc6d72c38ced4dd4eb
+│   │   ├── [  76]  b4
+│   │   │   └── [ 33K]  6ac45480f248b9f0535c05b755dda7866a1679
+│   │   ├── [  76]  ba
+│   │   │   └── [170K]  f129a00263988a63ccf1f72f2257bc4bebf833
+│   │   ├── [  76]  bf
+│   │   │   └── [ 199]  c2d73738299338f5eadf57d2484fa92e0eaef7
+│   │   ├── [  76]  c3
+│   │   │   └── [6.5K]  62abaab3413a31413dea13ca4e2b9945b1a5f1
+│   │   ├── [  76]  ca
+│   │   │   └── [ 904]  87e26b558822892804c24cb4ec53f998101e22
+│   │   ├── [  76]  cb
+│   │   │   └── [ 176]  f039b53c83060231c5d708cc748aa2369bd1f6
+│   │   ├── [  76]  d4
+│   │   │   └── [  64]  3d91936aa80f94c72e06870f95568be173f7f5
+│   │   ├── [  76]  dc
+│   │   │   └── [ 784]  e536e0f425827a6d21708f806461b29ffc909e
+│   │   ├── [  76]  de
+│   │   │   └── [  60]  056e7232bb6e65b83a8b6d3bc1de6e5a985108
+│   │   ├── [  76]  e1
+│   │   │   └── [ 138]  314f74c48a97fdf03a41da911c994cea960e39
+│   │   ├── [  76]  f3
+│   │   │   └── [ 312]  9a17d51b01be1a049075d1ea88a31308cde67d
+│   │   ├── [  76]  fa
+│   │   │   └── [  45]  ee4f360ddcc9d56850af53276e4f40731907cf
+│   │   ├── [   0]  info
+│   │   └── [   0]  pack
+│   └── [  32]  refs
+│       ├── [   8]  heads
+│       │   └── [  41]  main
+│       ├── [  12]  remotes
+│       │   └── [  16]  origin
+│       │       ├── [  30]  HEAD
+│       │       └── [  41]  main
+│       └── [   0]  tags
+├── [  13]  .gitignore
+├── [ 734]  Info.plist
+├── [ 639]  package.json
+├── [104K]  package-lock.json
+├── [ 214]  public
+│   ├── [  48]  img
+│   │   ├── [124K]  img1.png
+│   │   ├── [177K]  img2.png
+│   │   └── [207K]  img3.png
+│   ├── [ 27K]  index.html
+│   ├── [  80]  legal
+│   │   ├── [1.5K]  privacy-policy.html
+│   │   └── [1.7K]  terms-of-service.html
+│   ├── [ 469]  manifest.json
+│   ├── [ 12K]  originalindex.html
+│   ├── [ 26K]  originalindexpart2.html
+│   ├── [3.2K]  script.js
+│   ├── [ 576]  service-worker.js
+│   └── [2.5K]  style.css
+├── [6.6K]  README.md
+├── [ 284]  .replit
+├── [  84]  replit.nix
+├── [5.2K]  server.js
+├── [ 481]  tasks.json
+├── [9.1K]  treeandkeycontexts1.txt
+├── [ 432]  treefinal.txt
+├── [3.7K]  tree.txt
+├── [  20]  .upm
+│   └── [ 256]  store.json
+├── [ 222]  vite.config.js
+└── [  30]  .well-known
+    └── [ 164]  assetlinks.json
+
+72 directories, 111 files
+{
+  "name": "undici-types",
+  "version": "5.26.5",
+  "description": "A stand-alone types package for Undici",
+  "homepage": "https://undici.nodejs.org",
+  "bugs": {
+    "url": "https://github.com/nodejs/undici/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodejs/undici.git"
+  },
+  "license": "MIT",
+  "types": "index.d.ts",
+  "files": [
+    "*.d.ts"
+  ],
+  "contributors": [
+    {
+      "name": "Daniele Belardi",
+      "url": "https://github.com/dnlup",
+      "author": true
+    },
+    {
+      "name": "Ethan Arrowood",
+      "url": "https://github.com/ethan-arrowood",
+      "author": true
+    },
+    {
+      "name": "Matteo Collina",
+      "url": "https://github.com/mcollina",
+      "author": true
+    },
+    {
+      "name": "Matthew Aitken",
+      "url": "https://github.com/KhafraDev",
+      "author": true
+    },
+    {
+      "name": "Robert Nagy",
+      "url": "https://github.com/ronag",
+      "author": true
+    },
+    {
+      "name": "Szymon Marczak",
+      "url": "https://github.com/szmarczak",
+      "author": true
+    },
+    {
+      "name": "Tomas Della Vedova",
+      "url": "https://github.com/delvedor",
+      "author": true
+    }
+  ]
+}
+>>>>>>>> ./.cache/typescript/5.0/node_modules/@types/node/package.json
+
+[ 412]  .
+├── [   6]  android
+│   └── [   6]  app
+│       └── [   8]  src
+│           └── [  38]  main
+│               └── [ 476]  AndroidManifest.xml
+├── [  38]  .cache
+│   ├── [ 104]  nix
+│   │   ├── [ 40K]  binary-cache-v6.sqlite
+│   │   └── [   0]  binary-cache-v6.sqlite-journal
+│   ├── [  92]  replit
+│   │   ├── [  96]  modules
+│   │   │   ├── [  67]  nodejs-18 -> /nix/store/b0v305nvidpyw64cr4alk85p0hq3914n-replit-module-nodejs-18
+│   │   │   ├── [ 122]  nodejs-18.res
+│   │   │   ├── [  64]  replit -> /nix/store/pyyq478izs8rhhwli1pkmqdvbdz3frma-replit-module-replit
+│   │   │   ├── [ 116]  replit.res
+│   │   │   ├── [  61]  web -> /nix/store/ha7scvvwkkk80qapgcjywpjh00xz6vax-replit-module-web
+│   │   │   └── [ 110]  web.res
+│   │   ├── [   0]  modules.stamp
+│   │   ├── [  16]  nix
+│   │   │   └── [ 20K]  env.json
+│   │   └── [  84]  __replit_disk_meta.json
+│   └── [  18]  typescript
+│       ├── [  82]  5.0
+│       │   ├── [ 106]  package.json
+│       │   └── [1.1K]  package-lock.json
+│       ├── [  82]  5.3
+│       │   ├── [ 106]  package.json
+│       │   └── [1.1K]  package-lock.json
+│       └── [  82]  5.4
+│           ├── [ 186]  package.json
+│           └── [8.7K]  package-lock.json
+├── [ 303]  .env
+├── [ 164]  .git
+│   ├── [   0]  branches
+│   ├── [   6]  COMMIT_EDITMSG
+│   ├── [ 261]  config
+│   ├── [  73]  description
+│   ├── [   0]  FETCH_HEAD
+│   ├── [  21]  HEAD
+│   ├── [ 556]  hooks
+│   │   ├── [ 536]  applypatch-msg.sample
+│   │   ├── [ 954]  commit-msg.sample
+│   │   ├── [4.7K]  fsmonitor-watchman.sample
+│   │   ├── [ 247]  post-update.sample
+│   │   ├── [ 482]  pre-applypatch.sample
+│   │   ├── [1.7K]  pre-commit.sample
+│   │   ├── [ 474]  pre-merge-commit.sample
+│   │   ├── [1.7K]  prepare-commit-msg.sample
+│   │   ├── [1.4K]  pre-push.sample
+│   │   ├── [4.9K]  pre-rebase.sample
+│   │   ├── [ 602]  pre-receive.sample
+│   │   ├── [2.8K]  push-to-checkout.sample
+│   │   ├── [2.3K]  sendemail-validate.sample
+│   │   └── [3.6K]  update.sample
+│   ├── [2.1K]  index
+│   ├── [  14]  info
+│   │   └── [ 240]  exclude
+│   ├── [  16]  logs
+│   │   ├── [ 321]  HEAD
+│   │   └── [  24]  refs
+│   │       ├── [   8]  heads
+│   │       │   └── [ 321]  main
+│   │       └── [  12]  remotes
+│   │           └── [  16]  origin
+│   │               ├── [ 153]  HEAD
+│   │               └── [ 152]  main
+│   ├── [ 164]  objects
+│   │   ├── [  76]  03
+│   │   │   └── [ 264]  24cfc9729361ec99cc33bb86192887b3ef285c
+│   │   ├── [  76]  0c
+│   │   │   └── [ 248]  e1eb672f2f16e97ac27e0c1da0cc9e354dda0b
+│   │   ├── [  76]  1c
+│   │   │   └── [ 105]  eec6bff5519e803761e7b4086ab71cab3c7f0c
+│   │   ├── [  76]  24
+│   │   │   └── [ 224]  759b26041fa2d3ea5fd151a3884d317bb57ccc
+│   │   ├── [  76]  26
+│   │   │   └── [ 920]  260652e01d156a93efa1c7f384103d99e26960
+│   │   ├── [  76]  2e
+│   │   │   └── [  78]  4b50c66e9732dfa58ca19e95e0e1a5df436f04
+│   │   ├── [  76]  37
+│   │   │   └── [ 223]  efe8315e26028391cb3f06c0fd1015c175d3f2
+│   │   ├── [  76]  40
+│   │   │   └── [  29]  b878db5b1c97fc77049537a71bb2e249abe5dc
+│   │   ├── [  76]  42
+│   │   │   └── [ 701]  78742b32cb26ad7201b4cb76deec87616bb568
+│   │   ├── [  76]  46
+│   │   │   └── [ 106]  22fc3c668a650c1a38af208616b941cfdb09a1
+│   │   ├── [  76]  4d
+│   │   │   └── [ 77K]  5be1c97ec4807df5551eec2831dda6afbc6f6f
+│   │   ├── [  76]  51
+│   │   │   └── [2.2K]  10d182d29cd488f2e961f0daba422e7e58452e
+│   │   ├── [  76]  5e
+│   │   │   └── [  45]  3c2ef46019fae4f42912414cd7a59a1acd2052
+│   │   ├── [  76]  68
+│   │   │   └── [ 477]  c0b52236f871c4119f6d45740298032787d899
+│   │   ├── [  76]  69
+│   │   │   └── [ 380]  6b44c1ac78ca02af9b4b066b46430f9202428f
+│   │   ├── [  76]  6d
+│   │   │   └── [138K]  f7ebf02a983d22c7f13dc66671bce772b9ec8c
+│   │   ├── [  76]  6e
+│   │   │   └── [ 155]  411e8d77f33602291ca3bff308f47cf20475ee
+│   │   ├── [  76]  71
+│   │   │   └── [ 390]  8de57622916224c1147669fc7489f1fb5791e9
+│   │   ├── [  76]  72
+│   │   │   └── [1.0K]  396ad9ebc2265414b2084de72843fd6067e442
+│   │   ├── [  76]  77
+│   │   │   └── [ 353]  8212b225e5763bda6ed0323e343a92d2b7d7f6
+│   │   ├── [  76]  7b
+│   │   │   └── [ 193]  a19b09f813071692405d5cb0354c0021b07c8d
+│   │   ├── [  76]  82
+│   │   │   └── [  46]  fc853563f8963c3daaa6584b9d4c8751d4d649
+│   │   ├── [  76]  9e
+│   │   │   └── [5.9K]  d092736b37552cd8b82c4a77b65845db7840a0
+│   │   ├── [  76]  a4
+│   │   │   └── [ 477]  69a4329f51b0142cafe35695d8dd8232c5933b
+│   │   ├── [  76]  a7
+│   │   │   └── [ 130]  227f5e863f78caa2fec2dc6d72c38ced4dd4eb
+│   │   ├── [  76]  b4
+│   │   │   └── [ 33K]  6ac45480f248b9f0535c05b755dda7866a1679
+│   │   ├── [  76]  ba
+│   │   │   └── [170K]  f129a00263988a63ccf1f72f2257bc4bebf833
+│   │   ├── [  76]  bf
+│   │   │   └── [ 199]  c2d73738299338f5eadf57d2484fa92e0eaef7
+│   │   ├── [  76]  c3
+│   │   │   └── [6.5K]  62abaab3413a31413dea13ca4e2b9945b1a5f1
+│   │   ├── [  76]  ca
+│   │   │   └── [ 904]  87e26b558822892804c24cb4ec53f998101e22
+│   │   ├── [  76]  cb
+│   │   │   └── [ 176]  f039b53c83060231c5d708cc748aa2369bd1f6
+│   │   ├── [  76]  d4
+│   │   │   └── [  64]  3d91936aa80f94c72e06870f95568be173f7f5
+│   │   ├── [  76]  dc
+│   │   │   └── [ 784]  e536e0f425827a6d21708f806461b29ffc909e
+│   │   ├── [  76]  de
+│   │   │   └── [  60]  056e7232bb6e65b83a8b6d3bc1de6e5a985108
+│   │   ├── [  76]  e1
+│   │   │   └── [ 138]  314f74c48a97fdf03a41da911c994cea960e39
+│   │   ├── [  76]  f3
+│   │   │   └── [ 312]  9a17d51b01be1a049075d1ea88a31308cde67d
+│   │   ├── [  76]  fa
+│   │   │   └── [  45]  ee4f360ddcc9d56850af53276e4f40731907cf
+│   │   ├── [   0]  info
+│   │   └── [   0]  pack
+│   └── [  32]  refs
+│       ├── [   8]  heads
+│       │   └── [  41]  main
+│       ├── [  12]  remotes
+│       │   └── [  16]  origin
+│       │       ├── [  30]  HEAD
+│       │       └── [  41]  main
+│       └── [   0]  tags
+├── [  13]  .gitignore
+├── [ 734]  Info.plist
+├── [ 639]  package.json
+├── [104K]  package-lock.json
+├── [ 214]  public
+│   ├── [  48]  img
+│   │   ├── [124K]  img1.png
+│   │   ├── [177K]  img2.png
+│   │   └── [207K]  img3.png
+│   ├── [ 27K]  index.html
+│   ├── [  80]  legal
+│   │   ├── [1.5K]  privacy-policy.html
+│   │   └── [1.7K]  terms-of-service.html
+│   ├── [ 469]  manifest.json
+│   ├── [ 12K]  originalindex.html
+│   ├── [ 26K]  originalindexpart2.html
+│   ├── [3.2K]  script.js
+│   ├── [ 576]  service-worker.js
+│   └── [2.5K]  style.css
+├── [6.6K]  README.md
+├── [ 284]  .replit
+├── [  84]  replit.nix
+├── [5.2K]  server.js
+├── [ 481]  tasks.json
+├── [ 19K]  treeandkeycontexts1.txt
+├── [ 432]  treefinal.txt
+├── [3.7K]  tree.txt
+├── [  20]  .upm
+│   └── [ 256]  store.json
+├── [ 222]  vite.config.js
+└── [  30]  .well-known
+    └── [ 164]  assetlinks.json
+
+72 directories, 111 files
+{
+    "name": "@types/node",
+    "version": "20.8.10",
+    "description": "TypeScript definitions for node",
+    "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Microsoft TypeScript",
+            "githubUsername": "Microsoft",
+            "url": "https://github.com/Microsoft"
+        },
+        {
+            "name": "Alberto Schiabel",
+            "githubUsername": "jkomyno",
+            "url": "https://github.com/jkomyno"
+        },
+        {
+            "name": "Alvis HT Tang",
+            "githubUsername": "alvis",
+            "url": "https://github.com/alvis"
+        },
+        {
+            "name": "Andrew Makarov",
+            "githubUsername": "r3nya",
+            "url": "https://github.com/r3nya"
+        },
+        {
+            "name": "Benjamin Toueg",
+            "githubUsername": "btoueg",
+            "url": "https://github.com/btoueg"
+        },
+        {
+            "name": "Chigozirim C.",
+            "githubUsername": "smac89",
+            "url": "https://github.com/smac89"
+        },
+        {
+            "name": "David Junger",
+            "githubUsername": "touffy",
+            "url": "https://github.com/touffy"
+        },
+        {
+            "name": "Deividas Bakanas",
+            "githubUsername": "DeividasBakanas",
+            "url": "https://github.com/DeividasBakanas"
+        },
+        {
+            "name": "Eugene Y. Q. Shen",
+            "githubUsername": "eyqs",
+            "url": "https://github.com/eyqs"
+        },
+        {
+            "name": "Hannes Magnusson",
+            "githubUsername": "Hannes-Magnusson-CK",
+            "url": "https://github.com/Hannes-Magnusson-CK"
+        },
+        {
+            "name": "Huw",
+            "githubUsername": "hoo29",
+            "url": "https://github.com/hoo29"
+        },
+        {
+            "name": "Kelvin Jin",
+            "githubUsername": "kjin",
+            "url": "https://github.com/kjin"
+        },
+        {
+            "name": "Klaus Meinhardt",
+            "githubUsername": "ajafff",
+            "url": "https://github.com/ajafff"
+        },
+        {
+            "name": "Lishude",
+            "githubUsername": "islishude",
+            "url": "https://github.com/islishude"
+        },
+        {
+            "name": "Mariusz Wiktorczyk",
+            "githubUsername": "mwiktorczyk",
+            "url": "https://github.com/mwiktorczyk"
+        },
+        {
+            "name": "Mohsen Azimi",
+            "githubUsername": "mohsen1",
+            "url": "https://github.com/mohsen1"
+        },
+        {
+            "name": "Nicolas Even",
+            "githubUsername": "n-e",
+            "url": "https://github.com/n-e"
+        },
+        {
+            "name": "Nikita Galkin",
+            "githubUsername": "galkin",
+            "url": "https://github.com/galkin"
+        },
+        {
+            "name": "Parambir Singh",
+            "githubUsername": "parambirs",
+            "url": "https://github.com/parambirs"
+        },
+        {
+            "name": "Sebastian Silbermann",
+            "githubUsername": "eps1lon",
+            "url": "https://github.com/eps1lon"
+        },
+        {
+            "name": "Thomas den Hollander",
+            "githubUsername": "ThomasdenH",
+            "url": "https://github.com/ThomasdenH"
+        },
+        {
+            "name": "Wilco Bakker",
+            "githubUsername": "WilcoBakker",
+            "url": "https://github.com/WilcoBakker"
+        },
+        {
+            "name": "wwwy3y3",
+            "githubUsername": "wwwy3y3",
+            "url": "https://github.com/wwwy3y3"
+        },
+        {
+            "name": "Samuel Ainsworth",
+            "githubUsername": "samuela",
+            "url": "https://github.com/samuela"
+        },
+        {
+            "name": "Kyle Uehlein",
+            "githubUsername": "kuehlein",
+            "url": "https://github.com/kuehlein"
+        },
+        {
+            "name": "Thanik Bhongbhibhat",
+            "githubUsername": "bhongy",
+            "url": "https://github.com/bhongy"
+        },
+        {
+            "name": "Marcin Kopacz",
+            "githubUsername": "chyzwar",
+            "url": "https://github.com/chyzwar"
+        },
+        {
+            "name": "Trivikram Kamat",
+            "githubUsername": "trivikr",
+            "url": "https://github.com/trivikr"
+        },
+        {
+            "name": "Junxiao Shi",
+            "githubUsername": "yoursunny",
+            "url": "https://github.com/yoursunny"
+        },
+        {
+            "name": "Ilia Baryshnikov",
+            "githubUsername": "qwelias",
+            "url": "https://github.com/qwelias"
+        },
+        {
+            "name": "ExE Boss",
+            "githubUsername": "ExE-Boss",
+            "url": "https://github.com/ExE-Boss"
+        },
+        {
+            "name": "Piotr Błażejewicz",
+            "githubUsername": "peterblazejewicz",
+            "url": "https://github.com/peterblazejewicz"
+        },
+        {
+            "name": "Anna Henningsen",
+            "githubUsername": "addaleax",
+            "url": "https://github.com/addaleax"
+        },
+        {
+            "name": "Victor Perin",
+            "githubUsername": "victorperin",
+            "url": "https://github.com/victorperin"
+        },
+        {
+            "name": "Yongsheng Zhang",
+            "githubUsername": "ZYSzys",
+            "url": "https://github.com/ZYSzys"
+        },
+        {
+            "name": "NodeJS Contributors",
+            "githubUsername": "NodeJS",
+            "url": "https://github.com/NodeJS"
+        },
+        {
+            "name": "Linus Unnebäck",
+            "githubUsername": "LinusU",
+            "url": "https://github.com/LinusU"
+        },
+        {
+            "name": "wafuwafu13",
+            "githubUsername": "wafuwafu13",
+            "url": "https://github.com/wafuwafu13"
+        },
+        {
+            "name": "Matteo Collina",
+            "githubUsername": "mcollina",
+            "url": "https://github.com/mcollina"
+        },
+        {
+            "name": "Dmitry Semigradsky",
+            "githubUsername": "Semigradsky",
+            "url": "https://github.com/Semigradsky"
+        }
+    ],
+    "main": "",
+    "types": "index.d.ts",
+    "typesVersions": {
+        "<=4.8": {
+            "*": [
+                "ts4.8/*"
+            ]
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/node"
+    },
+    "scripts": {},
+    "dependencies": {
+        "undici-types": "~5.26.4"
+    },
+    "typesPublisherContentHash": "16184642b8bb9cb6f84a0d6245e7b26fc0133a47f604465cfae9c1ace3eeb2ba",
+    "typeScriptVersion": "4.5",
+    "nonNpm": true
+}
+>>>>>>>> ./.cache/typescript/5.0/node_modules/types-registry/package.json
+
+[ 412]  .
+├── [   6]  android
+│   └── [   6]  app
+│       └── [   8]  src
+│           └── [  38]  main
+│               └── [ 476]  AndroidManifest.xml
+├── [  38]  .cache
+│   ├── [ 104]  nix
+│   │   ├── [ 40K]  binary-cache-v6.sqlite
+│   │   └── [   0]  binary-cache-v6.sqlite-journal
+│   ├── [  92]  replit
+│   │   ├── [  96]  modules
+│   │   │   ├── [  67]  nodejs-18 -> /nix/store/b0v305nvidpyw64cr4alk85p0hq3914n-replit-module-nodejs-18
+│   │   │   ├── [ 122]  nodejs-18.res
+│   │   │   ├── [  64]  replit -> /nix/store/pyyq478izs8rhhwli1pkmqdvbdz3frma-replit-module-replit
+│   │   │   ├── [ 116]  replit.res
+│   │   │   ├── [  61]  web -> /nix/store/ha7scvvwkkk80qapgcjywpjh00xz6vax-replit-module-web
+│   │   │   └── [ 110]  web.res
+│   │   ├── [   0]  modules.stamp
+│   │   ├── [  16]  nix
+│   │   │   └── [ 20K]  env.json
+│   │   └── [  84]  __replit_disk_meta.json
+│   └── [  18]  typescript
+│       ├── [  82]  5.0
+│       │   ├── [ 106]  package.json
+│       │   └── [1.1K]  package-lock.json
+│       ├── [  82]  5.3
+│       │   ├── [ 106]  package.json
+│       │   └── [1.1K]  package-lock.json
+│       └── [  82]  5.4
+│           ├── [ 186]  package.json
+│           └── [8.7K]  package-lock.json
+├── [ 303]  .env
+├── [ 164]  .git
+│   ├── [   0]  branches
+│   ├── [   6]  COMMIT_EDITMSG
+│   ├── [ 261]  config
+│   ├── [  73]  description
+│   ├── [   0]  FETCH_HEAD
+│   ├── [  21]  HEAD
+│   ├── [ 556]  hooks
+│   │   ├── [ 536]  applypatch-msg.sample
+│   │   ├── [ 954]  commit-msg.sample
+│   │   ├── [4.7K]  fsmonitor-watchman.sample
+│   │   ├── [ 247]  post-update.sample
+│   │   ├── [ 482]  pre-applypatch.sample
+│   │   ├── [1.7K]  pre-commit.sample
+│   │   ├── [ 474]  pre-merge-commit.sample
+│   │   ├── [1.7K]  prepare-commit-msg.sample
+│   │   ├── [1.4K]  pre-push.sample
+│   │   ├── [4.9K]  pre-rebase.sample
+│   │   ├── [ 602]  pre-receive.sample
+│   │   ├── [2.8K]  push-to-checkout.sample
+│   │   ├── [2.3K]  sendemail-validate.sample
+│   │   └── [3.6K]  update.sample
+│   ├── [2.1K]  index
+│   ├── [  14]  info
+│   │   └── [ 240]  exclude
+│   ├── [  16]  logs
+│   │   ├── [ 321]  HEAD
+│   │   └── [  24]  refs
+│   │       ├── [   8]  heads
+│   │       │   └── [ 321]  main
+│   │       └── [  12]  remotes
+│   │           └── [  16]  origin
+│   │               ├── [ 153]  HEAD
+│   │               └── [ 152]  main
+│   ├── [ 164]  objects
+│   │   ├── [  76]  03
+│   │   │   └── [ 264]  24cfc9729361ec99cc33bb86192887b3ef285c
+│   │   ├── [  76]  0c
+│   │   │   └── [ 248]  e1eb672f2f16e97ac27e0c1da0cc9e354dda0b
+│   │   ├── [  76]  1c
+│   │   │   └── [ 105]  eec6bff5519e803761e7b4086ab71cab3c7f0c
+│   │   ├── [  76]  24
+│   │   │   └── [ 224]  759b26041fa2d3ea5fd151a3884d317bb57ccc
+│   │   ├── [  76]  26
+│   │   │   └── [ 920]  260652e01d156a93efa1c7f384103d99e26960
+│   │   ├── [  76]  2e
+│   │   │   └── [  78]  4b50c66e9732dfa58ca19e95e0e1a5df436f04
+│   │   ├── [  76]  37
+│   │   │   └── [ 223]  efe8315e26028391cb3f06c0fd1015c175d3f2
+│   │   ├── [  76]  40
+│   │   │   └── [  29]  b878db5b1c97fc77049537a71bb2e249abe5dc
+│   │   ├── [  76]  42
+│   │   │   └── [ 701]  78742b32cb26ad7201b4cb76deec87616bb568
+│   │   ├── [  76]  46
+│   │   │   └── [ 106]  22fc3c668a650c1a38af208616b941cfdb09a1
+│   │   ├── [  76]  4d
+│   │   │   └── [ 77K]  5be1c97ec4807df5551eec2831dda6afbc6f6f
+│   │   ├── [  76]  51
+│   │   │   └── [2.2K]  10d182d29cd488f2e961f0daba422e7e58452e
+│   │   ├── [  76]  5e
+│   │   │   └── [  45]  3c2ef46019fae4f42912414cd7a59a1acd2052
+│   │   ├── [  76]  68
+│   │   │   └── [ 477]  c0b52236f871c4119f6d45740298032787d899
+│   │   ├── [  76]  69
+│   │   │   └── [ 380]  6b44c1ac78ca02af9b4b066b46430f9202428f
+│   │   ├── [  76]  6d
+│   │   │   └── [138K]  f7ebf02a983d22c7f13dc66671bce772b9ec8c
+│   │   ├── [  76]  6e
+│   │   │   └── [ 155]  411e8d77f33602291ca3bff308f47cf20475ee
+│   │   ├── [  76]  71
+│   │   │   └── [ 390]  8de57622916224c1147669fc7489f1fb5791e9
+│   │   ├── [  76]  72
+│   │   │   └── [1.0K]  396ad9ebc2265414b2084de72843fd6067e442
+│   │   ├── [  76]  77
+│   │   │   └── [ 353]  8212b225e5763bda6ed0323e343a92d2b7d7f6
+│   │   ├── [  76]  7b
+│   │   │   └── [ 193]  a19b09f813071692405d5cb0354c0021b07c8d
+│   │   ├── [  76]  82
+│   │   │   └── [  46]  fc853563f8963c3daaa6584b9d4c8751d4d649
+│   │   ├── [  76]  9e
+│   │   │   └── [5.9K]  d092736b37552cd8b82c4a77b65845db7840a0
+│   │   ├── [  76]  a4
+│   │   │   └── [ 477]  69a4329f51b0142cafe35695d8dd8232c5933b
+│   │   ├── [  76]  a7
+│   │   │   └── [ 130]  227f5e863f78caa2fec2dc6d72c38ced4dd4eb
+│   │   ├── [  76]  b4
+│   │   │   └── [ 33K]  6ac45480f248b9f0535c05b755dda7866a1679
+│   │   ├── [  76]  ba
+│   │   │   └── [170K]  f129a00263988a63ccf1f72f2257bc4bebf833
+│   │   ├── [  76]  bf
+│   │   │   └── [ 199]  c2d73738299338f5eadf57d2484fa92e0eaef7
+│   │   ├── [  76]  c3
+│   │   │   └── [6.5K]  62abaab3413a31413dea13ca4e2b9945b1a5f1
+│   │   ├── [  76]  ca
+│   │   │   └── [ 904]  87e26b558822892804c24cb4ec53f998101e22
+│   │   ├── [  76]  cb
+│   │   │   └── [ 176]  f039b53c83060231c5d708cc748aa2369bd1f6
+│   │   ├── [  76]  d4
+│   │   │   └── [  64]  3d91936aa80f94c72e06870f95568be173f7f5
+│   │   ├── [  76]  dc
+│   │   │   └── [ 784]  e536e0f425827a6d21708f806461b29ffc909e
+│   │   ├── [  76]  de
+│   │   │   └── [  60]  056e7232bb6e65b83a8b6d3bc1de6e5a985108
+│   │   ├── [  76]  e1
+│   │   │   └── [ 138]  314f74c48a97fdf03a41da911c994cea960e39
+│   │   ├── [  76]  f3
+│   │   │   └── [ 312]  9a17d51b01be1a049075d1ea88a31308cde67d
+│   │   ├── [  76]  fa
+│   │   │   └── [  45]  ee4f360ddcc9d56850af53276e4f40731907cf
+│   │   ├── [   0]  info
+│   │   └── [   0]  pack
+│   └── [  32]  refs
+│       ├── [   8]  heads
+│       │   └── [  41]  main
+│       ├── [  12]  remotes
+│       │   └── [  16]  origin
+│       │       ├── [  30]  HEAD
+│       │       └── [  41]  main
+│       └── [   0]  tags
+├── [  13]  .gitignore
+├── [ 734]  Info.plist
+├── [ 639]  package.json
+├── [104K]  package-lock.json
+├── [ 214]  public
+│   ├── [  48]  img
+│   │   ├── [124K]  img1.png
+│   │   ├── [177K]  img2.png
+│   │   └── [207K]  img3.png
+│   ├── [ 27K]  index.html
+│   ├── [  80]  legal
+│   │   ├── [1.5K]  privacy-policy.html
+│   │   └── [1.7K]  terms-of-service.html
+│   ├── [ 469]  manifest.json
+│   ├── [ 12K]  originalindex.html
+│   ├── [ 26K]  originalindexpart2.html
+│   ├── [3.2K]  script.js
+│   ├── [ 576]  service-worker.js
+│   └── [2.5K]  style.css
+├── [6.6K]  README.md
+├── [ 284]  .replit
+├── [  84]  replit.nix
+├── [5.2K]  server.js
+├── [ 481]  tasks.json
+├── [ 35K]  treeandkeycontexts1.txt
+├── [ 432]  treefinal.txt
+├── [3.7K]  tree.txt
+├── [  20]  .upm
+│   └── [ 256]  store.json
+├── [ 222]  vite.config.js
+└── [  30]  .well-known
+    └── [ 164]  assetlinks.json
+
+72 directories, 111 files
+{
+    "name": "types-registry",
+    "version": "0.1.673",
+    "description": "A registry of TypeScript declaration file packages published within the @types scope.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/microsoft/DefinitelyTyped-tools.git",
+        "directory": "packages/publisher"
+    },
+    "keywords": [
+        "TypeScript",
+        "declaration",
+        "files",
+        "types",
+        "packages"
+    ],
+    "author": "Microsoft Corp.",
+    "license": "MIT",
+    "typesPublisherContentHash": "5fd4d93797f0622e8fbefcb34dd873ccc638404b8fd7845a8faade70f67758b0"
+}
+>>>>>>>> ./.cache/typescript/5.3/package.json
+
+[ 412]  .
+├── [   6]  android
+│   └── [   6]  app
+│       └── [   8]  src
+│           └── [  38]  main
+│               └── [ 476]  AndroidManifest.xml
+├── [  38]  .cache
+│   ├── [ 104]  nix
+│   │   ├── [ 40K]  binary-cache-v6.sqlite
+│   │   └── [   0]  binary-cache-v6.sqlite-journal
+│   ├── [  92]  replit
+│   │   ├── [  96]  modules
+│   │   │   ├── [  67]  nodejs-18 -> /nix/store/b0v305nvidpyw64cr4alk85p0hq3914n-replit-module-nodejs-18
+│   │   │   ├── [ 122]  nodejs-18.res
+│   │   │   ├── [  64]  replit -> /nix/store/pyyq478izs8rhhwli1pkmqdvbdz3frma-replit-module-replit
+│   │   │   ├── [ 116]  replit.res
+│   │   │   ├── [  61]  web -> /nix/store/ha7scvvwkkk80qapgcjywpjh00xz6vax-replit-module-web
+│   │   │   └── [ 110]  web.res
+│   │   ├── [   0]  modules.stamp
+│   │   ├── [  16]  nix
+│   │   │   └── [ 20K]  env.json
+│   │   └── [  84]  __replit_disk_meta.json
+│   └── [  18]  typescript
+│       ├── [  82]  5.0
+│       │   ├── [ 106]  package.json
+│       │   └── [1.1K]  package-lock.json
+│       ├── [  82]  5.3
+│       │   ├── [ 106]  package.json
+│       │   └── [1.1K]  package-lock.json
+│       └── [  82]  5.4
+│           ├── [ 186]  package.json
+│           └── [8.7K]  package-lock.json
+├── [ 303]  .env
+├── [ 164]  .git
+│   ├── [   0]  branches
+│   ├── [   6]  COMMIT_EDITMSG
+│   ├── [ 261]  config
+│   ├── [  73]  description
+│   ├── [   0]  FETCH_HEAD
+│   ├── [  21]  HEAD
+│   ├── [ 556]  hooks
+│   │   ├── [ 536]  applypatch-msg.sample
+│   │   ├── [ 954]  commit-msg.sample
+│   │   ├── [4.7K]  fsmonitor-watchman.sample
+│   │   ├── [ 247]  post-update.sample
+│   │   ├── [ 482]  pre-applypatch.sample
+│   │   ├── [1.7K]  pre-commit.sample
+│   │   ├── [ 474]  pre-merge-commit.sample
+│   │   ├── [1.7K]  prepare-commit-msg.sample
+│   │   ├── [1.4K]  pre-push.sample
+│   │   ├── [4.9K]  pre-rebase.sample
+│   │   ├── [ 602]  pre-receive.sample
+│   │   ├── [2.8K]  push-to-checkout.sample
+│   │   ├── [2.3K]  sendemail-validate.sample
+│   │   └── [3.6K]  update.sample
+│   ├── [2.1K]  index
+│   ├── [  14]  info
+│   │   └── [ 240]  exclude
+│   ├── [  16]  logs
+│   │   ├── [ 321]  HEAD
+│   │   └── [  24]  refs
+│   │       ├── [   8]  heads
+│   │       │   └── [ 321]  main
+│   │       └── [  12]  remotes
+│   │           └── [  16]  origin
+│   │               ├── [ 153]  HEAD
+│   │               └── [ 152]  main
+│   ├── [ 164]  objects
+│   │   ├── [  76]  03
+│   │   │   └── [ 264]  24cfc9729361ec99cc33bb86192887b3ef285c
+│   │   ├── [  76]  0c
+│   │   │   └── [ 248]  e1eb672f2f16e97ac27e0c1da0cc9e354dda0b
+│   │   ├── [  76]  1c
+│   │   │   └── [ 105]  eec6bff5519e803761e7b4086ab71cab3c7f0c
+│   │   ├── [  76]  24
+│   │   │   └── [ 224]  759b26041fa2d3ea5fd151a3884d317bb57ccc
+│   │   ├── [  76]  26
+│   │   │   └── [ 920]  260652e01d156a93efa1c7f384103d99e26960
+│   │   ├── [  76]  2e
+│   │   │   └── [  78]  4b50c66e9732dfa58ca19e95e0e1a5df436f04
+│   │   ├── [  76]  37
+│   │   │   └── [ 223]  efe8315e26028391cb3f06c0fd1015c175d3f2
+│   │   ├── [  76]  40
+│   │   │   └── [  29]  b878db5b1c97fc77049537a71bb2e249abe5dc
+│   │   ├── [  76]  42
+│   │   │   └── [ 701]  78742b32cb26ad7201b4cb76deec87616bb568
+│   │   ├── [  76]  46
+│   │   │   └── [ 106]  22fc3c668a650c1a38af208616b941cfdb09a1
+│   │   ├── [  76]  4d
+│   │   │   └── [ 77K]  5be1c97ec4807df5551eec2831dda6afbc6f6f
+│   │   ├── [  76]  51
+│   │   │   └── [2.2K]  10d182d29cd488f2e961f0daba422e7e58452e
+│   │   ├── [  76]  5e
+│   │   │   └── [  45]  3c2ef46019fae4f42912414cd7a59a1acd2052
+│   │   ├── [  76]  68
+│   │   │   └── [ 477]  c0b52236f871c4119f6d45740298032787d899
+│   │   ├── [  76]  69
+│   │   │   └── [ 380]  6b44c1ac78ca02af9b4b066b46430f9202428f
+│   │   ├── [  76]  6d
+│   │   │   └── [138K]  f7ebf02a983d22c7f13dc66671bce772b9ec8c
+│   │   ├── [  76]  6e
+│   │   │   └── [ 155]  411e8d77f33602291ca3bff308f47cf20475ee
+│   │   ├── [  76]  71
+│   │   │   └── [ 390]  8de57622916224c1147669fc7489f1fb5791e9
+│   │   ├── [  76]  72
+│   │   │   └── [1.0K]  396ad9ebc2265414b2084de72843fd6067e442
+│   │   ├── [  76]  77
+│   │   │   └── [ 353]  8212b225e5763bda6ed0323e343a92d2b7d7f6
+│   │   ├── [  76]  7b
+│   │   │   └── [ 193]  a19b09f813071692405d5cb0354c0021b07c8d
+│   │   ├── [  76]  82
+│   │   │   └── [  46]  fc853563f8963c3daaa6584b9d4c8751d4d649
+│   │   ├── [  76]  9e
+│   │   │   └── [5.9K]  d092736b37552cd8b82c4a77b65845db7840a0
+│   │   ├── [  76]  a4
+│   │   │   └── [ 477]  69a4329f51b0142cafe35695d8dd8232c5933b
+│   │   ├── [  76]  a7
+│   │   │   └── [ 130]  227f5e863f78caa2fec2dc6d72c38ced4dd4eb
+│   │   ├── [  76]  b4
+│   │   │   └── [ 33K]  6ac45480f248b9f0535c05b755dda7866a1679
+│   │   ├── [  76]  ba
+│   │   │   └── [170K]  f129a00263988a63ccf1f72f2257bc4bebf833
+│   │   ├── [  76]  bf
+│   │   │   └── [ 199]  c2d73738299338f5eadf57d2484fa92e0eaef7
+│   │   ├── [  76]  c3
+│   │   │   └── [6.5K]  62abaab3413a31413dea13ca4e2b9945b1a5f1
+│   │   ├── [  76]  ca
+│   │   │   └── [ 904]  87e26b558822892804c24cb4ec53f998101e22
+│   │   ├── [  76]  cb
+│   │   │   └── [ 176]  f039b53c83060231c5d708cc748aa2369bd1f6
+│   │   ├── [  76]  d4
+│   │   │   └── [  64]  3d91936aa80f94c72e06870f95568be173f7f5
+│   │   ├── [  76]  dc
+│   │   │   └── [ 784]  e536e0f425827a6d21708f806461b29ffc909e
+│   │   ├── [  76]  de
+│   │   │   └── [  60]  056e7232bb6e65b83a8b6d3bc1de6e5a985108
+│   │   ├── [  76]  e1
+│   │   │   └── [ 138]  314f74c48a97fdf03a41da911c994cea960e39
+│   │   ├── [  76]  f3
+│   │   │   └── [ 312]  9a17d51b01be1a049075d1ea88a31308cde67d
+│   │   ├── [  76]  fa
+│   │   │   └── [  45]  ee4f360ddcc9d56850af53276e4f40731907cf
+│   │   ├── [   0]  info
+│   │   └── [   0]  pack
+│   └── [  32]  refs
+│       ├── [   8]  heads
+│       │   └── [  41]  main
+│       ├── [  12]  remotes
+│       │   └── [  16]  origin
+│       │       ├── [  30]  HEAD
+│       │       └── [  41]  main
+│       └── [   0]  tags
+├── [  13]  .gitignore
+├── [ 734]  Info.plist
+├── [ 639]  package.json
+├── [104K]  package-lock.json
+├── [ 214]  public
+│   ├── [  48]  img
+│   │   ├── [124K]  img1.png
+│   │   ├── [177K]  img2.png
+│   │   └── [207K]  img3.png
+│   ├── [ 27K]  index.html
+│   ├── [  80]  legal
+│   │   ├── [1.5K]  privacy-policy.html
+│   │   └── [1.7K]  terms-of-service.html
+│   ├── [ 469]  manifest.json
+│   ├── [ 12K]  originalindex.html
+│   ├── [ 26K]  originalindexpart2.html
+│   ├── [3.2K]  script.js
+│   ├── [ 576]  service-worker.js
+│   └── [2.5K]  style.css
+├── [6.6K]  README.md
+├── [ 284]  .replit
+├── [  84]  replit.nix
+├── [5.2K]  server.js
+├── [ 481]  tasks.json
+├── [ 45K]  treeandkeycontexts1.txt
+├── [ 432]  treefinal.txt
+├── [3.7K]  tree.txt
+├── [  20]  .upm
+│   └── [ 256]  store.json
+├── [ 222]  vite.config.js
+└── [  30]  .well-known
+    └── [ 164]  assetlinks.json
+
+72 directories, 111 files
+{"private":true,"dependencies":{"types-registry":"^0.1.680"},"devDependencies":{"@types/node":"^20.10.4"}}
+>>>>>>>> ./.cache/typescript/5.3/node_modules/undici-types/package.json
+
+[ 412]  .
+├── [   6]  android
+│   └── [   6]  app
+│       └── [   8]  src
+│           └── [  38]  main
+│               └── [ 476]  AndroidManifest.xml
+├── [  38]  .cache
+│   ├── [ 104]  nix
+│   │   ├── [ 40K]  binary-cache-v6.sqlite
+│   │   └── [   0]  binary-cache-v6.sqlite-journal
+│   ├── [  92]  replit
+│   │   ├── [  96]  modules
+│   │   │   ├── [  67]  nodejs-18 -> /nix/store/b0v305nvidpyw64cr4alk85p0hq3914n-replit-module-nodejs-18
+│   │   │   ├── [ 122]  nodejs-18.res
+│   │   │   ├── [  64]  replit -> /nix/store/pyyq478izs8rhhwli1pkmqdvbdz3frma-replit-module-replit
+│   │   │   ├── [ 116]  replit.res
+│   │   │   ├── [  61]  web -> /nix/store/ha7scvvwkkk80qapgcjywpjh00xz6vax-replit-module-web
+│   │   │   └── [ 110]  web.res
+│   │   ├── [   0]  modules.stamp
+│   │   ├── [  16]  nix
+│   │   │   └── [ 20K]  env.json
+│   │   └── [  84]  __replit_disk_meta.json
+│   └── [  18]  typescript
+│       ├── [  82]  5.0
+│       │   ├── [ 106]  package.json
+│       │   └── [1.1K]  package-lock.json
+│       ├── [  82]  5.3
+│       │   ├── [ 106]  package.json
+│       │   └── [1.1K]  package-lock.json
+│       └── [  82]  5.4
+│           ├── [ 186]  package.json
+│           └── [8.7K]  package-lock.json
+├── [ 303]  .env
+├── [ 164]  .git
+│   ├── [   0]  branches
+│   ├── [   6]  COMMIT_EDITMSG
+│   ├── [ 261]  config
+│   ├── [  73]  description
+│   ├── [   0]  FETCH_HEAD
+│   ├── [  21]  HEAD
+│   ├── [ 556]  hooks
+│   │   ├── [ 536]  applypatch-msg.sample
+│   │   ├── [ 954]  commit-msg.sample
+│   │   ├── [4.7K]  fsmonitor-watchman.sample
+│   │   ├── [ 247]  post-update.sample
+│   │   ├── [ 482]  pre-applypatch.sample
+│   │   ├── [1.7K]  pre-commit.sample
+│   │   ├── [ 474]  pre-merge-commit.sample
+│   │   ├── [1.7K]  prepare-commit-msg.sample
+│   │   ├── [1.4K]  pre-push.sample
+│   │   ├── [4.9K]  pre-rebase.sample
+│   │   ├── [ 602]  pre-receive.sample
+│   │   ├── [2.8K]  push-to-checkout.sample
+│   │   ├── [2.3K]  sendemail-validate.sample
+│   │   └── [3.6K]  update.sample
+│   ├── [2.1K]  index
+│   ├── [  14]  info
+│   │   └── [ 240]  exclude
+│   ├── [  16]  logs
+│   │   ├── [ 321]  HEAD
+│   │   └── [  24]  refs
+│   │       ├── [   8]  heads
+│   │       │   └── [ 321]  main
+│   │       └── [  12]  remotes
+│   │           └── [  16]  origin
+│   │               ├── [ 153]  HEAD
+│   │               └── [ 152]  main
+│   ├── [ 164]  objects
+│   │   ├── [  76]  03
+│   │   │   └── [ 264]  24cfc9729361ec99cc33bb86192887b3ef285c
+│   │   ├── [  76]  0c
+│   │   │   └── [ 248]  e1eb672f2f16e97ac27e0c1da0cc9e354dda0b
+│   │   ├── [  76]  1c
+│   │   │   └── [ 105]  eec6bff5519e803761e7b4086ab71cab3c7f0c
+│   │   ├── [  76]  24
+│   │   │   └── [ 224]  759b26041fa2d3ea5fd151a3884d317bb57ccc
+│   │   ├── [  76]  26
+│   │   │   └── [ 920]  260652e01d156a93efa1c7f384103d99e26960
+│   │   ├── [  76]  2e
+│   │   │   └── [  78]  4b50c66e9732dfa58ca19e95e0e1a5df436f04
+│   │   ├── [  76]  37
+│   │   │   └── [ 223]  efe8315e26028391cb3f06c0fd1015c175d3f2
+│   │   ├── [  76]  40
+│   │   │   └── [  29]  b878db5b1c97fc77049537a71bb2e249abe5dc
+│   │   ├── [  76]  42
+│   │   │   └── [ 701]  78742b32cb26ad7201b4cb76deec87616bb568
+│   │   ├── [  76]  46
+│   │   │   └── [ 106]  22fc3c668a650c1a38af208616b941cfdb09a1
+│   │   ├── [  76]  4d
+│   │   │   └── [ 77K]  5be1c97ec4807df5551eec2831dda6afbc6f6f
+│   │   ├── [  76]  51
+│   │   │   └── [2.2K]  10d182d29cd488f2e961f0daba422e7e58452e
+│   │   ├── [  76]  5e
+│   │   │   └── [  45]  3c2ef46019fae4f42912414cd7a59a1acd2052
+│   │   ├── [  76]  68
+│   │   │   └── [ 477]  c0b52236f871c4119f6d45740298032787d899
+│   │   ├── [  76]  69
+│   │   │   └── [ 380]  6b44c1ac78ca02af9b4b066b46430f9202428f
+│   │   ├── [  76]  6d
+│   │   │   └── [138K]  f7ebf02a983d22c7f13dc66671bce772b9ec8c
+│   │   ├── [  76]  6e
+│   │   │   └── [ 155]  411e8d77f33602291ca3bff308f47cf20475ee
+│   │   ├── [  76]  71
+│   │   │   └── [ 390]  8de57622916224c1147669fc7489f1fb5791e9
+│   │   ├── [  76]  72
+│   │   │   └── [1.0K]  396ad9ebc2265414b2084de72843fd6067e442
+│   │   ├── [  76]  77
+│   │   │   └── [ 353]  8212b225e5763bda6ed0323e343a92d2b7d7f6
+│   │   ├── [  76]  7b
+│   │   │   └── [ 193]  a19b09f813071692405d5cb0354c0021b07c8d
+│   │   ├── [  76]  82
+│   │   │   └── [  46]  fc853563f8963c3daaa6584b9d4c8751d4d649
+│   │   ├── [  76]  9e
+│   │   │   └── [5.9K]  d092736b37552cd8b82c4a77b65845db7840a0
+│   │   ├── [  76]  a4
+│   │   │   └── [ 477]  69a4329f51b0142cafe35695d8dd8232c5933b
+│   │   ├── [  76]  a7
+│   │   │   └── [ 130]  227f5e863f78caa2fec2dc6d72c38ced4dd4eb
+│   │   ├── [  76]  b4
+│   │   │   └── [ 33K]  6ac45480f248b9f0535c05b755dda7866a1679
+│   │   ├── [  76]  ba
+│   │   │   └── [170K]  f129a00263988a63ccf1f72f2257bc4bebf833
+│   │   ├── [  76]  bf
+│   │   │   └── [ 199]  c2d73738299338f5eadf57d2484fa92e0eaef7
+│   │   ├── [  76]  c3
+│   │   │   └── [6.5K]  62abaab3413a31413dea13ca4e2b9945b1a5f1
+│   │   ├── [  76]  ca
+│   │   │   └── [ 904]  87e26b558822892804c24cb4ec53f998101e22
+│   │   ├── [  76]  cb
+│   │   │   └── [ 176]  f039b53c83060231c5d708cc748aa2369bd1f6
+│   │   ├── [  76]  d4
+│   │   │   └── [  64]  3d91936aa80f94c72e06870f95568be173f7f5
+│   │   ├── [  76]  dc
+│   │   │   └── [ 784]  e536e0f425827a6d21708f806461b29ffc909e
+│   │   ├── [  76]  de
+│   │   │   └── [  60]  056e7232bb6e65b83a8b6d3bc1de6e5a985108
+│   │   ├── [  76]  e1
+│   │   │   └── [ 138]  314f74c48a97fdf03a41da911c994cea960e39
+│   │   ├── [  76]  f3
+│   │   │   └── [ 312]  9a17d51b01be1a049075d1ea88a31308cde67d
+│   │   ├── [  76]  fa
+│   │   │   └── [  45]  ee4f360ddcc9d56850af53276e4f40731907cf
+│   │   ├── [   0]  info
+│   │   └── [   0]  pack
+│   └── [  32]  refs
+│       ├── [   8]  heads
+│       │   └── [  41]  main
+│       ├── [  12]  remotes
+│       │   └── [  16]  origin
+│       │       ├── [  30]  HEAD
+│       │       └── [  41]  main
+│       └── [   0]  tags
+├── [  13]  .gitignore
+├── [ 734]  Info.plist
+├── [ 639]  package.json
+├── [104K]  package-lock.json
+├── [ 214]  public
+│   ├── [  48]  img
+│   │   ├── [124K]  img1.png
+│   │   ├── [177K]  img2.png
+│   │   └── [207K]  img3.png
+│   ├── [ 27K]  index.html
+│   ├── [  80]  legal
+│   │   ├── [1.5K]  privacy-policy.html
+│   │   └── [1.7K]  terms-of-service.html
+│   ├── [ 469]  manifest.json
+│   ├── [ 12K]  originalindex.html
+│   ├── [ 26K]  originalindexpart2.html
+│   ├── [3.2K]  script.js
+│   ├── [ 576]  service-worker.js
+│   └── [2.5K]  style.css
+├── [6.6K]  README.md
+├── [ 284]  .replit
+├── [  84]  replit.nix
+├── [5.2K]  server.js
+├── [ 481]  tasks.json
+├── [ 54K]  treeandkeycontexts1.txt
+├── [ 432]  treefinal.txt
+├── [3.7K]  tree.txt
+├── [  20]  .upm
+│   └── [ 256]  store.json
+├── [ 222]  vite.config.js
+└── [  30]  .well-known
+    └── [ 164]  assetlinks.json
+
+72 directories, 111 files
+{
+  "name": "undici-types",
+  "version": "5.26.5",
+  "description": "A stand-alone types package for Undici",
+  "homepage": "https://undici.nodejs.org",
+  "bugs": {
+    "url": "https://github.com/nodejs/undici/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodejs/undici.git"
+  },
+  "license": "MIT",
+  "types": "index.d.ts",
+  "files": [
+    "*.d.ts"
+  ],
+  "contributors": [
+    {
+      "name": "Daniele Belardi",
+      "url": "https://github.com/dnlup",
+      "author": true
+    },
+    {
+      "name": "Ethan Arrowood",
+      "url": "https://github.com/ethan-arrowood",
+      "author": true
+    },
+    {
+      "name": "Matteo Collina",
+      "url": "https://github.com/mcollina",
+      "author": true
+    },
+    {
+      "name": "Matthew Aitken",
+      "url": "https://github.com/KhafraDev",
+      "author": true
+    },
+    {
+      "name": "Robert Nagy",
+      "url": "https://github.com/ronag",
+      "author": true
+    },
+    {
+      "name": "Szymon Marczak",
+      "url": "https://github.com/szmarczak",
+      "author": true
+    },
+    {
+      "name": "Tomas Della Vedova",
+      "url": "https://github.com/delvedor",
+      "author": true
+    }
+  ]
+}
+>>>>>>>> ./.cache/typescript/5.3/node_modules/@types/node/package.json
+
+[ 412]  .
+├── [   6]  android
+│   └── [   6]  app
+│       └── [   8]  src
+│           └── [  38]  main
+│               └── [ 476]  AndroidManifest.xml
+├── [  38]  .cache
+│   ├── [ 104]  nix
+│   │   ├── [ 40K]  binary-cache-v6.sqlite
+│   │   └── [   0]  binary-cache-v6.sqlite-journal
+│   ├── [  92]  replit
+│   │   ├── [  96]  modules
+│   │   │   ├── [  67]  nodejs-18 -> /nix/store/b0v305nvidpyw64cr4alk85p0hq3914n-replit-module-nodejs-18
+│   │   │   ├── [ 122]  nodejs-18.res
+│   │   │   ├── [  64]  replit -> /nix/store/pyyq478izs8rhhwli1pkmqdvbdz3frma-replit-module-replit
+│   │   │   ├── [ 116]  replit.res
+│   │   │   ├── [  61]  web -> /nix/store/ha7scvvwkkk80qapgcjywpjh00xz6vax-replit-module-web
+│   │   │   └── [ 110]  web.res
+│   │   ├── [   0]  modules.stamp
+│   │   ├── [  16]  nix
+│   │   │   └── [ 20K]  env.json
+│   │   └── [  84]  __replit_disk_meta.json
+│   └── [  18]  typescript
+│       ├── [  82]  5.0
+│       │   ├── [ 106]  package.json
+│       │   └── [1.1K]  package-lock.json
+│       ├── [  82]  5.3
+│       │   ├── [ 106]  package.json
+│       │   └── [1.1K]  package-lock.json
+│       └── [  82]  5.4
+│           ├── [ 186]  package.json
+│           └── [8.7K]  package-lock.json
+├── [ 303]  .env
+├── [ 164]  .git
+│   ├── [   0]  branches
+│   ├── [   6]  COMMIT_EDITMSG
+│   ├── [ 261]  config
+│   ├── [  73]  description
+│   ├── [   0]  FETCH_HEAD
+│   ├── [  21]  HEAD
+│   ├── [ 556]  hooks
+│   │   ├── [ 536]  applypatch-msg.sample
+│   │   ├── [ 954]  commit-msg.sample
+│   │   ├── [4.7K]  fsmonitor-watchman.sample
+│   │   ├── [ 247]  post-update.sample
+│   │   ├── [ 482]  pre-applypatch.sample
+│   │   ├── [1.7K]  pre-commit.sample
+│   │   ├── [ 474]  pre-merge-commit.sample
+│   │   ├── [1.7K]  prepare-commit-msg.sample
+│   │   ├── [1.4K]  pre-push.sample
+│   │   ├── [4.9K]  pre-rebase.sample
+│   │   ├── [ 602]  pre-receive.sample
+│   │   ├── [2.8K]  push-to-checkout.sample
+│   │   ├── [2.3K]  sendemail-validate.sample
+│   │   └── [3.6K]  update.sample
+│   ├── [2.1K]  index
+│   ├── [  14]  info
+│   │   └── [ 240]  exclude
+│   ├── [  16]  logs
+│   │   ├── [ 321]  HEAD
+│   │   └── [  24]  refs
+│   │       ├── [   8]  heads
+│   │       │   └── [ 321]  main
+│   │       └── [  12]  remotes
+│   │           └── [  16]  origin
+│   │               ├── [ 153]  HEAD
+│   │               └── [ 152]  main
+│   ├── [ 164]  objects
+│   │   ├── [  76]  03
+│   │   │   └── [ 264]  24cfc9729361ec99cc33bb86192887b3ef285c
+│   │   ├── [  76]  0c
+│   │   │   └── [ 248]  e1eb672f2f16e97ac27e0c1da0cc9e354dda0b
+│   │   ├── [  76]  1c
+│   │   │   └── [ 105]  eec6bff5519e803761e7b4086ab71cab3c7f0c
+│   │   ├── [  76]  24
+│   │   │   └── [ 224]  759b26041fa2d3ea5fd151a3884d317bb57ccc
+│   │   ├── [  76]  26
+│   │   │   └── [ 920]  260652e01d156a93efa1c7f384103d99e26960
+│   │   ├── [  76]  2e
+│   │   │   └── [  78]  4b50c66e9732dfa58ca19e95e0e1a5df436f04
+│   │   ├── [  76]  37
+│   │   │   └── [ 223]  efe8315e26028391cb3f06c0fd1015c175d3f2
+│   │   ├── [  76]  40
+│   │   │   └── [  29]  b878db5b1c97fc77049537a71bb2e249abe5dc
+│   │   ├── [  76]  42
+│   │   │   └── [ 701]  78742b32cb26ad7201b4cb76deec87616bb568
+│   │   ├── [  76]  46
+│   │   │   └── [ 106]  22fc3c668a650c1a38af208616b941cfdb09a1
+│   │   ├── [  76]  4d
+│   │   │   └── [ 77K]  5be1c97ec4807df5551eec2831dda6afbc6f6f
+│   │   ├── [  76]  51
+│   │   │   └── [2.2K]  10d182d29cd488f2e961f0daba422e7e58452e
+│   │   ├── [  76]  5e
+│   │   │   └── [  45]  3c2ef46019fae4f42912414cd7a59a1acd2052
+│   │   ├── [  76]  68
+│   │   │   └── [ 477]  c0b52236f871c4119f6d45740298032787d899
+│   │   ├── [  76]  69
+│   │   │   └── [ 380]  6b44c1ac78ca02af9b4b066b46430f9202428f
+│   │   ├── [  76]  6d
+│   │   │   └── [138K]  f7ebf02a983d22c7f13dc66671bce772b9ec8c
+│   │   ├── [  76]  6e
+│   │   │   └── [ 155]  411e8d77f33602291ca3bff308f47cf20475ee
+│   │   ├── [  76]  71
+│   │   │   └── [ 390]  8de57622916224c1147669fc7489f1fb5791e9
+│   │   ├── [  76]  72
+│   │   │   └── [1.0K]  396ad9ebc2265414b2084de72843fd6067e442
+│   │   ├── [  76]  77
+│   │   │   └── [ 353]  8212b225e5763bda6ed0323e343a92d2b7d7f6
+│   │   ├── [  76]  7b
+│   │   │   └── [ 193]  a19b09f813071692405d5cb0354c0021b07c8d
+│   │   ├── [  76]  82
+│   │   │   └── [  46]  fc853563f8963c3daaa6584b9d4c8751d4d649
+│   │   ├── [  76]  9e
+│   │   │   └── [5.9K]  d092736b37552cd8b82c4a77b65845db7840a0
+│   │   ├── [  76]  a4
+│   │   │   └── [ 477]  69a4329f51b0142cafe35695d8dd8232c5933b
+│   │   ├── [  76]  a7
+│   │   │   └── [ 130]  227f5e863f78caa2fec2dc6d72c38ced4dd4eb
+│   │   ├── [  76]  b4
+│   │   │   └── [ 33K]  6ac45480f248b9f0535c05b755dda7866a1679
+│   │   ├── [  76]  ba
+│   │   │   └── [170K]  f129a00263988a63ccf1f72f2257bc4bebf833
+│   │   ├── [  76]  bf
+│   │   │   └── [ 199]  c2d73738299338f5eadf57d2484fa92e0eaef7
+│   │   ├── [  76]  c3
+│   │   │   └── [6.5K]  62abaab3413a31413dea13ca4e2b9945b1a5f1
+│   │   ├── [  76]  ca
+│   │   │   └── [ 904]  87e26b558822892804c24cb4ec53f998101e22
+│   │   ├── [  76]  cb
+│   │   │   └── [ 176]  f039b53c83060231c5d708cc748aa2369bd1f6
+│   │   ├── [  76]  d4
+│   │   │   └── [  64]  3d91936aa80f94c72e06870f95568be173f7f5
+│   │   ├── [  76]  dc
+│   │   │   └── [ 784]  e536e0f425827a6d21708f806461b29ffc909e
+│   │   ├── [  76]  de
+│   │   │   └── [  60]  056e7232bb6e65b83a8b6d3bc1de6e5a985108
+│   │   ├── [  76]  e1
+│   │   │   └── [ 138]  314f74c48a97fdf03a41da911c994cea960e39
+│   │   ├── [  76]  f3
+│   │   │   └── [ 312]  9a17d51b01be1a049075d1ea88a31308cde67d
+│   │   ├── [  76]  fa
+│   │   │   └── [  45]  ee4f360ddcc9d56850af53276e4f40731907cf
+│   │   ├── [   0]  info
+│   │   └── [   0]  pack
+│   └── [  32]  refs
+│       ├── [   8]  heads
+│       │   └── [  41]  main
+│       ├── [  12]  remotes
+│       │   └── [  16]  origin
+│       │       ├── [  30]  HEAD
+│       │       └── [  41]  main
+│       └── [   0]  tags
+├── [  13]  .gitignore
+├── [ 734]  Info.plist
+├── [ 639]  package.json
+├── [104K]  package-lock.json
+├── [ 214]  public
+│   ├── [  48]  img
+│   │   ├── [124K]  img1.png
+│   │   ├── [177K]  img2.png
+│   │   └── [207K]  img3.png
+│   ├── [ 27K]  index.html
+│   ├── [  80]  legal
+│   │   ├── [1.5K]  privacy-policy.html
+│   │   └── [1.7K]  terms-of-service.html
+│   ├── [ 469]  manifest.json
+│   ├── [ 12K]  originalindex.html
+│   ├── [ 26K]  originalindexpart2.html
+│   ├── [3.2K]  script.js
+│   ├── [ 576]  service-worker.js
+│   └── [2.5K]  style.css
+├── [6.6K]  README.md
+├── [ 284]  .replit
+├── [  84]  replit.nix
+├── [5.2K]  server.js
+├── [ 481]  tasks.json
+├── [ 64K]  treeandkeycontexts1.txt
+├── [ 432]  treefinal.txt
+├── [3.7K]  tree.txt
+├── [  20]  .upm
+│   └── [ 256]  store.json
+├── [ 222]  vite.config.js
+└── [  30]  .well-known
+    └── [ 164]  assetlinks.json
+
+72 directories, 111 files
+{
+    "name": "@types/node",
+    "version": "20.10.4",
+    "description": "TypeScript definitions for node",
+    "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Microsoft TypeScript",
+            "githubUsername": "Microsoft",
+            "url": "https://github.com/Microsoft"
+        },
+        {
+            "name": "Alberto Schiabel",
+            "githubUsername": "jkomyno",
+            "url": "https://github.com/jkomyno"
+        },
+        {
+            "name": "Alvis HT Tang",
+            "githubUsername": "alvis",
+            "url": "https://github.com/alvis"
+        },
+        {
+            "name": "Andrew Makarov",
+            "githubUsername": "r3nya",
+            "url": "https://github.com/r3nya"
+        },
+        {
+            "name": "Benjamin Toueg",
+            "githubUsername": "btoueg",
+            "url": "https://github.com/btoueg"
+        },
+        {
+            "name": "Chigozirim C.",
+            "githubUsername": "smac89",
+            "url": "https://github.com/smac89"
+        },
+        {
+            "name": "David Junger",
+            "githubUsername": "touffy",
+            "url": "https://github.com/touffy"
+        },
+        {
+            "name": "Deividas Bakanas",
+            "githubUsername": "DeividasBakanas",
+            "url": "https://github.com/DeividasBakanas"
+        },
+        {
+            "name": "Eugene Y. Q. Shen",
+            "githubUsername": "eyqs",
+            "url": "https://github.com/eyqs"
+        },
+        {
+            "name": "Hannes Magnusson",
+            "githubUsername": "Hannes-Magnusson-CK",
+            "url": "https://github.com/Hannes-Magnusson-CK"
+        },
+        {
+            "name": "Huw",
+            "githubUsername": "hoo29",
+            "url": "https://github.com/hoo29"
+        },
+        {
+            "name": "Kelvin Jin",
+            "githubUsername": "kjin",
+            "url": "https://github.com/kjin"
+        },
+        {
+            "name": "Klaus Meinhardt",
+            "githubUsername": "ajafff",
+            "url": "https://github.com/ajafff"
+        },
+        {
+            "name": "Lishude",
+            "githubUsername": "islishude",
+            "url": "https://github.com/islishude"
+        },
+        {
+            "name": "Mariusz Wiktorczyk",
+            "githubUsername": "mwiktorczyk",
+            "url": "https://github.com/mwiktorczyk"
+        },
+        {
+            "name": "Mohsen Azimi",
+            "githubUsername": "mohsen1",
+            "url": "https://github.com/mohsen1"
+        },
+        {
+            "name": "Nicolas Even",
+            "githubUsername": "n-e",
+            "url": "https://github.com/n-e"
+        },
+        {
+            "name": "Nikita Galkin",
+            "githubUsername": "galkin",
+            "url": "https://github.com/galkin"
+        },
+        {
+            "name": "Parambir Singh",
+            "githubUsername": "parambirs",
+            "url": "https://github.com/parambirs"
+        },
+        {
+            "name": "Sebastian Silbermann",
+            "githubUsername": "eps1lon",
+            "url": "https://github.com/eps1lon"
+        },
+        {
+            "name": "Thomas den Hollander",
+            "githubUsername": "ThomasdenH",
+            "url": "https://github.com/ThomasdenH"
+        },
+        {
+            "name": "Wilco Bakker",
+            "githubUsername": "WilcoBakker",
+            "url": "https://github.com/WilcoBakker"
+        },
+        {
+            "name": "wwwy3y3",
+            "githubUsername": "wwwy3y3",
+            "url": "https://github.com/wwwy3y3"
+        },
+        {
+            "name": "Samuel Ainsworth",
+            "githubUsername": "samuela",
+            "url": "https://github.com/samuela"
+        },
+        {
+            "name": "Kyle Uehlein",
+            "githubUsername": "kuehlein",
+            "url": "https://github.com/kuehlein"
+        },
+        {
+            "name": "Thanik Bhongbhibhat",
+            "githubUsername": "bhongy",
+            "url": "https://github.com/bhongy"
+        },
+        {
+            "name": "Marcin Kopacz",
+            "githubUsername": "chyzwar",
+            "url": "https://github.com/chyzwar"
+        },
+        {
+            "name": "Trivikram Kamat",
+            "githubUsername": "trivikr",
+            "url": "https://github.com/trivikr"
+        },
+        {
+            "name": "Junxiao Shi",
+            "githubUsername": "yoursunny",
+            "url": "https://github.com/yoursunny"
+        },
+        {
+            "name": "Ilia Baryshnikov",
+            "githubUsername": "qwelias",
+            "url": "https://github.com/qwelias"
+        },
+        {
+            "name": "ExE Boss",
+            "githubUsername": "ExE-Boss",
+            "url": "https://github.com/ExE-Boss"
+        },
+        {
+            "name": "Piotr Błażejewicz",
+            "githubUsername": "peterblazejewicz",
+            "url": "https://github.com/peterblazejewicz"
+        },
+        {
+            "name": "Anna Henningsen",
+            "githubUsername": "addaleax",
+            "url": "https://github.com/addaleax"
+        },
+        {
+            "name": "Victor Perin",
+            "githubUsername": "victorperin",
+            "url": "https://github.com/victorperin"
+        },
+        {
+            "name": "Yongsheng Zhang",
+            "githubUsername": "ZYSzys",
+            "url": "https://github.com/ZYSzys"
+        },
+        {
+            "name": "NodeJS Contributors",
+            "githubUsername": "NodeJS",
+            "url": "https://github.com/NodeJS"
+        },
+        {
+            "name": "Linus Unnebäck",
+            "githubUsername": "LinusU",
+            "url": "https://github.com/LinusU"
+        },
+        {
+            "name": "wafuwafu13",
+            "githubUsername": "wafuwafu13",
+            "url": "https://github.com/wafuwafu13"
+        },
+        {
+            "name": "Matteo Collina",
+            "githubUsername": "mcollina",
+            "url": "https://github.com/mcollina"
+        },
+        {
+            "name": "Dmitry Semigradsky",
+            "githubUsername": "Semigradsky",
+            "url": "https://github.com/Semigradsky"
+        }
+    ],
+    "main": "",
+    "types": "index.d.ts",
+    "typesVersions": {
+        "<=4.8": {
+            "*": [
+                "ts4.8/*"
+            ]
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/node"
+    },
+    "scripts": {},
+    "dependencies": {
+        "undici-types": "~5.26.4"
+    },
+    "typesPublisherContentHash": "70306276c79ea3801d82ca605703455f07ca61a9ef7d05f547ee2671f6bc5712",
+    "typeScriptVersion": "4.6",
+    "nonNpm": true
+}
+>>>>>>>> ./.cache/typescript/5.3/node_modules/types-registry/package.json
+
+[ 412]  .
+├── [   6]  android
+│   └── [   6]  app
+│       └── [   8]  src
+│           └── [  38]  main
+│               └── [ 476]  AndroidManifest.xml
+├── [  38]  .cache
+│   ├── [ 104]  nix
+│   │   ├── [ 40K]  binary-cache-v6.sqlite
+│   │   └── [   0]  binary-cache-v6.sqlite-journal
+│   ├── [  92]  replit
+│   │   ├── [  96]  modules
+│   │   │   ├── [  67]  nodejs-18 -> /nix/store/b0v305nvidpyw64cr4alk85p0hq3914n-replit-module-nodejs-18
+│   │   │   ├── [ 122]  nodejs-18.res
+│   │   │   ├── [  64]  replit -> /nix/store/pyyq478izs8rhhwli1pkmqdvbdz3frma-replit-module-replit
+│   │   │   ├── [ 116]  replit.res
+│   │   │   ├── [  61]  web -> /nix/store/ha7scvvwkkk80qapgcjywpjh00xz6vax-replit-module-web
+│   │   │   └── [ 110]  web.res
+│   │   ├── [   0]  modules.stamp
+│   │   ├── [  16]  nix
+│   │   │   └── [ 20K]  env.json
+│   │   └── [  84]  __replit_disk_meta.json
+│   └── [  18]  typescript
+│       ├── [  82]  5.0
+│       │   ├── [ 106]  package.json
+│       │   └── [1.1K]  package-lock.json
+│       ├── [  82]  5.3
+│       │   ├── [ 106]  package.json
+│       │   └── [1.1K]  package-lock.json
+│       └── [  82]  5.4
+│           ├── [ 186]  package.json
+│           └── [8.7K]  package-lock.json
+├── [ 303]  .env
+├── [ 164]  .git
+│   ├── [   0]  branches
+│   ├── [   6]  COMMIT_EDITMSG
+│   ├── [ 261]  config
+│   ├── [  73]  description
+│   ├── [   0]  FETCH_HEAD
+│   ├── [  21]  HEAD
+│   ├── [ 556]  hooks
+│   │   ├── [ 536]  applypatch-msg.sample
+│   │   ├── [ 954]  commit-msg.sample
+│   │   ├── [4.7K]  fsmonitor-watchman.sample
+│   │   ├── [ 247]  post-update.sample
+│   │   ├── [ 482]  pre-applypatch.sample
+│   │   ├── [1.7K]  pre-commit.sample
+│   │   ├── [ 474]  pre-merge-commit.sample
+│   │   ├── [1.7K]  prepare-commit-msg.sample
+│   │   ├── [1.4K]  pre-push.sample
+│   │   ├── [4.9K]  pre-rebase.sample
+│   │   ├── [ 602]  pre-receive.sample
+│   │   ├── [2.8K]  push-to-checkout.sample
+│   │   ├── [2.3K]  sendemail-validate.sample
+│   │   └── [3.6K]  update.sample
+│   ├── [2.1K]  index
+│   ├── [  14]  info
+│   │   └── [ 240]  exclude
+│   ├── [  16]  logs
+│   │   ├── [ 321]  HEAD
+│   │   └── [  24]  refs
+│   │       ├── [   8]  heads
+│   │       │   └── [ 321]  main
+│   │       └── [  12]  remotes
+│   │           └── [  16]  origin
+│   │               ├── [ 153]  HEAD
+│   │               └── [ 152]  main
+│   ├── [ 164]  objects
+│   │   ├── [  76]  03
+│   │   │   └── [ 264]  24cfc9729361ec99cc33bb86192887b3ef285c
+│   │   ├── [  76]  0c
+│   │   │   └── [ 248]  e1eb672f2f16e97ac27e0c1da0cc9e354dda0b
+│   │   ├── [  76]  1c
+│   │   │   └── [ 105]  eec6bff5519e803761e7b4086ab71cab3c7f0c
+│   │   ├── [  76]  24
+│   │   │   └── [ 224]  759b26041fa2d3ea5fd151a3884d317bb57ccc
+│   │   ├── [  76]  26
+│   │   │   └── [ 920]  260652e01d156a93efa1c7f384103d99e26960
+│   │   ├── [  76]  2e
+│   │   │   └── [  78]  4b50c66e9732dfa58ca19e95e0e1a5df436f04
+│   │   ├── [  76]  37
+│   │   │   └── [ 223]  efe8315e26028391cb3f06c0fd1015c175d3f2
+│   │   ├── [  76]  40
+│   │   │   └── [  29]  b878db5b1c97fc77049537a71bb2e249abe5dc
+│   │   ├── [  76]  42
+│   │   │   └── [ 701]  78742b32cb26ad7201b4cb76deec87616bb568
+│   │   ├── [  76]  46
+│   │   │   └── [ 106]  22fc3c668a650c1a38af208616b941cfdb09a1
+│   │   ├── [  76]  4d
+│   │   │   └── [ 77K]  5be1c97ec4807df5551eec2831dda6afbc6f6f
+│   │   ├── [  76]  51
+│   │   │   └── [2.2K]  10d182d29cd488f2e961f0daba422e7e58452e
+│   │   ├── [  76]  5e
+│   │   │   └── [  45]  3c2ef46019fae4f42912414cd7a59a1acd2052
+│   │   ├── [  76]  68
+│   │   │   └── [ 477]  c0b52236f871c4119f6d45740298032787d899
+│   │   ├── [  76]  69
+│   │   │   └── [ 380]  6b44c1ac78ca02af9b4b066b46430f9202428f
+│   │   ├── [  76]  6d
+│   │   │   └── [138K]  f7ebf02a983d22c7f13dc66671bce772b9ec8c
+│   │   ├── [  76]  6e
+│   │   │   └── [ 155]  411e8d77f33602291ca3bff308f47cf20475ee
+│   │   ├── [  76]  71
+│   │   │   └── [ 390]  8de57622916224c1147669fc7489f1fb5791e9
+│   │   ├── [  76]  72
+│   │   │   └── [1.0K]  396ad9ebc2265414b2084de72843fd6067e442
+│   │   ├── [  76]  77
+│   │   │   └── [ 353]  8212b225e5763bda6ed0323e343a92d2b7d7f6
+│   │   ├── [  76]  7b
+│   │   │   └── [ 193]  a19b09f813071692405d5cb0354c0021b07c8d
+│   │   ├── [  76]  82
+│   │   │   └── [  46]  fc853563f8963c3daaa6584b9d4c8751d4d649
+│   │   ├── [  76]  9e
+│   │   │   └── [5.9K]  d092736b37552cd8b82c4a77b65845db7840a0
+│   │   ├── [  76]  a4
+│   │   │   └── [ 477]  69a4329f51b0142cafe35695d8dd8232c5933b
+│   │   ├── [  76]  a7
+│   │   │   └── [ 130]  227f5e863f78caa2fec2dc6d72c38ced4dd4eb
+│   │   ├── [  76]  b4
+│   │   │   └── [ 33K]  6ac45480f248b9f0535c05b755dda7866a1679
+│   │   ├── [  76]  ba
+│   │   │   └── [170K]  f129a00263988a63ccf1f72f2257bc4bebf833
+│   │   ├── [  76]  bf
+│   │   │   └── [ 199]  c2d73738299338f5eadf57d2484fa92e0eaef7
+│   │   ├── [  76]  c3
+│   │   │   └── [6.5K]  62abaab3413a31413dea13ca4e2b9945b1a5f1
+│   │   ├── [  76]  ca
+│   │   │   └── [ 904]  87e26b558822892804c24cb4ec53f998101e22
+│   │   ├── [  76]  cb
+│   │   │   └── [ 176]  f039b53c83060231c5d708cc748aa2369bd1f6
+│   │   ├── [  76]  d4
+│   │   │   └── [  64]  3d91936aa80f94c72e06870f95568be173f7f5
+│   │   ├── [  76]  dc
+│   │   │   └── [ 784]  e536e0f425827a6d21708f806461b29ffc909e
+│   │   ├── [  76]  de
+│   │   │   └── [  60]  056e7232bb6e65b83a8b6d3bc1de6e5a985108
+│   │   ├── [  76]  e1
+│   │   │   └── [ 138]  314f74c48a97fdf03a41da911c994cea960e39
+│   │   ├── [  76]  f3
+│   │   │   └── [ 312]  9a17d51b01be1a049075d1ea88a31308cde67d
+│   │   ├── [  76]  fa
+│   │   │   └── [  45]  ee4f360ddcc9d56850af53276e4f40731907cf
+│   │   ├── [   0]  info
+│   │   └── [   0]  pack
+│   └── [  32]  refs
+│       ├── [   8]  heads
+│       │   └── [  41]  main
+│       ├── [  12]  remotes
+│       │   └── [  16]  origin
+│       │       ├── [  30]  HEAD
+│       │       └── [  41]  main
+│       └── [   0]  tags
+├── [  13]  .gitignore
+├── [ 734]  Info.plist
+├── [ 639]  package.json
+├── [104K]  package-lock.json
+├── [ 214]  public
+│   ├── [  48]  img
+│   │   ├── [124K]  img1.png
+│   │   ├── [177K]  img2.png
+│   │   └── [207K]  img3.png
+│   ├── [ 27K]  index.html
+│   ├── [  80]  legal
+│   │   ├── [1.5K]  privacy-policy.html
+│   │   └── [1.7K]  terms-of-service.html
+│   ├── [ 469]  manifest.json
+│   ├── [ 12K]  originalindex.html
+│   ├── [ 26K]  originalindexpart2.html
+│   ├── [3.2K]  script.js
+│   ├── [ 576]  service-worker.js
+│   └── [2.5K]  style.css
+├── [6.6K]  README.md
+├── [ 284]  .replit
+├── [  84]  replit.nix
+├── [5.2K]  server.js
+├── [ 481]  tasks.json
+├── [ 79K]  treeandkeycontexts1.txt
+├── [ 432]  treefinal.txt
+├── [3.7K]  tree.txt
+├── [  20]  .upm
+│   └── [ 256]  store.json
+├── [ 222]  vite.config.js
+└── [  30]  .well-known
+    └── [ 164]  assetlinks.json
+
+72 directories, 111 files
+{
+    "name": "types-registry",
+    "version": "0.1.680",
+    "description": "A registry of TypeScript declaration file packages published within the @types scope.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/microsoft/DefinitelyTyped-tools.git",
+        "directory": "packages/publisher"
+    },
+    "keywords": [
+        "TypeScript",
+        "declaration",
+        "files",
+        "types",
+        "packages"
+    ],
+    "author": "Microsoft Corp.",
+    "license": "MIT",
+    "typesPublisherContentHash": "184edfccc24199c7f65b0cc886bb23e7e1923d38421c788ce80d859cbff8b213"
+}
+>>>>>>>> ./.cache/typescript/5.4/package.json
+
+[ 412]  .
+├── [   6]  android
+│   └── [   6]  app
+│       └── [   8]  src
+│           └── [  38]  main
+│               └── [ 476]  AndroidManifest.xml
+├── [  38]  .cache
+│   ├── [ 104]  nix
+│   │   ├── [ 40K]  binary-cache-v6.sqlite
+│   │   └── [   0]  binary-cache-v6.sqlite-journal
+│   ├── [  92]  replit
+│   │   ├── [  96]  modules
+│   │   │   ├── [  67]  nodejs-18 -> /nix/store/b0v305nvidpyw64cr4alk85p0hq3914n-replit-module-nodejs-18
+│   │   │   ├── [ 122]  nodejs-18.res
+│   │   │   ├── [  64]  replit -> /nix/store/pyyq478izs8rhhwli1pkmqdvbdz3frma-replit-module-replit
+│   │   │   ├── [ 116]  replit.res
+│   │   │   ├── [  61]  web -> /nix/store/ha7scvvwkkk80qapgcjywpjh00xz6vax-replit-module-web
+│   │   │   └── [ 110]  web.res
+│   │   ├── [   0]  modules.stamp
+│   │   ├── [  16]  nix
+│   │   │   └── [ 20K]  env.json
+│   │   └── [  84]  __replit_disk_meta.json
+│   └── [  18]  typescript
+│       ├── [  82]  5.0
+│       │   ├── [ 106]  package.json
+│       │   └── [1.1K]  package-lock.json
+│       ├── [  82]  5.3
+│       │   ├── [ 106]  package.json
+│       │   └── [1.1K]  package-lock.json
+│       └── [  82]  5.4
+│           ├── [ 186]  package.json
+│           └── [8.7K]  package-lock.json
+├── [ 303]  .env
+├── [ 164]  .git
+│   ├── [   0]  branches
+│   ├── [   6]  COMMIT_EDITMSG
+│   ├── [ 261]  config
+│   ├── [  73]  description
+│   ├── [   0]  FETCH_HEAD
+│   ├── [  21]  HEAD
+│   ├── [ 556]  hooks
+│   │   ├── [ 536]  applypatch-msg.sample
+│   │   ├── [ 954]  commit-msg.sample
+│   │   ├── [4.7K]  fsmonitor-watchman.sample
+│   │   ├── [ 247]  post-update.sample
+│   │   ├── [ 482]  pre-applypatch.sample
+│   │   ├── [1.7K]  pre-commit.sample
+│   │   ├── [ 474]  pre-merge-commit.sample
+│   │   ├── [1.7K]  prepare-commit-msg.sample
+│   │   ├── [1.4K]  pre-push.sample
+│   │   ├── [4.9K]  pre-rebase.sample
+│   │   ├── [ 602]  pre-receive.sample
+│   │   ├── [2.8K]  push-to-checkout.sample
+│   │   ├── [2.3K]  sendemail-validate.sample
+│   │   └── [3.6K]  update.sample
+│   ├── [2.1K]  index
+│   ├── [  14]  info
+│   │   └── [ 240]  exclude
+│   ├── [  16]  logs
+│   │   ├── [ 321]  HEAD
+│   │   └── [  24]  refs
+│   │       ├── [   8]  heads
+│   │       │   └── [ 321]  main
+│   │       └── [  12]  remotes
+│   │           └── [  16]  origin
+│   │               ├── [ 153]  HEAD
+│   │               └── [ 152]  main
+│   ├── [ 164]  objects
+│   │   ├── [  76]  03
+│   │   │   └── [ 264]  24cfc9729361ec99cc33bb86192887b3ef285c
+│   │   ├── [  76]  0c
+│   │   │   └── [ 248]  e1eb672f2f16e97ac27e0c1da0cc9e354dda0b
+│   │   ├── [  76]  1c
+│   │   │   └── [ 105]  eec6bff5519e803761e7b4086ab71cab3c7f0c
+│   │   ├── [  76]  24
+│   │   │   └── [ 224]  759b26041fa2d3ea5fd151a3884d317bb57ccc
+│   │   ├── [  76]  26
+│   │   │   └── [ 920]  260652e01d156a93efa1c7f384103d99e26960
+│   │   ├── [  76]  2e
+│   │   │   └── [  78]  4b50c66e9732dfa58ca19e95e0e1a5df436f04
+│   │   ├── [  76]  37
+│   │   │   └── [ 223]  efe8315e26028391cb3f06c0fd1015c175d3f2
+│   │   ├── [  76]  40
+│   │   │   └── [  29]  b878db5b1c97fc77049537a71bb2e249abe5dc
+│   │   ├── [  76]  42
+│   │   │   └── [ 701]  78742b32cb26ad7201b4cb76deec87616bb568
+│   │   ├── [  76]  46
+│   │   │   └── [ 106]  22fc3c668a650c1a38af208616b941cfdb09a1
+│   │   ├── [  76]  4d
+│   │   │   └── [ 77K]  5be1c97ec4807df5551eec2831dda6afbc6f6f
+│   │   ├── [  76]  51
+│   │   │   └── [2.2K]  10d182d29cd488f2e961f0daba422e7e58452e
+│   │   ├── [  76]  5e
+│   │   │   └── [  45]  3c2ef46019fae4f42912414cd7a59a1acd2052
+│   │   ├── [  76]  68
+│   │   │   └── [ 477]  c0b52236f871c4119f6d45740298032787d899
+│   │   ├── [  76]  69
+│   │   │   └── [ 380]  6b44c1ac78ca02af9b4b066b46430f9202428f
+│   │   ├── [  76]  6d
+│   │   │   └── [138K]  f7ebf02a983d22c7f13dc66671bce772b9ec8c
+│   │   ├── [  76]  6e
+│   │   │   └── [ 155]  411e8d77f33602291ca3bff308f47cf20475ee
+│   │   ├── [  76]  71
+│   │   │   └── [ 390]  8de57622916224c1147669fc7489f1fb5791e9
+│   │   ├── [  76]  72
+│   │   │   └── [1.0K]  396ad9ebc2265414b2084de72843fd6067e442
+│   │   ├── [  76]  77
+│   │   │   └── [ 353]  8212b225e5763bda6ed0323e343a92d2b7d7f6
+│   │   ├── [  76]  7b
+│   │   │   └── [ 193]  a19b09f813071692405d5cb0354c0021b07c8d
+│   │   ├── [  76]  82
+│   │   │   └── [  46]  fc853563f8963c3daaa6584b9d4c8751d4d649
+│   │   ├── [  76]  9e
+│   │   │   └── [5.9K]  d092736b37552cd8b82c4a77b65845db7840a0
+│   │   ├── [  76]  a4
+│   │   │   └── [ 477]  69a4329f51b0142cafe35695d8dd8232c5933b
+│   │   ├── [  76]  a7
+│   │   │   └── [ 130]  227f5e863f78caa2fec2dc6d72c38ced4dd4eb
+│   │   ├── [  76]  b4
+│   │   │   └── [ 33K]  6ac45480f248b9f0535c05b755dda7866a1679
+│   │   ├── [  76]  ba
+│   │   │   └── [170K]  f129a00263988a63ccf1f72f2257bc4bebf833
+│   │   ├── [  76]  bf
+│   │   │   └── [ 199]  c2d73738299338f5eadf57d2484fa92e0eaef7
+│   │   ├── [  76]  c3
+│   │   │   └── [6.5K]  62abaab3413a31413dea13ca4e2b9945b1a5f1
+│   │   ├── [  76]  ca
+│   │   │   └── [ 904]  87e26b558822892804c24cb4ec53f998101e22
+│   │   ├── [  76]  cb
+│   │   │   └── [ 176]  f039b53c83060231c5d708cc748aa2369bd1f6
+│   │   ├── [  76]  d4
+│   │   │   └── [  64]  3d91936aa80f94c72e06870f95568be173f7f5
+│   │   ├── [  76]  dc
+│   │   │   └── [ 784]  e536e0f425827a6d21708f806461b29ffc909e
+│   │   ├── [  76]  de
+│   │   │   └── [  60]  056e7232bb6e65b83a8b6d3bc1de6e5a985108
+│   │   ├── [  76]  e1
+│   │   │   └── [ 138]  314f74c48a97fdf03a41da911c994cea960e39
+│   │   ├── [  76]  f3
+│   │   │   └── [ 312]  9a17d51b01be1a049075d1ea88a31308cde67d
+│   │   ├── [  76]  fa
+│   │   │   └── [  45]  ee4f360ddcc9d56850af53276e4f40731907cf
+│   │   ├── [   0]  info
+│   │   └── [   0]  pack
+│   └── [  32]  refs
+│       ├── [   8]  heads
+│       │   └── [  41]  main
+│       ├── [  12]  remotes
+│       │   └── [  16]  origin
+│       │       ├── [  30]  HEAD
+│       │       └── [  41]  main
+│       └── [   0]  tags
+├── [  13]  .gitignore
+├── [ 734]  Info.plist
+├── [ 639]  package.json
+├── [104K]  package-lock.json
+├── [ 214]  public
+│   ├── [  48]  img
+│   │   ├── [124K]  img1.png
+│   │   ├── [177K]  img2.png
+│   │   └── [207K]  img3.png
+│   ├── [ 27K]  index.html
+│   ├── [  80]  legal
+│   │   ├── [1.5K]  privacy-policy.html
+│   │   └── [1.7K]  terms-of-service.html
+│   ├── [ 469]  manifest.json
+│   ├── [ 12K]  originalindex.html
+│   ├── [ 26K]  originalindexpart2.html
+│   ├── [3.2K]  script.js
+│   ├── [ 576]  service-worker.js
+│   └── [2.5K]  style.css
+├── [6.6K]  README.md
+├── [ 284]  .replit
+├── [  84]  replit.nix
+├── [5.2K]  server.js
+├── [ 481]  tasks.json
+├── [ 89K]  treeandkeycontexts1.txt
+├── [ 432]  treefinal.txt
+├── [3.7K]  tree.txt
+├── [  20]  .upm
+│   └── [ 256]  store.json
+├── [ 222]  vite.config.js
+└── [  30]  .well-known
+    └── [ 164]  assetlinks.json
+
+72 directories, 111 files
+{"private":true,"dependencies":{"types-registry":"^0.1.685"},"devDependencies":{"@types/body-parser":"^1.19.5","@types/express":"^4.17.21","@types/node":"^22.0.0","@types/pg":"^8.11.6"}}
+>>>>>>>> ./.cache/typescript/5.4/node_modules/types-registry/package.json
+
+[ 412]  .
+├── [   6]  android
+│   └── [   6]  app
+│       └── [   8]  src
+│           └── [  38]  main
+│               └── [ 476]  AndroidManifest.xml
+├── [  38]  .cache
+│   ├── [ 104]  nix
+│   │   ├── [ 40K]  binary-cache-v6.sqlite
+│   │   └── [   0]  binary-cache-v6.sqlite-journal
+│   ├── [  92]  replit
+│   │   ├── [  96]  modules
+│   │   │   ├── [  67]  nodejs-18 -> /nix/store/b0v305nvidpyw64cr4alk85p0hq3914n-replit-module-nodejs-18
+│   │   │   ├── [ 122]  nodejs-18.res
+│   │   │   ├── [  64]  replit -> /nix/store/pyyq478izs8rhhwli1pkmqdvbdz3frma-replit-module-replit
+│   │   │   ├── [ 116]  replit.res
+│   │   │   ├── [  61]  web -> /nix/store/ha7scvvwkkk80qapgcjywpjh00xz6vax-replit-module-web
+│   │   │   └── [ 110]  web.res
+│   │   ├── [   0]  modules.stamp
+│   │   ├── [  16]  nix
+│   │   │   └── [ 20K]  env.json
+│   │   └── [  84]  __replit_disk_meta.json
+│   └── [  18]  typescript
+│       ├── [  82]  5.0
+│       │   ├── [ 106]  package.json
+│       │   └── [1.1K]  package-lock.json
+│       ├── [  82]  5.3
+│       │   ├── [ 106]  package.json
+│       │   └── [1.1K]  package-lock.json
+│       └── [  82]  5.4
+│           ├── [ 186]  package.json
+│           └── [8.7K]  package-lock.json
+├── [ 303]  .env
+├── [ 164]  .git
+│   ├── [   0]  branches
+│   ├── [   6]  COMMIT_EDITMSG
+│   ├── [ 261]  config
+│   ├── [  73]  description
+│   ├── [   0]  FETCH_HEAD
+│   ├── [  21]  HEAD
+│   ├── [ 556]  hooks
+│   │   ├── [ 536]  applypatch-msg.sample
+│   │   ├── [ 954]  commit-msg.sample
+│   │   ├── [4.7K]  fsmonitor-watchman.sample
+│   │   ├── [ 247]  post-update.sample
+│   │   ├── [ 482]  pre-applypatch.sample
+│   │   ├── [1.7K]  pre-commit.sample
+│   │   ├── [ 474]  pre-merge-commit.sample
+│   │   ├── [1.7K]  prepare-commit-msg.sample
+│   │   ├── [1.4K]  pre-push.sample
+│   │   ├── [4.9K]  pre-rebase.sample
+│   │   ├── [ 602]  pre-receive.sample
+│   │   ├── [2.8K]  push-to-checkout.sample
+│   │   ├── [2.3K]  sendemail-validate.sample
+│   │   └── [3.6K]  update.sample
+│   ├── [2.1K]  index
+│   ├── [  14]  info
+│   │   └── [ 240]  exclude
+│   ├── [  16]  logs
+│   │   ├── [ 321]  HEAD
+│   │   └── [  24]  refs
+│   │       ├── [   8]  heads
+│   │       │   └── [ 321]  main
+│   │       └── [  12]  remotes
+│   │           └── [  16]  origin
+│   │               ├── [ 153]  HEAD
+│   │               └── [ 152]  main
+│   ├── [ 164]  objects
+│   │   ├── [  76]  03
+│   │   │   └── [ 264]  24cfc9729361ec99cc33bb86192887b3ef285c
+│   │   ├── [  76]  0c
+│   │   │   └── [ 248]  e1eb672f2f16e97ac27e0c1da0cc9e354dda0b
+│   │   ├── [  76]  1c
+│   │   │   └── [ 105]  eec6bff5519e803761e7b4086ab71cab3c7f0c
+│   │   ├── [  76]  24
+│   │   │   └── [ 224]  759b26041fa2d3ea5fd151a3884d317bb57ccc
+│   │   ├── [  76]  26
+│   │   │   └── [ 920]  260652e01d156a93efa1c7f384103d99e26960
+│   │   ├── [  76]  2e
+│   │   │   └── [  78]  4b50c66e9732dfa58ca19e95e0e1a5df436f04
+│   │   ├── [  76]  37
+│   │   │   └── [ 223]  efe8315e26028391cb3f06c0fd1015c175d3f2
+│   │   ├── [  76]  40
+│   │   │   └── [  29]  b878db5b1c97fc77049537a71bb2e249abe5dc
+│   │   ├── [  76]  42
+│   │   │   └── [ 701]  78742b32cb26ad7201b4cb76deec87616bb568
+│   │   ├── [  76]  46
+│   │   │   └── [ 106]  22fc3c668a650c1a38af208616b941cfdb09a1
+│   │   ├── [  76]  4d
+│   │   │   └── [ 77K]  5be1c97ec4807df5551eec2831dda6afbc6f6f
+│   │   ├── [  76]  51
+│   │   │   └── [2.2K]  10d182d29cd488f2e961f0daba422e7e58452e
+│   │   ├── [  76]  5e
+│   │   │   └── [  45]  3c2ef46019fae4f42912414cd7a59a1acd2052
+│   │   ├── [  76]  68
+│   │   │   └── [ 477]  c0b52236f871c4119f6d45740298032787d899
+│   │   ├── [  76]  69
+│   │   │   └── [ 380]  6b44c1ac78ca02af9b4b066b46430f9202428f
+│   │   ├── [  76]  6d
+│   │   │   └── [138K]  f7ebf02a983d22c7f13dc66671bce772b9ec8c
+│   │   ├── [  76]  6e
+│   │   │   └── [ 155]  411e8d77f33602291ca3bff308f47cf20475ee
+│   │   ├── [  76]  71
+│   │   │   └── [ 390]  8de57622916224c1147669fc7489f1fb5791e9
+│   │   ├── [  76]  72
+│   │   │   └── [1.0K]  396ad9ebc2265414b2084de72843fd6067e442
+│   │   ├── [  76]  77
+│   │   │   └── [ 353]  8212b225e5763bda6ed0323e343a92d2b7d7f6
+│   │   ├── [  76]  7b
+│   │   │   └── [ 193]  a19b09f813071692405d5cb0354c0021b07c8d
+│   │   ├── [  76]  82
+│   │   │   └── [  46]  fc853563f8963c3daaa6584b9d4c8751d4d649
+│   │   ├── [  76]  9e
+│   │   │   └── [5.9K]  d092736b37552cd8b82c4a77b65845db7840a0
+│   │   ├── [  76]  a4
+│   │   │   └── [ 477]  69a4329f51b0142cafe35695d8dd8232c5933b
+│   │   ├── [  76]  a7
+│   │   │   └── [ 130]  227f5e863f78caa2fec2dc6d72c38ced4dd4eb
+│   │   ├── [  76]  b4
+│   │   │   └── [ 33K]  6ac45480f248b9f0535c05b755dda7866a1679
+│   │   ├── [  76]  ba
+│   │   │   └── [170K]  f129a00263988a63ccf1f72f2257bc4bebf833
+│   │   ├── [  76]  bf
+│   │   │   └── [ 199]  c2d73738299338f5eadf57d2484fa92e0eaef7
+│   │   ├── [  76]  c3
+│   │   │   └── [6.5K]  62abaab3413a31413dea13ca4e2b9945b1a5f1
+│   │   ├── [  76]  ca
+│   │   │   └── [ 904]  87e26b558822892804c24cb4ec53f998101e22
+│   │   ├── [  76]  cb
+│   │   │   └── [ 176]  f039b53c83060231c5d708cc748aa2369bd1f6
+│   │   ├── [  76]  d4
+│   │   │   └── [  64]  3d91936aa80f94c72e06870f95568be173f7f5
+│   │   ├── [  76]  dc
+│   │   │   └── [ 784]  e536e0f425827a6d21708f806461b29ffc909e
+│   │   ├── [  76]  de
+│   │   │   └── [  60]  056e7232bb6e65b83a8b6d3bc1de6e5a985108
+│   │   ├── [  76]  e1
+│   │   │   └── [ 138]  314f74c48a97fdf03a41da911c994cea960e39
+│   │   ├── [  76]  f3
+│   │   │   └── [ 312]  9a17d51b01be1a049075d1ea88a31308cde67d
+│   │   ├── [  76]  fa
+│   │   │   └── [  45]  ee4f360ddcc9d56850af53276e4f40731907cf
+│   │   ├── [   0]  info
+│   │   └── [   0]  pack
+│   └── [  32]  refs
+│       ├── [   8]  heads
+│       │   └── [  41]  main
+│       ├── [  12]  remotes
+│       │   └── [  16]  origin
+│       │       ├── [  30]  HEAD
+│       │       └── [  41]  main
+│       └── [   0]  tags
+├── [  13]  .gitignore
+├── [ 734]  Info.plist
+├── [ 639]  package.json
+├── [104K]  package-lock.json
+├── [ 214]  public
+│   ├── [  48]  img
+│   │   ├── [124K]  img1.png
+│   │   ├── [177K]  img2.png
+│   │   └── [207K]  img3.png
+│   ├── [ 27K]  index.html
+│   ├── [  80]  legal
+│   │   ├── [1.5K]  privacy-policy.html
+│   │   └── [1.7K]  terms-of-service.html
+│   ├── [ 469]  manifest.json
+│   ├── [ 12K]  originalindex.html
+│   ├── [ 26K]  originalindexpart2.html
+│   ├── [3.2K]  script.js
+│   ├── [ 576]  service-worker.js
+│   └── [2.5K]  style.css
+├── [6.6K]  README.md
+├── [ 284]  .replit
+├── [  84]  replit.nix
+├── [5.2K]  server.js
+├── [ 481]  tasks.json
+├── [ 98K]  treeandkeycontexts1.txt
+├── [ 432]  treefinal.txt
+├── [3.7K]  tree.txt
+├── [  20]  .upm
+│   └── [ 256]  store.json
+├── [ 222]  vite.config.js
+└── [  30]  .well-known
+    └── [ 164]  assetlinks.json
+
+72 directories, 111 files
+{
+    "name": "types-registry",
+    "version": "0.1.685",
+    "description": "A registry of TypeScript declaration file packages published within the @types scope.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/microsoft/DefinitelyTyped-tools.git",
+        "directory": "packages/publisher"
+    },
+    "keywords": [
+        "TypeScript",
+        "declaration",
+        "files",
+        "types",
+        "packages"
+    ],
+    "author": "Microsoft Corp.",
+    "license": "MIT",
+    "typesPublisherContentHash": "d67ffe0c7ea5e7efd6bedb067ce127ade4209bcf07334856f84cfcfa22345c08"
+}
+>>>>>>>> ./.cache/typescript/5.4/node_modules/undici-types/package.json
+
+[ 412]  .
+├── [   6]  android
+│   └── [   6]  app
+│       └── [   8]  src
+│           └── [  38]  main
+│               └── [ 476]  AndroidManifest.xml
+├── [  38]  .cache
+│   ├── [ 104]  nix
+│   │   ├── [ 40K]  binary-cache-v6.sqlite
+│   │   └── [   0]  binary-cache-v6.sqlite-journal
+│   ├── [  92]  replit
+│   │   ├── [  96]  modules
+│   │   │   ├── [  67]  nodejs-18 -> /nix/store/b0v305nvidpyw64cr4alk85p0hq3914n-replit-module-nodejs-18
+│   │   │   ├── [ 122]  nodejs-18.res
+│   │   │   ├── [  64]  replit -> /nix/store/pyyq478izs8rhhwli1pkmqdvbdz3frma-replit-module-replit
+│   │   │   ├── [ 116]  replit.res
+│   │   │   ├── [  61]  web -> /nix/store/ha7scvvwkkk80qapgcjywpjh00xz6vax-replit-module-web
+│   │   │   └── [ 110]  web.res
+│   │   ├── [   0]  modules.stamp
+│   │   ├── [  16]  nix
+│   │   │   └── [ 20K]  env.json
+│   │   └── [  84]  __replit_disk_meta.json
+│   └── [  18]  typescript
+│       ├── [  82]  5.0
+│       │   ├── [ 106]  package.json
+│       │   └── [1.1K]  package-lock.json
+│       ├── [  82]  5.3
+│       │   ├── [ 106]  package.json
+│       │   └── [1.1K]  package-lock.json
+│       └── [  82]  5.4
+│           ├── [ 186]  package.json
+│           └── [8.7K]  package-lock.json
+├── [ 303]  .env
+├── [ 164]  .git
+│   ├── [   0]  branches
+│   ├── [   6]  COMMIT_EDITMSG
+│   ├── [ 261]  config
+│   ├── [  73]  description
+│   ├── [   0]  FETCH_HEAD
+│   ├── [  21]  HEAD
+│   ├── [ 556]  hooks
+│   │   ├── [ 536]  applypatch-msg.sample
+│   │   ├── [ 954]  commit-msg.sample
+│   │   ├── [4.7K]  fsmonitor-watchman.sample
+│   │   ├── [ 247]  post-update.sample
+│   │   ├── [ 482]  pre-applypatch.sample
+│   │   ├── [1.7K]  pre-commit.sample
+│   │   ├── [ 474]  pre-merge-commit.sample
+│   │   ├── [1.7K]  prepare-commit-msg.sample
+│   │   ├── [1.4K]  pre-push.sample
+│   │   ├── [4.9K]  pre-rebase.sample
+│   │   ├── [ 602]  pre-receive.sample
+│   │   ├── [2.8K]  push-to-checkout.sample
+│   │   ├── [2.3K]  sendemail-validate.sample
+│   │   └── [3.6K]  update.sample
+│   ├── [2.1K]  index
+│   ├── [  14]  info
+│   │   └── [ 240]  exclude
+│   ├── [  16]  logs
+│   │   ├── [ 321]  HEAD
+│   │   └── [  24]  refs
+│   │       ├── [   8]  heads
+│   │       │   └── [ 321]  main
+│   │       └── [  12]  remotes
+│   │           └── [  16]  origin
+│   │               ├── [ 153]  HEAD
+│   │               └── [ 152]  main
+│   ├── [ 164]  objects
+│   │   ├── [  76]  03
+│   │   │   └── [ 264]  24cfc9729361ec99cc33bb86192887b3ef285c
+│   │   ├── [  76]  0c
+│   │   │   └── [ 248]  e1eb672f2f16e97ac27e0c1da0cc9e354dda0b
+│   │   ├── [  76]  1c
+│   │   │   └── [ 105]  eec6bff5519e803761e7b4086ab71cab3c7f0c
+│   │   ├── [  76]  24
+│   │   │   └── [ 224]  759b26041fa2d3ea5fd151a3884d317bb57ccc
+│   │   ├── [  76]  26
+│   │   │   └── [ 920]  260652e01d156a93efa1c7f384103d99e26960
+│   │   ├── [  76]  2e
+│   │   │   └── [  78]  4b50c66e9732dfa58ca19e95e0e1a5df436f04
+│   │   ├── [  76]  37
+│   │   │   └── [ 223]  efe8315e26028391cb3f06c0fd1015c175d3f2
+│   │   ├── [  76]  40
+│   │   │   └── [  29]  b878db5b1c97fc77049537a71bb2e249abe5dc
+│   │   ├── [  76]  42
+│   │   │   └── [ 701]  78742b32cb26ad7201b4cb76deec87616bb568
+│   │   ├── [  76]  46
+│   │   │   └── [ 106]  22fc3c668a650c1a38af208616b941cfdb09a1
+│   │   ├── [  76]  4d
+│   │   │   └── [ 77K]  5be1c97ec4807df5551eec2831dda6afbc6f6f
+│   │   ├── [  76]  51
+│   │   │   └── [2.2K]  10d182d29cd488f2e961f0daba422e7e58452e
+│   │   ├── [  76]  5e
+│   │   │   └── [  45]  3c2ef46019fae4f42912414cd7a59a1acd2052
+│   │   ├── [  76]  68
+│   │   │   └── [ 477]  c0b52236f871c4119f6d45740298032787d899
+│   │   ├── [  76]  69
+│   │   │   └── [ 380]  6b44c1ac78ca02af9b4b066b46430f9202428f
+│   │   ├── [  76]  6d
+│   │   │   └── [138K]  f7ebf02a983d22c7f13dc66671bce772b9ec8c
+│   │   ├── [  76]  6e
+│   │   │   └── [ 155]  411e8d77f33602291ca3bff308f47cf20475ee
+│   │   ├── [  76]  71
+│   │   │   └── [ 390]  8de57622916224c1147669fc7489f1fb5791e9
+│   │   ├── [  76]  72
+│   │   │   └── [1.0K]  396ad9ebc2265414b2084de72843fd6067e442
+│   │   ├── [  76]  77
+│   │   │   └── [ 353]  8212b225e5763bda6ed0323e343a92d2b7d7f6
+│   │   ├── [  76]  7b
+│   │   │   └── [ 193]  a19b09f813071692405d5cb0354c0021b07c8d
+│   │   ├── [  76]  82
+│   │   │   └── [  46]  fc853563f8963c3daaa6584b9d4c8751d4d649
+│   │   ├── [  76]  9e
+│   │   │   └── [5.9K]  d092736b37552cd8b82c4a77b65845db7840a0
+│   │   ├── [  76]  a4
+│   │   │   └── [ 477]  69a4329f51b0142cafe35695d8dd8232c5933b
+│   │   ├── [  76]  a7
+│   │   │   └── [ 130]  227f5e863f78caa2fec2dc6d72c38ced4dd4eb
+│   │   ├── [  76]  b4
+│   │   │   └── [ 33K]  6ac45480f248b9f0535c05b755dda7866a1679
+│   │   ├── [  76]  ba
+│   │   │   └── [170K]  f129a00263988a63ccf1f72f2257bc4bebf833
+│   │   ├── [  76]  bf
+│   │   │   └── [ 199]  c2d73738299338f5eadf57d2484fa92e0eaef7
+│   │   ├── [  76]  c3
+│   │   │   └── [6.5K]  62abaab3413a31413dea13ca4e2b9945b1a5f1
+│   │   ├── [  76]  ca
+│   │   │   └── [ 904]  87e26b558822892804c24cb4ec53f998101e22
+│   │   ├── [  76]  cb
+│   │   │   └── [ 176]  f039b53c83060231c5d708cc748aa2369bd1f6
+│   │   ├── [  76]  d4
+│   │   │   └── [  64]  3d91936aa80f94c72e06870f95568be173f7f5
+│   │   ├── [  76]  dc
+│   │   │   └── [ 784]  e536e0f425827a6d21708f806461b29ffc909e
+│   │   ├── [  76]  de
+│   │   │   └── [  60]  056e7232bb6e65b83a8b6d3bc1de6e5a985108
+│   │   ├── [  76]  e1
+│   │   │   └── [ 138]  314f74c48a97fdf03a41da911c994cea960e39
+│   │   ├── [  76]  f3
+│   │   │   └── [ 312]  9a17d51b01be1a049075d1ea88a31308cde67d
+│   │   ├── [  76]  fa
+│   │   │   └── [  45]  ee4f360ddcc9d56850af53276e4f40731907cf
+│   │   ├── [   0]  info
+│   │   └── [   0]  pack
+│   └── [  32]  refs
+│       ├── [   8]  heads
+│       │   └── [  41]  main
+│       ├── [  12]  remotes
+│       │   └── [  16]  origin
+│       │       ├── [  30]  HEAD
+│       │       └── [  41]  main
+│       └── [   0]  tags
+├── [  13]  .gitignore
+├── [ 734]  Info.plist
+├── [ 639]  package.json
+├── [104K]  package-lock.json
+├── [ 214]  public
+│   ├── [  48]  img
+│   │   ├── [124K]  img1.png
+│   │   ├── [177K]  img2.png
+│   │   └── [207K]  img3.png
+│   ├── [ 27K]  index.html
+│   ├── [  80]  legal
+│   │   ├── [1.5K]  privacy-policy.html
+│   │   └── [1.7K]  terms-of-service.html
+│   ├── [ 469]  manifest.json
+│   ├── [ 12K]  originalindex.html
+│   ├── [ 26K]  originalindexpart2.html
+│   ├── [3.2K]  script.js
+│   ├── [ 576]  service-worker.js
+│   └── [2.5K]  style.css
+├── [6.6K]  README.md
+├── [ 284]  .replit
+├── [  84]  replit.nix
+├── [5.2K]  server.js
+├── [ 481]  tasks.json
+├── [108K]  treeandkeycontexts1.txt
+├── [ 432]  treefinal.txt
+├── [3.7K]  tree.txt
+├── [  20]  .upm
+│   └── [ 256]  store.json
+├── [ 222]  vite.config.js
+└── [  30]  .well-known
+    └── [ 164]  assetlinks.json
+
+72 directories, 111 files
+{
+  "name": "undici-types",
+  "version": "6.11.1",
+  "description": "A stand-alone types package for Undici",
+  "homepage": "https://undici.nodejs.org",
+  "bugs": {
+    "url": "https://github.com/nodejs/undici/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodejs/undici.git"
+  },
+  "license": "MIT",
+  "types": "index.d.ts",
+  "files": [
+    "*.d.ts"
+  ],
+  "contributors": [
+    {
+      "name": "Daniele Belardi",
+      "url": "https://github.com/dnlup",
+      "author": true
+    },
+    {
+      "name": "Ethan Arrowood",
+      "url": "https://github.com/ethan-arrowood",
+      "author": true
+    },
+    {
+      "name": "Matteo Collina",
+      "url": "https://github.com/mcollina",
+      "author": true
+    },
+    {
+      "name": "Matthew Aitken",
+      "url": "https://github.com/KhafraDev",
+      "author": true
+    },
+    {
+      "name": "Robert Nagy",
+      "url": "https://github.com/ronag",
+      "author": true
+    },
+    {
+      "name": "Szymon Marczak",
+      "url": "https://github.com/szmarczak",
+      "author": true
+    },
+    {
+      "name": "Tomas Della Vedova",
+      "url": "https://github.com/delvedor",
+      "author": true
+    }
+  ]
+}
+>>>>>>>> ./.cache/typescript/5.4/node_modules/@types/node/package.json
+
+[ 412]  .
+├── [   6]  android
+│   └── [   6]  app
+│       └── [   8]  src
+│           └── [  38]  main
+│               └── [ 476]  AndroidManifest.xml
+├── [  38]  .cache
+│   ├── [ 104]  nix
+│   │   ├── [ 40K]  binary-cache-v6.sqlite
+│   │   └── [   0]  binary-cache-v6.sqlite-journal
+│   ├── [  92]  replit
+│   │   ├── [  96]  modules
+│   │   │   ├── [  67]  nodejs-18 -> /nix/store/b0v305nvidpyw64cr4alk85p0hq3914n-replit-module-nodejs-18
+│   │   │   ├── [ 122]  nodejs-18.res
+│   │   │   ├── [  64]  replit -> /nix/store/pyyq478izs8rhhwli1pkmqdvbdz3frma-replit-module-replit
+│   │   │   ├── [ 116]  replit.res
+│   │   │   ├── [  61]  web -> /nix/store/ha7scvvwkkk80qapgcjywpjh00xz6vax-replit-module-web
+│   │   │   └── [ 110]  web.res
+│   │   ├── [   0]  modules.stamp
+│   │   ├── [  16]  nix
+│   │   │   └── [ 20K]  env.json
+│   │   └── [  84]  __replit_disk_meta.json
+│   └── [  18]  typescript
+│       ├── [  82]  5.0
+│       │   ├── [ 106]  package.json
+│       │   └── [1.1K]  package-lock.json
+│       ├── [  82]  5.3
+│       │   ├── [ 106]  package.json
+│       │   └── [1.1K]  package-lock.json
+│       └── [  82]  5.4
+│           ├── [ 186]  package.json
+│           └── [8.7K]  package-lock.json
+├── [ 303]  .env
+├── [ 164]  .git
+│   ├── [   0]  branches
+│   ├── [   6]  COMMIT_EDITMSG
+│   ├── [ 261]  config
+│   ├── [  73]  description
+│   ├── [   0]  FETCH_HEAD
+│   ├── [  21]  HEAD
+│   ├── [ 556]  hooks
+│   │   ├── [ 536]  applypatch-msg.sample
+│   │   ├── [ 954]  commit-msg.sample
+│   │   ├── [4.7K]  fsmonitor-watchman.sample
+│   │   ├── [ 247]  post-update.sample
+│   │   ├── [ 482]  pre-applypatch.sample
+│   │   ├── [1.7K]  pre-commit.sample
+│   │   ├── [ 474]  pre-merge-commit.sample
+│   │   ├── [1.7K]  prepare-commit-msg.sample
+│   │   ├── [1.4K]  pre-push.sample
+│   │   ├── [4.9K]  pre-rebase.sample
+│   │   ├── [ 602]  pre-receive.sample
+│   │   ├── [2.8K]  push-to-checkout.sample
+│   │   ├── [2.3K]  sendemail-validate.sample
+│   │   └── [3.6K]  update.sample
+│   ├── [2.1K]  index
+│   ├── [  14]  info
+│   │   └── [ 240]  exclude
+│   ├── [  16]  logs
+│   │   ├── [ 321]  HEAD
+│   │   └── [  24]  refs
+│   │       ├── [   8]  heads
+│   │       │   └── [ 321]  main
+│   │       └── [  12]  remotes
+│   │           └── [  16]  origin
+│   │               ├── [ 153]  HEAD
+│   │               └── [ 152]  main
+│   ├── [ 164]  objects
+│   │   ├── [  76]  03
+│   │   │   └── [ 264]  24cfc9729361ec99cc33bb86192887b3ef285c
+│   │   ├── [  76]  0c
+│   │   │   └── [ 248]  e1eb672f2f16e97ac27e0c1da0cc9e354dda0b
+│   │   ├── [  76]  1c
+│   │   │   └── [ 105]  eec6bff5519e803761e7b4086ab71cab3c7f0c
+│   │   ├── [  76]  24
+│   │   │   └── [ 224]  759b26041fa2d3ea5fd151a3884d317bb57ccc
+│   │   ├── [  76]  26
+│   │   │   └── [ 920]  260652e01d156a93efa1c7f384103d99e26960
+│   │   ├── [  76]  2e
+│   │   │   └── [  78]  4b50c66e9732dfa58ca19e95e0e1a5df436f04
+│   │   ├── [  76]  37
+│   │   │   └── [ 223]  efe8315e26028391cb3f06c0fd1015c175d3f2
+│   │   ├── [  76]  40
+│   │   │   └── [  29]  b878db5b1c97fc77049537a71bb2e249abe5dc
+│   │   ├── [  76]  42
+│   │   │   └── [ 701]  78742b32cb26ad7201b4cb76deec87616bb568
+│   │   ├── [  76]  46
+│   │   │   └── [ 106]  22fc3c668a650c1a38af208616b941cfdb09a1
+│   │   ├── [  76]  4d
+│   │   │   └── [ 77K]  5be1c97ec4807df5551eec2831dda6afbc6f6f
+│   │   ├── [  76]  51
+│   │   │   └── [2.2K]  10d182d29cd488f2e961f0daba422e7e58452e
+│   │   ├── [  76]  5e
+│   │   │   └── [  45]  3c2ef46019fae4f42912414cd7a59a1acd2052
+│   │   ├── [  76]  68
+│   │   │   └── [ 477]  c0b52236f871c4119f6d45740298032787d899
+│   │   ├── [  76]  69
+│   │   │   └── [ 380]  6b44c1ac78ca02af9b4b066b46430f9202428f
+│   │   ├── [  76]  6d
+│   │   │   └── [138K]  f7ebf02a983d22c7f13dc66671bce772b9ec8c
+│   │   ├── [  76]  6e
+│   │   │   └── [ 155]  411e8d77f33602291ca3bff308f47cf20475ee
+│   │   ├── [  76]  71
+│   │   │   └── [ 390]  8de57622916224c1147669fc7489f1fb5791e9
+│   │   ├── [  76]  72
+│   │   │   └── [1.0K]  396ad9ebc2265414b2084de72843fd6067e442
+│   │   ├── [  76]  77
+│   │   │   └── [ 353]  8212b225e5763bda6ed0323e343a92d2b7d7f6
+│   │   ├── [  76]  7b
+│   │   │   └── [ 193]  a19b09f813071692405d5cb0354c0021b07c8d
+│   │   ├── [  76]  82
+│   │   │   └── [  46]  fc853563f8963c3daaa6584b9d4c8751d4d649
+│   │   ├── [  76]  9e
+│   │   │   └── [5.9K]  d092736b37552cd8b82c4a77b65845db7840a0
+│   │   ├── [  76]  a4
+│   │   │   └── [ 477]  69a4329f51b0142cafe35695d8dd8232c5933b
+│   │   ├── [  76]  a7
+│   │   │   └── [ 130]  227f5e863f78caa2fec2dc6d72c38ced4dd4eb
+│   │   ├── [  76]  b4
+│   │   │   └── [ 33K]  6ac45480f248b9f0535c05b755dda7866a1679
+│   │   ├── [  76]  ba
+│   │   │   └── [170K]  f129a00263988a63ccf1f72f2257bc4bebf833
+│   │   ├── [  76]  bf
+│   │   │   └── [ 199]  c2d73738299338f5eadf57d2484fa92e0eaef7
+│   │   ├── [  76]  c3
+│   │   │   └── [6.5K]  62abaab3413a31413dea13ca4e2b9945b1a5f1
+│   │   ├── [  76]  ca
+│   │   │   └── [ 904]  87e26b558822892804c24cb4ec53f998101e22
+│   │   ├── [  76]  cb
+│   │   │   └── [ 176]  f039b53c83060231c5d708cc748aa2369bd1f6
+│   │   ├── [  76]  d4
+│   │   │   └── [  64]  3d91936aa80f94c72e06870f95568be173f7f5
+│   │   ├── [  76]  dc
+│   │   │   └── [ 784]  e536e0f425827a6d21708f806461b29ffc909e
+│   │   ├── [  76]  de
+│   │   │   └── [  60]  056e7232bb6e65b83a8b6d3bc1de6e5a985108
+│   │   ├── [  76]  e1
+│   │   │   └── [ 138]  314f74c48a97fdf03a41da911c994cea960e39
+│   │   ├── [  76]  f3
+│   │   │   └── [ 312]  9a17d51b01be1a049075d1ea88a31308cde67d
+│   │   ├── [  76]  fa
+│   │   │   └── [  45]  ee4f360ddcc9d56850af53276e4f40731907cf
+│   │   ├── [   0]  info
+│   │   └── [   0]  pack
+│   └── [  32]  refs
+│       ├── [   8]  heads
+│       │   └── [  41]  main
+│       ├── [  12]  remotes
+│       │   └── [  16]  origin
+│       │       ├── [  30]  HEAD
+│       │       └── [  41]  main
+│       └── [   0]  tags
+├── [  13]  .gitignore
+├── [ 734]  Info.plist
+├── [ 639]  package.json
+├── [104K]  package-lock.json
+├── [ 214]  public
+│   ├── [  48]  img
+│   │   ├── [124K]  img1.png
+│   │   ├── [177K]  img2.png
+│   │   └── [207K]  img3.png
+│   ├── [ 27K]  index.html
+│   ├── [  80]  legal
+│   │   ├── [1.5K]  privacy-policy.html
+│   │   └── [1.7K]  terms-of-service.html
+│   ├── [ 469]  manifest.json
+│   ├── [ 12K]  originalindex.html
+│   ├── [ 26K]  originalindexpart2.html
+│   ├── [3.2K]  script.js
+│   ├── [ 576]  service-worker.js
+│   └── [2.5K]  style.css
+├── [6.6K]  README.md
+├── [ 284]  .replit
+├── [  84]  replit.nix
+├── [5.2K]  server.js
+├── [ 481]  tasks.json
+├── [118K]  treeandkeycontexts1.txt
+├── [ 432]  treefinal.txt
+├── [3.7K]  tree.txt
+├── [  20]  .upm
+│   └── [ 256]  store.json
+├── [ 222]  vite.config.js
+└── [  30]  .well-known
+    └── [ 164]  assetlinks.json
+
+72 directories, 111 files
+{
+    "name": "@types/node",
+    "version": "22.0.0",
+    "description": "TypeScript definitions for node",
+    "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Microsoft TypeScript",
+            "githubUsername": "Microsoft",
+            "url": "https://github.com/Microsoft"
+        },
+        {
+            "name": "Alberto Schiabel",
+            "githubUsername": "jkomyno",
+            "url": "https://github.com/jkomyno"
+        },
+        {
+            "name": "Alvis HT Tang",
+            "githubUsername": "alvis",
+            "url": "https://github.com/alvis"
+        },
+        {
+            "name": "Andrew Makarov",
+            "githubUsername": "r3nya",
+            "url": "https://github.com/r3nya"
+        },
+        {
+            "name": "Benjamin Toueg",
+            "githubUsername": "btoueg",
+            "url": "https://github.com/btoueg"
+        },
+        {
+            "name": "Chigozirim C.",
+            "githubUsername": "smac89",
+            "url": "https://github.com/smac89"
+        },
+        {
+            "name": "David Junger",
+            "githubUsername": "touffy",
+            "url": "https://github.com/touffy"
+        },
+        {
+            "name": "Deividas Bakanas",
+            "githubUsername": "DeividasBakanas",
+            "url": "https://github.com/DeividasBakanas"
+        },
+        {
+            "name": "Eugene Y. Q. Shen",
+            "githubUsername": "eyqs",
+            "url": "https://github.com/eyqs"
+        },
+        {
+            "name": "Hannes Magnusson",
+            "githubUsername": "Hannes-Magnusson-CK",
+            "url": "https://github.com/Hannes-Magnusson-CK"
+        },
+        {
+            "name": "Huw",
+            "githubUsername": "hoo29",
+            "url": "https://github.com/hoo29"
+        },
+        {
+            "name": "Kelvin Jin",
+            "githubUsername": "kjin",
+            "url": "https://github.com/kjin"
+        },
+        {
+            "name": "Klaus Meinhardt",
+            "githubUsername": "ajafff",
+            "url": "https://github.com/ajafff"
+        },
+        {
+            "name": "Lishude",
+            "githubUsername": "islishude",
+            "url": "https://github.com/islishude"
+        },
+        {
+            "name": "Mariusz Wiktorczyk",
+            "githubUsername": "mwiktorczyk",
+            "url": "https://github.com/mwiktorczyk"
+        },
+        {
+            "name": "Mohsen Azimi",
+            "githubUsername": "mohsen1",
+            "url": "https://github.com/mohsen1"
+        },
+        {
+            "name": "Nikita Galkin",
+            "githubUsername": "galkin",
+            "url": "https://github.com/galkin"
+        },
+        {
+            "name": "Parambir Singh",
+            "githubUsername": "parambirs",
+            "url": "https://github.com/parambirs"
+        },
+        {
+            "name": "Sebastian Silbermann",
+            "githubUsername": "eps1lon",
+            "url": "https://github.com/eps1lon"
+        },
+        {
+            "name": "Thomas den Hollander",
+            "githubUsername": "ThomasdenH",
+            "url": "https://github.com/ThomasdenH"
+        },
+        {
+            "name": "Wilco Bakker",
+            "githubUsername": "WilcoBakker",
+            "url": "https://github.com/WilcoBakker"
+        },
+        {
+            "name": "wwwy3y3",
+            "githubUsername": "wwwy3y3",
+            "url": "https://github.com/wwwy3y3"
+        },
+        {
+            "name": "Samuel Ainsworth",
+            "githubUsername": "samuela",
+            "url": "https://github.com/samuela"
+        },
+        {
+            "name": "Kyle Uehlein",
+            "githubUsername": "kuehlein",
+            "url": "https://github.com/kuehlein"
+        },
+        {
+            "name": "Thanik Bhongbhibhat",
+            "githubUsername": "bhongy",
+            "url": "https://github.com/bhongy"
+        },
+        {
+            "name": "Marcin Kopacz",
+            "githubUsername": "chyzwar",
+            "url": "https://github.com/chyzwar"
+        },
+        {
+            "name": "Trivikram Kamat",
+            "githubUsername": "trivikr",
+            "url": "https://github.com/trivikr"
+        },
+        {
+            "name": "Junxiao Shi",
+            "githubUsername": "yoursunny",
+            "url": "https://github.com/yoursunny"
+        },
+        {
+            "name": "Ilia Baryshnikov",
+            "githubUsername": "qwelias",
+            "url": "https://github.com/qwelias"
+        },
+        {
+            "name": "ExE Boss",
+            "githubUsername": "ExE-Boss",
+            "url": "https://github.com/ExE-Boss"
+        },
+        {
+            "name": "Piotr Błażejewicz",
+            "githubUsername": "peterblazejewicz",
+            "url": "https://github.com/peterblazejewicz"
+        },
+        {
+            "name": "Anna Henningsen",
+            "githubUsername": "addaleax",
+            "url": "https://github.com/addaleax"
+        },
+        {
+            "name": "Victor Perin",
+            "githubUsername": "victorperin",
+            "url": "https://github.com/victorperin"
+        },
+        {
+            "name": "Yongsheng Zhang",
+            "githubUsername": "ZYSzys",
+            "url": "https://github.com/ZYSzys"
+        },
+        {
+            "name": "NodeJS Contributors",
+            "githubUsername": "NodeJS",
+            "url": "https://github.com/NodeJS"
+        },
+        {
+            "name": "Linus Unnebäck",
+            "githubUsername": "LinusU",
+            "url": "https://github.com/LinusU"
+        },
+        {
+            "name": "wafuwafu13",
+            "githubUsername": "wafuwafu13",
+            "url": "https://github.com/wafuwafu13"
+        },
+        {
+            "name": "Matteo Collina",
+            "githubUsername": "mcollina",
+            "url": "https://github.com/mcollina"
+        },
+        {
+            "name": "Dmitry Semigradsky",
+            "githubUsername": "Semigradsky",
+            "url": "https://github.com/Semigradsky"
+        }
+    ],
+    "main": "",
+    "types": "index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/node"
+    },
+    "scripts": {},
+    "dependencies": {
+        "undici-types": "~6.11.1"
+    },
+    "typesPublisherContentHash": "14d7e2fcf1f884d0f55bb00df1951b1b7f2ad5995765756491fdd7dca5fd256f",
+    "typeScriptVersion": "4.8"
+}
+>>>>>>>> ./.cache/typescript/5.4/node_modules/@types/connect/package.json
+
+[ 412]  .
+├── [   6]  android
+│   └── [   6]  app
+│       └── [   8]  src
+│           └── [  38]  main
+│               └── [ 476]  AndroidManifest.xml
+├── [  38]  .cache
+│   ├── [ 104]  nix
+│   │   ├── [ 40K]  binary-cache-v6.sqlite
+│   │   └── [   0]  binary-cache-v6.sqlite-journal
+│   ├── [  92]  replit
+│   │   ├── [  96]  modules
+│   │   │   ├── [  67]  nodejs-18 -> /nix/store/b0v305nvidpyw64cr4alk85p0hq3914n-replit-module-nodejs-18
+│   │   │   ├── [ 122]  nodejs-18.res
+│   │   │   ├── [  64]  replit -> /nix/store/pyyq478izs8rhhwli1pkmqdvbdz3frma-replit-module-replit
+│   │   │   ├── [ 116]  replit.res
+│   │   │   ├── [  61]  web -> /nix/store/ha7scvvwkkk80qapgcjywpjh00xz6vax-replit-module-web
+│   │   │   └── [ 110]  web.res
+│   │   ├── [   0]  modules.stamp
+│   │   ├── [  16]  nix
+│   │   │   └── [ 20K]  env.json
+│   │   └── [  84]  __replit_disk_meta.json
+│   └── [  18]  typescript
+│       ├── [  82]  5.0
+│       │   ├── [ 106]  package.json
+│       │   └── [1.1K]  package-lock.json
+│       ├── [  82]  5.3
+│       │   ├── [ 106]  package.json
+│       │   └── [1.1K]  package-lock.json
+│       └── [  82]  5.4
+│           ├── [ 186]  package.json
+│           └── [8.7K]  package-lock.json
+├── [ 303]  .env
+├── [ 164]  .git
+│   ├── [   0]  branches
+│   ├── [   6]  COMMIT_EDITMSG
+│   ├── [ 261]  config
+│   ├── [  73]  description
+│   ├── [   0]  FETCH_HEAD
+│   ├── [  21]  HEAD
+│   ├── [ 556]  hooks
+│   │   ├── [ 536]  applypatch-msg.sample
+│   │   ├── [ 954]  commit-msg.sample
+│   │   ├── [4.7K]  fsmonitor-watchman.sample
+│   │   ├── [ 247]  post-update.sample
+│   │   ├── [ 482]  pre-applypatch.sample
+│   │   ├── [1.7K]  pre-commit.sample
+│   │   ├── [ 474]  pre-merge-commit.sample
+│   │   ├── [1.7K]  prepare-commit-msg.sample
+│   │   ├── [1.4K]  pre-push.sample
+│   │   ├── [4.9K]  pre-rebase.sample
+│   │   ├── [ 602]  pre-receive.sample
+│   │   ├── [2.8K]  push-to-checkout.sample
+│   │   ├── [2.3K]  sendemail-validate.sample
+│   │   └── [3.6K]  update.sample
+│   ├── [2.1K]  index
+│   ├── [  14]  info
+│   │   └── [ 240]  exclude
+│   ├── [  16]  logs
+│   │   ├── [ 321]  HEAD
+│   │   └── [  24]  refs
+│   │       ├── [   8]  heads
+│   │       │   └── [ 321]  main
+│   │       └── [  12]  remotes
+│   │           └── [  16]  origin
+│   │               ├── [ 153]  HEAD
+│   │               └── [ 152]  main
+│   ├── [ 164]  objects
+│   │   ├── [  76]  03
+│   │   │   └── [ 264]  24cfc9729361ec99cc33bb86192887b3ef285c
+│   │   ├── [  76]  0c
+│   │   │   └── [ 248]  e1eb672f2f16e97ac27e0c1da0cc9e354dda0b
+│   │   ├── [  76]  1c
+│   │   │   └── [ 105]  eec6bff5519e803761e7b4086ab71cab3c7f0c
+│   │   ├── [  76]  24
+│   │   │   └── [ 224]  759b26041fa2d3ea5fd151a3884d317bb57ccc
+│   │   ├── [  76]  26
+│   │   │   └── [ 920]  260652e01d156a93efa1c7f384103d99e26960
+│   │   ├── [  76]  2e
+│   │   │   └── [  78]  4b50c66e9732dfa58ca19e95e0e1a5df436f04
+│   │   ├── [  76]  37
+│   │   │   └── [ 223]  efe8315e26028391cb3f06c0fd1015c175d3f2
+│   │   ├── [  76]  40
+│   │   │   └── [  29]  b878db5b1c97fc77049537a71bb2e249abe5dc
+│   │   ├── [  76]  42
+│   │   │   └── [ 701]  78742b32cb26ad7201b4cb76deec87616bb568
+│   │   ├── [  76]  46
+│   │   │   └── [ 106]  22fc3c668a650c1a38af208616b941cfdb09a1
+│   │   ├── [  76]  4d
+│   │   │   └── [ 77K]  5be1c97ec4807df5551eec2831dda6afbc6f6f
+│   │   ├── [  76]  51
+│   │   │   └── [2.2K]  10d182d29cd488f2e961f0daba422e7e58452e
+│   │   ├── [  76]  5e
+│   │   │   └── [  45]  3c2ef46019fae4f42912414cd7a59a1acd2052
+│   │   ├── [  76]  68
+│   │   │   └── [ 477]  c0b52236f871c4119f6d45740298032787d899
+│   │   ├── [  76]  69
+│   │   │   └── [ 380]  6b44c1ac78ca02af9b4b066b46430f9202428f
+│   │   ├── [  76]  6d
+│   │   │   └── [138K]  f7ebf02a983d22c7f13dc66671bce772b9ec8c
+│   │   ├── [  76]  6e
+│   │   │   └── [ 155]  411e8d77f33602291ca3bff308f47cf20475ee
+│   │   ├── [  76]  71
+│   │   │   └── [ 390]  8de57622916224c1147669fc7489f1fb5791e9
+│   │   ├── [  76]  72
+│   │   │   └── [1.0K]  396ad9ebc2265414b2084de72843fd6067e442
+│   │   ├── [  76]  77
+│   │   │   └── [ 353]  8212b225e5763bda6ed0323e343a92d2b7d7f6
+│   │   ├── [  76]  7b
+│   │   │   └── [ 193]  a19b09f813071692405d5cb0354c0021b07c8d
+│   │   ├── [  76]  82
+│   │   │   └── [  46]  fc853563f8963c3daaa6584b9d4c8751d4d649
+│   │   ├── [  76]  9e
+│   │   │   └── [5.9K]  d092736b37552cd8b82c4a77b65845db7840a0
+│   │   ├── [  76]  a4
+│   │   │   └── [ 477]  69a4329f51b0142cafe35695d8dd8232c5933b
+│   │   ├── [  76]  a7
+│   │   │   └── [ 130]  227f5e863f78caa2fec2dc6d72c38ced4dd4eb
+│   │   ├── [  76]  b4
+│   │   │   └── [ 33K]  6ac45480f248b9f0535c05b755dda7866a1679
+│   │   ├── [  76]  ba
+│   │   │   └── [170K]  f129a00263988a63ccf1f72f2257bc4bebf833
+│   │   ├── [  76]  bf
+│   │   │   └── [ 199]  c2d73738299338f5eadf57d2484fa92e0eaef7
+│   │   ├── [  76]  c3
+│   │   │   └── [6.5K]  62abaab3413a31413dea13ca4e2b9945b1a5f1
+│   │   ├── [  76]  ca
+│   │   │   └── [ 904]  87e26b558822892804c24cb4ec53f998101e22
+│   │   ├── [  76]  cb
+│   │   │   └── [ 176]  f039b53c83060231c5d708cc748aa2369bd1f6
+│   │   ├── [  76]  d4
+│   │   │   └── [  64]  3d91936aa80f94c72e06870f95568be173f7f5
+│   │   ├── [  76]  dc
+│   │   │   └── [ 784]  e536e0f425827a6d21708f806461b29ffc909e
+│   │   ├── [  76]  de
+│   │   │   └── [  60]  056e7232bb6e65b83a8b6d3bc1de6e5a985108
+│   │   ├── [  76]  e1
+│   │   │   └── [ 138]  314f74c48a97fdf03a41da911c994cea960e39
+│   │   ├── [  76]  f3
+│   │   │   └── [ 312]  9a17d51b01be1a049075d1ea88a31308cde67d
+│   │   ├── [  76]  fa
+│   │   │   └── [  45]  ee4f360ddcc9d56850af53276e4f40731907cf
+│   │   ├── [   0]  info
+│   │   └── [   0]  pack
+│   └── [  32]  refs
+│       ├── [   8]  heads
+│       │   └── [  41]  main
+│       ├── [  12]  remotes
+│       │   └── [  16]  origin
+│       │       ├── [  30]  HEAD
+│       │       └── [  41]  main
+│       └── [   0]  tags
+├── [  13]  .gitignore
+├── [ 734]  Info.plist
+├── [ 639]  package.json
+├── [104K]  package-lock.json
+├── [ 214]  public
+│   ├── [  48]  img
+│   │   ├── [124K]  img1.png
+│   │   ├── [177K]  img2.png
+│   │   └── [207K]  img3.png
+│   ├── [ 27K]  index.html
+│   ├── [  80]  legal
+│   │   ├── [1.5K]  privacy-policy.html
+│   │   └── [1.7K]  terms-of-service.html
+│   ├── [ 469]  manifest.json
+│   ├── [ 12K]  originalindex.html
+│   ├── [ 26K]  originalindexpart2.html
+│   ├── [3.2K]  script.js
+│   ├── [ 576]  service-worker.js
+│   └── [2.5K]  style.css
+├── [6.6K]  README.md
+├── [ 284]  .replit
+├── [  84]  replit.nix
+├── [5.2K]  server.js
+├── [ 481]  tasks.json
+├── [133K]  treeandkeycontexts1.txt
+├── [ 432]  treefinal.txt
+├── [3.7K]  tree.txt
+├── [  20]  .upm
+│   └── [ 256]  store.json
+├── [ 222]  vite.config.js
+└── [  30]  .well-known
+    └── [ 164]  assetlinks.json
+
+72 directories, 111 files
+{
+    "name": "@types/connect",
+    "version": "3.4.38",
+    "description": "TypeScript definitions for connect",
+    "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/connect",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Maxime LUCE",
+            "githubUsername": "SomaticIT",
+            "url": "https://github.com/SomaticIT"
+        },
+        {
+            "name": "Evan Hahn",
+            "githubUsername": "EvanHahn",
+            "url": "https://github.com/EvanHahn"
+        }
+    ],
+    "main": "",
+    "types": "index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/connect"
+    },
+    "scripts": {},
+    "dependencies": {
+        "@types/node": "*"
+    },
+    "typesPublisherContentHash": "8990242237504bdec53088b79e314b94bec69286df9de56db31f22de403b4092",
+    "typeScriptVersion": "4.5"
+}
+>>>>>>>> ./.cache/typescript/5.4/node_modules/@types/express-serve-static-core/package.json
+
+[ 412]  .
+├── [   6]  android
+│   └── [   6]  app
+│       └── [   8]  src
+│           └── [  38]  main
+│               └── [ 476]  AndroidManifest.xml
+├── [  38]  .cache
+│   ├── [ 104]  nix
+│   │   ├── [ 40K]  binary-cache-v6.sqlite
+│   │   └── [   0]  binary-cache-v6.sqlite-journal
+│   ├── [  92]  replit
+│   │   ├── [  96]  modules
+│   │   │   ├── [  67]  nodejs-18 -> /nix/store/b0v305nvidpyw64cr4alk85p0hq3914n-replit-module-nodejs-18
+│   │   │   ├── [ 122]  nodejs-18.res
+│   │   │   ├── [  64]  replit -> /nix/store/pyyq478izs8rhhwli1pkmqdvbdz3frma-replit-module-replit
+│   │   │   ├── [ 116]  replit.res
+│   │   │   ├── [  61]  web -> /nix/store/ha7scvvwkkk80qapgcjywpjh00xz6vax-replit-module-web
+│   │   │   └── [ 110]  web.res
+│   │   ├── [   0]  modules.stamp
+│   │   ├── [  16]  nix
+│   │   │   └── [ 20K]  env.json
+│   │   └── [  84]  __replit_disk_meta.json
+│   └── [  18]  typescript
+│       ├── [  82]  5.0
+│       │   ├── [ 106]  package.json
+│       │   └── [1.1K]  package-lock.json
+│       ├── [  82]  5.3
+│       │   ├── [ 106]  package.json
+│       │   └── [1.1K]  package-lock.json
+│       └── [  82]  5.4
+│           ├── [ 186]  package.json
+│           └── [8.7K]  package-lock.json
+├── [ 303]  .env
+├── [ 164]  .git
+│   ├── [   0]  branches
+│   ├── [   6]  COMMIT_EDITMSG
+│   ├── [ 261]  config
+│   ├── [  73]  description
+│   ├── [   0]  FETCH_HEAD
+│   ├── [  21]  HEAD
+│   ├── [ 556]  hooks
+│   │   ├── [ 536]  applypatch-msg.sample
+│   │   ├── [ 954]  commit-msg.sample
+│   │   ├── [4.7K]  fsmonitor-watchman.sample
+│   │   ├── [ 247]  post-update.sample
+│   │   ├── [ 482]  pre-applypatch.sample
+│   │   ├── [1.7K]  pre-commit.sample
+│   │   ├── [ 474]  pre-merge-commit.sample
+│   │   ├── [1.7K]  prepare-commit-msg.sample
+│   │   ├── [1.4K]  pre-push.sample
+│   │   ├── [4.9K]  pre-rebase.sample
+│   │   ├── [ 602]  pre-receive.sample
+│   │   ├── [2.8K]  push-to-checkout.sample
+│   │   ├── [2.3K]  sendemail-validate.sample
+│   │   └── [3.6K]  update.sample
+│   ├── [2.1K]  index
+│   ├── [  14]  info
+│   │   └── [ 240]  exclude
+│   ├── [  16]  logs
+│   │   ├── [ 321]  HEAD
+│   │   └── [  24]  refs
+│   │       ├── [   8]  heads
+│   │       │   └── [ 321]  main
+│   │       └── [  12]  remotes
+│   │           └── [  16]  origin
+│   │               ├── [ 153]  HEAD
+│   │               └── [ 152]  main
+│   ├── [ 164]  objects
+│   │   ├── [  76]  03
+│   │   │   └── [ 264]  24cfc9729361ec99cc33bb86192887b3ef285c
+│   │   ├── [  76]  0c
+│   │   │   └── [ 248]  e1eb672f2f16e97ac27e0c1da0cc9e354dda0b
+│   │   ├── [  76]  1c
+│   │   │   └── [ 105]  eec6bff5519e803761e7b4086ab71cab3c7f0c
+│   │   ├── [  76]  24
+│   │   │   └── [ 224]  759b26041fa2d3ea5fd151a3884d317bb57ccc
+│   │   ├── [  76]  26
+│   │   │   └── [ 920]  260652e01d156a93efa1c7f384103d99e26960
+│   │   ├── [  76]  2e
+│   │   │   └── [  78]  4b50c66e9732dfa58ca19e95e0e1a5df436f04
+│   │   ├── [  76]  37
+│   │   │   └── [ 223]  efe8315e26028391cb3f06c0fd1015c175d3f2
+│   │   ├── [  76]  40
+│   │   │   └── [  29]  b878db5b1c97fc77049537a71bb2e249abe5dc
+│   │   ├── [  76]  42
+│   │   │   └── [ 701]  78742b32cb26ad7201b4cb76deec87616bb568
+│   │   ├── [  76]  46
+│   │   │   └── [ 106]  22fc3c668a650c1a38af208616b941cfdb09a1
+│   │   ├── [  76]  4d
+│   │   │   └── [ 77K]  5be1c97ec4807df5551eec2831dda6afbc6f6f
+│   │   ├── [  76]  51
+│   │   │   └── [2.2K]  10d182d29cd488f2e961f0daba422e7e58452e
+│   │   ├── [  76]  5e
+│   │   │   └── [  45]  3c2ef46019fae4f42912414cd7a59a1acd2052
+│   │   ├── [  76]  68
+│   │   │   └── [ 477]  c0b52236f871c4119f6d45740298032787d899
+│   │   ├── [  76]  69
+│   │   │   └── [ 380]  6b44c1ac78ca02af9b4b066b46430f9202428f
+│   │   ├── [  76]  6d
+│   │   │   └── [138K]  f7ebf02a983d22c7f13dc66671bce772b9ec8c
+│   │   ├── [  76]  6e
+│   │   │   └── [ 155]  411e8d77f33602291ca3bff308f47cf20475ee
+│   │   ├── [  76]  71
+│   │   │   └── [ 390]  8de57622916224c1147669fc7489f1fb5791e9
+│   │   ├── [  76]  72
+│   │   │   └── [1.0K]  396ad9ebc2265414b2084de72843fd6067e442
+│   │   ├── [  76]  77
+│   │   │   └── [ 353]  8212b225e5763bda6ed0323e343a92d2b7d7f6
+│   │   ├── [  76]  7b
+│   │   │   └── [ 193]  a19b09f813071692405d5cb0354c0021b07c8d
+│   │   ├── [  76]  82
+│   │   │   └── [  46]  fc853563f8963c3daaa6584b9d4c8751d4d649
+│   │   ├── [  76]  9e
+│   │   │   └── [5.9K]  d092736b37552cd8b82c4a77b65845db7840a0
+│   │   ├── [  76]  a4
+│   │   │   └── [ 477]  69a4329f51b0142cafe35695d8dd8232c5933b
+│   │   ├── [  76]  a7
+│   │   │   └── [ 130]  227f5e863f78caa2fec2dc6d72c38ced4dd4eb
+│   │   ├── [  76]  b4
+│   │   │   └── [ 33K]  6ac45480f248b9f0535c05b755dda7866a1679
+│   │   ├── [  76]  ba
+│   │   │   └── [170K]  f129a00263988a63ccf1f72f2257bc4bebf833
+│   │   ├── [  76]  bf
+│   │   │   └── [ 199]  c2d73738299338f5eadf57d2484fa92e0eaef7
+│   │   ├── [  76]  c3
+│   │   │   └── [6.5K]  62abaab3413a31413dea13ca4e2b9945b1a5f1
+│   │   ├── [  76]  ca
+│   │   │   └── [ 904]  87e26b558822892804c24cb4ec53f998101e22
+│   │   ├── [  76]  cb
+│   │   │   └── [ 176]  f039b53c83060231c5d708cc748aa2369bd1f6
+│   │   ├── [  76]  d4
+│   │   │   └── [  64]  3d91936aa80f94c72e06870f95568be173f7f5
+│   │   ├── [  76]  dc
+│   │   │   └── [ 784]  e536e0f425827a6d21708f806461b29ffc909e
+│   │   ├── [  76]  de
+│   │   │   └── [  60]  056e7232bb6e65b83a8b6d3bc1de6e5a985108
+│   │   ├── [  76]  e1
+│   │   │   └── [ 138]  314f74c48a97fdf03a41da911c994cea960e39
+│   │   ├── [  76]  f3
+│   │   │   └── [ 312]  9a17d51b01be1a049075d1ea88a31308cde67d
+│   │   ├── [  76]  fa
+│   │   │   └── [  45]  ee4f360ddcc9d56850af53276e4f40731907cf
+│   │   ├── [   0]  info
+│   │   └── [   0]  pack
+│   └── [  32]  refs
+│       ├── [   8]  heads
+│       │   └── [  41]  main
+│       ├── [  12]  remotes
+│       │   └── [  16]  origin
+│       │       ├── [  30]  HEAD
+│       │       └── [  41]  main
+│       └── [   0]  tags
+├── [  13]  .gitignore
+├── [ 734]  Info.plist
+├── [ 639]  package.json
+├── [104K]  package-lock.json
+├── [ 214]  public
+│   ├── [  48]  img
+│   │   ├── [124K]  img1.png
+│   │   ├── [177K]  img2.png
+│   │   └── [207K]  img3.png
+│   ├── [ 27K]  index.html
+│   ├── [  80]  legal
+│   │   ├── [1.5K]  privacy-policy.html
+│   │   └── [1.7K]  terms-of-service.html
+│   ├── [ 469]  manifest.json
+│   ├── [ 12K]  originalindex.html
+│   ├── [ 26K]  originalindexpart2.html
+│   ├── [3.2K]  script.js
+│   ├── [ 576]  service-worker.js
+│   └── [2.5K]  style.css
+├── [6.6K]  README.md
+├── [ 284]  .replit
+├── [  84]  replit.nix
+├── [5.2K]  server.js
+├── [ 481]  tasks.json
+├── [143K]  treeandkeycontexts1.txt
+├── [ 432]  treefinal.txt
+├── [3.7K]  tree.txt
+├── [  20]  .upm
+│   └── [ 256]  store.json
+├── [ 222]  vite.config.js
+└── [  30]  .well-known
+    └── [ 164]  assetlinks.json
+
+72 directories, 111 files
+{
+    "name": "@types/express-serve-static-core",
+    "version": "4.19.5",
+    "description": "TypeScript definitions for express-serve-static-core",
+    "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express-serve-static-core",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Boris Yankov",
+            "githubUsername": "borisyankov",
+            "url": "https://github.com/borisyankov"
+        },
+        {
+            "name": "Satana Charuwichitratana",
+            "githubUsername": "micksatana",
+            "url": "https://github.com/micksatana"
+        },
+        {
+            "name": "Jose Luis Leon",
+            "githubUsername": "JoseLion",
+            "url": "https://github.com/JoseLion"
+        },
+        {
+            "name": "David Stephens",
+            "githubUsername": "dwrss",
+            "url": "https://github.com/dwrss"
+        },
+        {
+            "name": "Shin Ando",
+            "githubUsername": "andoshin11",
+            "url": "https://github.com/andoshin11"
+        }
+    ],
+    "main": "",
+    "types": "index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/express-serve-static-core"
+    },
+    "scripts": {},
+    "dependencies": {
+        "@types/node": "*",
+        "@types/qs": "*",
+        "@types/range-parser": "*",
+        "@types/send": "*"
+    },
+    "typesPublisherContentHash": "7851d080d9b3c122ba245a1cfebd5ae4939c12e88f52b66385cdfd02a0a916da",
+    "typeScriptVersion": "4.7"
+}

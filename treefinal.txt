@@ -1,0 +1,1 @@
+ls -1A | grep -E '\.replit|replit\.nix|package\.json|server\.js|vite\.config\.ts|\.env|manifest\.json|service-worker\.js' | xargs -I {} sh -c 'echo "\n>>>>>>>> {}" >> treeandkeycontexts1.txt; tree -I "node_modules|.git" -ah --noreport >> treeandkeycontexts1.txt; cat "{}" >> treeandkeycontexts1.txt'

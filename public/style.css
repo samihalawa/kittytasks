@@ -95,3 +95,71 @@ main {
     flex-direction: column;
   }
 }
+/* Icons for edit and delete buttons */
+.edit-btn::before {
+  content: url('edit-icon.png');
+}
+
+.delete-btn::before {
+  content: url('delete-icon.png');
+}
+
+/* Task Prioritization */
+.priority-high {
+  background-color: red;
+}
+
+.priority-medium {
+  background-color: yellow;
+}
+
+.priority-low {
+  background-color: green;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Progress Bar */
+#progress-bar {
+  width: 100%;
+  background-color: #f3f3f3;
+}
+
+#progress {
+  width: 0;
+  height: 30px;
+  background-color: #4caf50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  animation: progress-animation 2s infinite;
+}
+
+@keyframes progress-animation {
+  0% { background-color: #4caf50; }
+  50% { background-color: #8bc34a; }
+  100% { background-color: #4caf50; }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .task-item {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  .task-item {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .task-item {
+    font-size: 18px;
+  }
+}

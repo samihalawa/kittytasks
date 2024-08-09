@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kitty-tasks-cache-v2';
+const CACHE_NAME = 'kitty-tasks-cache-v4';
 const urlsToCache = [
   '/',
   '/index.html',

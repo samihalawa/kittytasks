@@ -255,3 +255,43 @@ Main HTML structure of the application.
 
 
    ![Screenshot 1](public/img/img1.png)
+
+ORIGINAL TASK POSTGRES:
+
+CREATE TABLE tasks (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    description TEXT,
+    priority VARCHAR(50) DEFAULT 'medium',
+    due_date DATE DEFAULT CURRENT_DATE,
+    status VARCHAR(50) DEFAULT 'pending'
+);
+
+i want to update tasks so it has one more column (position) and meets the following criteria. also add a creation date apart from position, that must be autofilled with current datatime when a new task is created: (the last creationdateime is wrong : correct it)
+
+
+CURRENT TABLE SCHEMA:
+
+CREATE TABLE tasks (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  description TEXT,
+  priority VARCHAR(50) DEFAULT 'medium',
+  due_date DATE,
+  status VARCHAR(50) DEFAULT 'pending',
+  position INT,
+  creation_datetime TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+CREATE TABLE subtasks (
+  id SERIAL PRIMARY KEY,
+  task_id INT REFERENCES tasks(id),
+  title VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE comments (
+  id SERIAL PRIMARY KEY,
+  task_id INT REFERENCES tasks(id),
+  comment TEXT
+);
